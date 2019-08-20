@@ -41,6 +41,7 @@
 		04F719DE230BDE3E00A7A787 /* HSUserLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719D7230BDE3E00A7A787 /* HSUserLocationProvider.swift */; };
 		04F719DF230BDE3E00A7A787 /* AFLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719D8230BDE3E00A7A787 /* AFLocationManager.swift */; };
 		04F719E0230BDE3E00A7A787 /* HSUserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719D9230BDE3E00A7A787 /* HSUserLocation.swift */; };
+		04F719E6230BF10B00A7A787 /* HSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719E5230BF10B00A7A787 /* HSConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		04F719D7230BDE3E00A7A787 /* HSUserLocationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUserLocationProvider.swift; sourceTree = "<group>"; };
 		04F719D8230BDE3E00A7A787 /* AFLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFLocationManager.swift; sourceTree = "<group>"; };
 		04F719D9230BDE3E00A7A787 /* HSUserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUserLocation.swift; sourceTree = "<group>"; };
+		04F719E5230BF10B00A7A787 /* HSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		048B0653230BD0C600818D4E /* HeadStart */ = {
 			isa = PBXGroup;
 			children = (
+				04F719E4230BF0F700A7A787 /* Constants */,
 				04F719CB230BDE3E00A7A787 /* Location Manager */,
 				04F719B1230BD80F00A7A787 /* Network Layer */,
 				04F7198E230BD7FB00A7A787 /* Extensions */,
@@ -226,6 +229,14 @@
 			path = "Location Warning Screen";
 			sourceTree = "<group>";
 		};
+		04F719E4230BF0F700A7A787 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				04F719E5230BF10B00A7A787 /* HSConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -314,6 +325,7 @@
 				04F719AF230BD7FB00A7A787 /* NBUIImageView+Extensions.swift in Sources */,
 				04F719DA230BDE3E00A7A787 /* HSUserLocationService.swift in Sources */,
 				04F719E0230BDE3E00A7A787 /* HSUserLocation.swift in Sources */,
+				04F719E6230BF10B00A7A787 /* HSConstants.swift in Sources */,
 				04F719A1230BD7FB00A7A787 /* NBDateFormatter+Extensions.swift in Sources */,
 				04F719C2230BD80F00A7A787 /* HSJsonParameterEncoding.swift in Sources */,
 				04F719C3230BD80F00A7A787 /* HSParameterEncoding.swift in Sources */,

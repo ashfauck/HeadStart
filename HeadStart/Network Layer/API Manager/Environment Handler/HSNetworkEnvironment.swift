@@ -17,28 +17,41 @@ public enum HSNetworkEnvironment
 
 public struct EnvironmentManager
 {
-    #if Test
-    //    // Test environment
-    static public let environment:HSNetworkEnvironment = .test
-    #elseif Stage
-    //    // Stage environment
-    static public let environment:HSNetworkEnvironment = .staging
-    #else
-    //    // Release environment
-    static public let environment:HSNetworkEnvironment = .release
-    #endif
+//    static public var environment:HSNetworkEnvironment {
+//
+//        #if Test
+//            return .test
+//        #elseif Stage
+//            return .stage
+//        #else
+//            return .release
+//        #endif
+//
+//
+//    }
     
+//    #if Test
+//    //    // Test environment
+//    static public let environment:HSNetworkEnvironment = .test
+//    #elseif Stage
+//    //    // Stage environment
+//    static public let environment:HSNetworkEnvironment = .staging
+//    #else
+//    //    // Release environment
+//    static public let environment:HSNetworkEnvironment = .release
+//    #endif
+//
     static public var accessToken:String = ""
     static public var environmentBaseURL:String {
         
-        switch EnvironmentManager.environment
+        switch HSConstants.shared.environment
         {
         case .release:
-            return ""
+            return HSConstants.shared.releaseUrl
         case .staging:
-            return ""
+            return HSConstants.shared.stagingUrl
         case .test:
-            return ""
+            return HSConstants.shared.testingUrl
         }
         
     }
