@@ -1,0 +1,1570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0250367B9C6A10F20A3EFA4C38993F5A /* NVActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E42BE3B82901778B8A003B1E0F313 /* NVActivityIndicatorPresenter.swift */; };
+		048CEB48664177E8B57C1409DE73EBCC /* PINButton+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9462AA4C0A699293066D769AA6A229DA /* PINButton+PINRemoteImage.m */; };
+		06C67BCBA6A874BD3880821F5DBB0A89 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA08D44EB7AD39CDCA975050225956 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
+		0A049810D911F2BE93DBB6DED9F85F9E /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E09DF31BB676074A640433928675DF8 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
+		0C39F3031226B02EFB8A049EAC792AE5 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DAEB6754386CE4F9C78A22DA9162EC /* FLAnimatedImage.m */; };
+		173B2AB93E6069FDDF700BA452E92999 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B99E9F0A36128B2587990121B7FA32 /* NVActivityIndicatorAnimationBallZigZag.swift */; };
+		18654D742D6420B84464DF49AA5D29E8 /* PINRemoteImageCategoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B2E0E867D358CA436083DD92C415D4E /* PINRemoteImageCategoryManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E737CABAAB8102864A116AE51071069 /* PINRemoteImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA9D66FF8EB1C485E480E746409463C /* PINRemoteImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		241D8706075A6FB075A5CFA2E60873C2 /* NVActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B59BBE2E99B97723D31695170535A4 /* NVActivityIndicatorAnimationDelegate.swift */; };
+		294E54C2F064E420252BC02E9E693C0B /* NVActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193B8F01711E8DDEDDC85BB693232FB5 /* NVActivityIndicatorAnimationOrbit.swift */; };
+		2BF9DBDCDF85AF548FB6145907FC2B7C /* PINCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BEB110B9D404D4E043EEFA9AFEEBC /* PINCache-dummy.m */; };
+		2C31C7AE680B5B9EA47975B9653458FF /* PINRemoteImageManagerResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE827AFB97E11CE19147F9394FC8E0A /* PINRemoteImageManagerResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C3E47DB6A11B235F7F7F794CFCD19BE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96ACEAC73F952C24C2D383639B735207 /* Accelerate.framework */; };
+		2FD4703B1693E8A615F32A5E81851160 /* PINRemoteLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 5875335A7B994240246C3D0236A16D64 /* PINRemoteLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FF088AD6ACE8739F458176F490F14A4 /* PINImage+WebP.h in Headers */ = {isa = PBXBuildFile; fileRef = 8770AF3A3AA2633582266EB5E9C595AA /* PINImage+WebP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A48F5220F0158D2E846517B543B53C /* PINImage+DecodedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D047D4A738E6BF6BD6C599E59F32E /* PINImage+DecodedImage.m */; };
+		342F6B072BE4E2254E68BF8684071641 /* PINRemoteImageProcessorTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E1914DE4CDB37ED4BC92C305F8A28D09 /* PINRemoteImageProcessorTask.m */; };
+		3BB7737D1AFDED41F90C79EB8DE80FE8 /* NVActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A99734FFE68E59B77884A2A50C4D1 /* NVActivityIndicatorView-dummy.m */; };
+		3DDA9AC778332AD5C791AB22D387B251 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212F00FB34B94109B381E2C9DE670C4 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */; };
+		3EA01D63D0204092024D113ADC9B4C26 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C612614A7308CDAB83B9A2819DA08C3D /* NVActivityIndicatorAnimationBallGridPulse.swift */; };
+		40857BD39439F4422A9DF084F0EF574B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9596607E9918154CEB1DF6E11FE73DE /* ImageIO.framework */; };
+		478D927565C9922FD7CFDE8520D87D81 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A147A7A536AD4A26E9ADFBA2CF38387 /* NVActivityIndicatorAnimationBallBeat.swift */; };
+		4858785C304EAA3F49BFD43A53D4160F /* PINCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55297598F0F78656CBA885701F1F37A1 /* PINCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4965E1D6FF3E6A30FA40DF14EDF663F5 /* Nullability.h in Headers */ = {isa = PBXBuildFile; fileRef = D386FB13666C3E07CF6B61AA3C4E7A7D /* Nullability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E8F9B0F535F34A47D1E01B5008D88DF /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C279A597CD90F914A9E32BFB2FADE2 /* NVActivityIndicatorAnimationBallClipRotate.swift */; };
+		4F7AB1D7316D3B8C31208ABF2D73CC31 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F5397918AD4769CCF667DFBFDFA1E /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
+		505609504F185EAAC0FDF30003B70F8C /* FLAnimatedImageView+PINRemoteImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D1F1B8D0B089FB6CB2FF3AF6C18F7869 /* FLAnimatedImageView+PINRemoteImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52493378592C2DAF2FDDC2C0E55568BA /* PINDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 269C36AD988585AA9D24F8D27E412F6E /* PINDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53F1C3093A17BF73042AF4BAB0E6B030 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82685A55F20530F68B0D32B1CF10805 /* NVActivityIndicatorAnimationBallRotateChase.swift */; };
+		547FD24D18F637E68341E9F714B8D173 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E5352D489C424ACBB3D2D53963817D /* NVActivityIndicatorAnimationBallScaleMultiple.swift */; };
+		549469C9AD768F0101DEF8BEADC06306 /* Pods-HeadStart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E4223EBB3953D5876432FF168B34871 /* Pods-HeadStart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5586925BE1F49B2CA7B3329EE2405C34 /* PINRemoteImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A776F94521E3594EDB63CD71664D80AC /* PINRemoteImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55A8FBD7F24B060B3C6BFADDAE97024E /* FLAnimatedImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF97CCBEB729C586EEB2A94328F92C2 /* FLAnimatedImage-dummy.m */; };
+		5B08A65CCDFBEEC102113BDFC4BE8C03 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9596607E9918154CEB1DF6E11FE73DE /* ImageIO.framework */; };
+		5BAA2E8935DDC767AA844976A263A145 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF2F14D4626C40D4A5D88118BBA670 /* NVActivityIndicatorShape.swift */; };
+		5CC0FC90D2422366B8BCD02DFA08AC76 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926FF6D44CE7A9AEE0CC503D9426F1E7 /* QuartzCore.framework */; };
+		5DCAE6B70121FFEFA47B0A623777F1AE /* NVActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C69197EBB3EEF40A22420CD53CCD14A /* NVActivityIndicatorAnimationPacman.swift */; };
+		6552CAEB9AA077C793B8FA13C1B49B2F /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5F386B558FF493025C0CA4BD8AF0A /* NVActivityIndicatorAnimationSquareSpin.swift */; };
+		6705BD5EB3824B47711EDDE0B9CBD6E3 /* PINImage+DecodedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EBCBB4205294677A2EEC79261D8AEE5E /* PINImage+DecodedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6724FFE67E8291F059BD8C8DF6FEC636 /* PINRemoteImageCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 401DB9FBD876B38278B51690DB030428 /* PINRemoteImageCallbacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0BB21F82E342EC6809AA0F45BA4FFE /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDDBAD33F44232FBF788406500C2192 /* NVActivityIndicatorAnimationCubeTransition.swift */; };
+		6CAB9148ABD2236556BA8EAB66B01A59 /* PINImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F96B6775A43BCE705D550735EE3B61 /* PINImage+WebP.m */; };
+		6F4BBA113F825B12E9EF6F00C57CD64D /* PINProgressiveImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A0679D49DDAE34545970E00D264A81AB /* PINProgressiveImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7056AD6E8676C1D600CD3E0F66642078 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0FBD6FC62308EDA28645947C8A5F5 /* NVActivityIndicatorAnimationLineScaleParty.swift */; };
+		74F46FDFA4FDF1CB7247E827FEE6D3BA /* PINMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6C4E65187404EAF86F26BBAC352C90 /* PINMemoryCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		753576B2AFDC8214EF0B204B209F0D1A /* FLAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 777701570C9694F6A861DC841AEDBF62 /* FLAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		759757524FF111AEFBB5E236A3D19749 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB0C27ABC0BAD387DF93B14DD18F68 /* NVActivityIndicatorAnimationBallPulseRise.swift */; };
+		76AEFCEC3FAA110189B32E9A7B813BEF /* PINImageView+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D18D0976B91FA669ADE0C333371342F0 /* PINImageView+PINRemoteImage.m */; };
+		784708BBECB561B3319073D4A60A851E /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5996D79950415E95CB0C871C4201F17E /* NVActivityIndicatorAnimationBallPulseSync.swift */; };
+		7A3B041862879D335DBFB8CE8E1927D0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926FF6D44CE7A9AEE0CC503D9426F1E7 /* QuartzCore.framework */; };
+		7C0A63CAE4A3DFEB5FF026A2501D86EB /* NVActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA35023D5615601E67DF60ED6B144C6 /* NVActivityIndicatorViewable.swift */; };
+		7C4CBAF15CD8DFFEFB4187F3C17A1341 /* PINCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BB55CAC8098B85B1B74B45E7970B60C /* PINCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E827949633FFF0BFB3EA0AB00E7981E /* NVActivityIndicatorAnimationBallDoubleBounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664DB93FBE6ABF88F2F9430E049744C3 /* NVActivityIndicatorAnimationBallDoubleBounce.swift */; };
+		7F2429051103760E749823F536A276B5 /* PINRemoteImageProcessorTask.h in Headers */ = {isa = PBXBuildFile; fileRef = A18FF6223FA56DF0B7CA8C639CBC8436 /* PINRemoteImageProcessorTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		807C65CC32C0946CBAD3558ECCF2C95E /* PINRemoteImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70540077FE4A2D63617A7C0956CB2A48 /* PINRemoteImage-dummy.m */; };
+		81BE5F5287079F8C36BBBE7E0900A928 /* PINMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E3B9577AC637538CA52E0C5F3825B6 /* PINMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82862AA4EC1076A840182E5C0271BF0E /* NVActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73B0870EB1A2EED8A45D4D7E679BF2A4 /* NVActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84B0B55E2A8E8EDE0866CA2D2A206406 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20EF75D5EE4778C4E3BD20A3C977B83A /* UIKit.framework */; };
+		8687A069F0CEF173F22F450E9B2D6D0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DD5C76C5FBA965B8F8FDCA6D8C930A /* Foundation.framework */; };
+		87F34F8961C6C5A82D03627E43907EED /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8286346C88098F1B6E44F89BC3DA13 /* NVActivityIndicatorAnimationAudioEqualizer.swift */; };
+		88C546770279761A8EB932E1FC115A76 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A205A3CE004F9E7E07D6F0851F1A86 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */; };
+		8FA47949CC77DE9AE664C387F3C58FE3 /* PINRemoteImageCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D14E1066F76B9479FE68062891050E0 /* PINRemoteImageCallbacks.m */; };
+		91E4D516B14454557EC636E2DC5C148F /* PINButton+PINRemoteImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 646AC90D1197A4362C1CA1CAB053A2D9 /* PINButton+PINRemoteImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9620E91FFEA58DF4DD4C41BE08766081 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D26FCBDD160E524F1BEBA16762FAC6 /* PINCache.framework */; };
+		979EC079A99941268BC734C1DE4F0794 /* PINDataTaskOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFACE03025EDAEE0DC5650F76A8E0F4 /* PINDataTaskOperation.m */; };
+		98D7005AEEEE984FE5C75DCF879CA33D /* PINCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3FFE2B42D2A4F87F487591F759785 /* PINCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9E03AB5FDD66BC9E500406BDD8C163A2 /* PINRemoteImageTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8CE1E1010E523F5046B1C5C50C9C5 /* PINRemoteImageTask.m */; };
+		A2BCB72B4762FA9E51415A459A73CB29 /* PINRemoteImageManagerResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7DC983E26485B7E2FC84DA1AFD660 /* PINRemoteImageManagerResult.m */; };
+		A512DEEDF0B63DEF4B9EDCC2CDEC0C18 /* PINImageView+PINRemoteImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B0D66E5C2694C2D9232D4315418A534 /* PINImageView+PINRemoteImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7C3331C1D6C2249631BE6A1D54B55AB /* PINRemoteImageCategoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D82195C5A0BECAE446D00287A4A469F0 /* PINRemoteImageCategoryManager.m */; };
+		AA47F3BDE530ABB2B4F1A1A59D78613A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DD5C76C5FBA965B8F8FDCA6D8C930A /* Foundation.framework */; };
+		B19CD67D3D8A1EBE73C1596854215596 /* FLAnimatedImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 578E8AF58A829E8DAEBBF321A139BE9C /* FLAnimatedImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F1FFB9D3D119EAD6945BF49639CDDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941E3A6144A90BCB2CE17B9D1ADF15CB /* CoreGraphics.framework */; };
+		B50581B31D0D83B95CBE1B0A83B1CD24 /* PINURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CC261D77650FAB8B7246D18396FF1B5 /* PINURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B79676BD6FB7C470E2895C42593DDDEA /* PINRemoteImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F84912C609FE9FA02D84B0C2F2D03AE /* PINRemoteImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7BB784E0F33437037CEA2AD51196248 /* FLAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2126E6B1C6E3F8B2174316BDC7AF3131 /* FLAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7DD9E55C13191ABF50159BFF1964F76 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B73BCE0542F9F4C241F4E38B830841 /* NVActivityIndicatorAnimationBallRotate.swift */; };
+		B8A70B4292CD6C2DBB88207E8FC900D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DD5C76C5FBA965B8F8FDCA6D8C930A /* Foundation.framework */; };
+		B8F2BA15419957313614012DE159E56B /* PINDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ADB9EBD8F5C8F7FA7D1F44B5038DA /* PINDiskCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BABDEEA0E400185112FC54048CFAEE33 /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E88C5953E0B2954C8E1BA9A5D0FDD2 /* NVActivityIndicatorAnimationBallGridBeat.swift */; };
+		BBE0890CA1E7E3C13426610AAA119F43 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2927F3C0EFAD8A6A391DAEA5266C4F /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
+		C3CDFE14B71893B7CB729FE8CD774898 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920E4E87904458E6CF24AF9455501F68 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */; };
+		C9860A9B8847CB2E32913B53ED7C9BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DD5C76C5FBA965B8F8FDCA6D8C930A /* Foundation.framework */; };
+		C9F1A204E02C6491567236E0E1F27D46 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCD53DBF7E44E2D90DB32F539B8C79A /* FLAnimatedImage.framework */; };
+		CE4A42C71FB0A896E776CF9EC7BB1509 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A69429EF792354557314F932E1F7F /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */; };
+		CE85CBA8FA9C050D92CF8C09EFD9DE5E /* PINRemoteImageMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B140F7CE1E6D8F09128A077B704CF8 /* PINRemoteImageMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEBB09DCF87B6CF3FF89EC6A8B2D4E1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DD5C76C5FBA965B8F8FDCA6D8C930A /* Foundation.framework */; };
+		D2D5FE5E52DB3382E99AE09A92138DA2 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E04BAF0F95EBF3AD1EC372DA9C0077D5 /* FLAnimatedImageView.m */; };
+		D37527398E12D52F839C0C9973775170 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8CC4AF208E528BC7F54AF8436D6268 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		D38B7844BB5E179AB653102430112F55 /* NVActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA83581909BFBA9A166DCBA6B9F5035F /* NVActivityIndicatorAnimationBallScale.swift */; };
+		D4456741E1E6C337C07D48D5F6EAC1F0 /* NSData+ImageDetectors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7701BBA8C6ADE4114717CF2A2F41F528 /* NSData+ImageDetectors.m */; };
+		D575650591913594C02E088BADFFB5CE /* Pods-HeadStart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A02305762C52D29906365220EA9F1FD7 /* Pods-HeadStart-dummy.m */; };
+		D5E044D8443D80A34DF2626AFB87FF73 /* NVActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74AAF10AA41907595B3313E55D2499E /* NVActivityIndicatorAnimationLineScale.swift */; };
+		D62F3F1D3C2FEF3FF373FC98C9EE38E9 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8507E6D7C8AAF2238EC812CCC629BA /* NVActivityIndicatorAnimationBallPulse.swift */; };
+		D76D70E1E2A8C05B3E53AF187E03CF5B /* FLAnimatedImageView+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E417AA11603D5F4AA0FB3668B0B82CA /* FLAnimatedImageView+PINRemoteImage.m */; };
+		D7939CCB7D607B840E329C823E3C719C /* NVActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98988C770ECE91FB5F795484ABE865B4 /* NVActivityIndicatorAnimationBlank.swift */; };
+		DB1E9B160B4DBD103B933A5619F5ABE5 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470E8AE76A3E430542A5D3912E8A172 /* NVActivityIndicatorAnimationBallTrianglePath.swift */; };
+		DB55A77A560140E077C2EB90D729EE44 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59268B4DEF0E5D0A15814D67C5A0570D /* MobileCoreServices.framework */; };
+		DB9B67E7E7BD5A2ACDAF217CD3A26BE6 /* PINRemoteImageTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F15E0E723EF7AB3DAE06C09BD557634 /* PINRemoteImageTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDE307664FA93D696E71ADD1D74C7F37 /* NVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB540D60BF2019D2FCA8909B6993E9F3 /* NVActivityIndicatorView.swift */; };
+		E5D6AF9DB93DBD657A1665AC32AC928F /* PINDataTaskOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AD1B5287450348D752A35E4AB8DF3B02 /* PINDataTaskOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E85C43B65C95128C5BDA0F48599FEE35 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2AB120386CBC5B0D3F0EA648A8B17 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */; };
+		EA58683A66F87AA1815B118759923543 /* PINRemoteImageDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E075C4F0A8E5910C9C86FACE988DFE11 /* PINRemoteImageDownloadTask.m */; };
+		EBD4986B46C03FADE7DD71B0FF3B9CE8 /* PINRemoteImageDownloadTask.h in Headers */ = {isa = PBXBuildFile; fileRef = B9DEB98D9657FDD8D8782FF8BD35754A /* PINRemoteImageDownloadTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECC0947C74863804A9F9A2C26B123E29 /* PINCacheObjectSubscripting.h in Headers */ = {isa = PBXBuildFile; fileRef = 006E498BCA45B0B2F713459ACDE9FA8A /* PINCacheObjectSubscripting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0BC72C763A28D76005F8513337B70CB /* PINProgressiveImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA9BA18C92D64EA218130B1ECC78ACE /* PINProgressiveImage.m */; };
+		F0BC7FD1A8B8D0B380E85AC064EABEB6 /* PINRemoteLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3241C7A03D7453CCF842978B145FE5FF /* PINRemoteLock.m */; };
+		F36EFE23ABFBAD55A78B6B456B3E8C90 /* NSData+ImageDetectors.h in Headers */ = {isa = PBXBuildFile; fileRef = 59350C78FA01D4DEBD71141CB77A3AD8 /* NSData+ImageDetectors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47C7B7A22E39AEFC60CDC340315787A /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E806C887D3943B551CCE27CC441F5 /* NVActivityIndicatorAnimationBallScaleRipple.swift */; };
+		F5270BB19CD1DA6B6D75C7B558587D73 /* PINRemoteImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AABD60AE5FF5BE22F961BBD1A71433 /* PINRemoteImageManager.m */; };
+		F70E86DCE585E795BD9D3EB8DBF2307F /* PINURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5984EEB8B77F699F93464033CBD72DA5 /* PINURLSessionManager.m */; };
+		F93A7D854E9DE74090AE78651377004B /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC7DB15415FB95DC2BE796279415755 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		102E8DA450E245183B6B53D3F43AB727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D50FB3EC50169B780BAE2A1FC76443CB;
+			remoteInfo = PINCache;
+		};
+		3BA131C78C48335311DA10449086922A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02468E4F74D2F434912741862EE578C3;
+			remoteInfo = PINRemoteImage;
+		};
+		495A32E5B722EADA68CD6406C8B51D58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D50FB3EC50169B780BAE2A1FC76443CB;
+			remoteInfo = PINCache;
+		};
+		747B1C71923E56DBBE7588A4A1CB3900 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F111FA0695D7341183345C1E3B3BB86;
+			remoteInfo = FLAnimatedImage;
+		};
+		7798C2B888ED4F03F63C71F793EB5C23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54B1439EA0C8737E1BAF1F8CEF27B62C;
+			remoteInfo = NVActivityIndicatorView;
+		};
+		DE4416DF45CA11EEABE4B03B4B5A248D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F111FA0695D7341183345C1E3B3BB86;
+			remoteInfo = FLAnimatedImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006E498BCA45B0B2F713459ACDE9FA8A /* PINCacheObjectSubscripting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINCacheObjectSubscripting.h; path = PINCache/PINCacheObjectSubscripting.h; sourceTree = "<group>"; };
+		0DA9D66FF8EB1C485E480E746409463C /* PINRemoteImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINRemoteImage-umbrella.h"; sourceTree = "<group>"; };
+		0DC0FBD6FC62308EDA28645947C8A5F5 /* NVActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScaleParty.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
+		0E65163AB301274A8110B5DDEF6878EB /* PINCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PINCache.xcconfig; sourceTree = "<group>"; };
+		12A205A3CE004F9E7E07D6F0851F1A86 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSemiCircleSpin.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
+		167D84E9A0F2474ED6D64061D3F1D825 /* PINCache-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PINCache-Info.plist"; sourceTree = "<group>"; };
+		193B8F01711E8DDEDDC85BB693232FB5 /* NVActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationOrbit.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
+		1CCD53DBF7E44E2D90DB32F539B8C79A /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EDDBAD33F44232FBF788406500C2192 /* NVActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCubeTransition.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
+		1EE827AFB97E11CE19147F9394FC8E0A /* PINRemoteImageManagerResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageManagerResult.h; path = Pod/Classes/PINRemoteImageManagerResult.h; sourceTree = "<group>"; };
+		1F9BEB110B9D404D4E043EEFA9AFEEBC /* PINCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PINCache-dummy.m"; sourceTree = "<group>"; };
+		1FA3FFE2B42D2A4F87F487591F759785 /* PINCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINCache.m; path = PINCache/PINCache.m; sourceTree = "<group>"; };
+		20EF75D5EE4778C4E3BD20A3C977B83A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2126E6B1C6E3F8B2174316BDC7AF3131 /* FLAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImage.h; path = FLAnimatedImage/FLAnimatedImage.h; sourceTree = "<group>"; };
+		269C36AD988585AA9D24F8D27E412F6E /* PINDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINDiskCache.h; path = PINCache/PINDiskCache.h; sourceTree = "<group>"; };
+		299E42BE3B82901778B8A003B1E0F313 /* NVActivityIndicatorPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorPresenter.swift; path = Source/NVActivityIndicatorView/Presenter/NVActivityIndicatorPresenter.swift; sourceTree = "<group>"; };
+		2B2E0E867D358CA436083DD92C415D4E /* PINRemoteImageCategoryManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageCategoryManager.h; path = Pod/Classes/PINRemoteImageCategoryManager.h; sourceTree = "<group>"; };
+		2BB55CAC8098B85B1B74B45E7970B60C /* PINCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINCache.h; path = PINCache/PINCache.h; sourceTree = "<group>"; };
+		3241C7A03D7453CCF842978B145FE5FF /* PINRemoteLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteLock.m; path = Pod/Classes/PINRemoteLock.m; sourceTree = "<group>"; };
+		33FF5A2C4DA04323476AB833627EED67 /* Pods-HeadStart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeadStart.release.xcconfig"; sourceTree = "<group>"; };
+		35AABD60AE5FF5BE22F961BBD1A71433 /* PINRemoteImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageManager.m; path = Pod/Classes/PINRemoteImageManager.m; sourceTree = "<group>"; };
+		3D14E1066F76B9479FE68062891050E0 /* PINRemoteImageCallbacks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageCallbacks.m; path = Pod/Classes/PINRemoteImageCallbacks.m; sourceTree = "<group>"; };
+		3E56B7357C8425B603374A0B8C1ACB78 /* Pods-HeadStart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeadStart.debug.xcconfig"; sourceTree = "<group>"; };
+		3EF97CCBEB729C586EEB2A94328F92C2 /* FLAnimatedImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImage-dummy.m"; sourceTree = "<group>"; };
+		3F15E0E723EF7AB3DAE06C09BD557634 /* PINRemoteImageTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageTask.h; path = Pod/Classes/PINRemoteImageTask.h; sourceTree = "<group>"; };
+		401DB9FBD876B38278B51690DB030428 /* PINRemoteImageCallbacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageCallbacks.h; path = Pod/Classes/PINRemoteImageCallbacks.h; sourceTree = "<group>"; };
+		45C279A597CD90F914A9E32BFB2FADE2 /* NVActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotate.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
+		47DD5C76C5FBA965B8F8FDCA6D8C930A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4CFACE03025EDAEE0DC5650F76A8E0F4 /* PINDataTaskOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINDataTaskOperation.m; path = Pod/Classes/PINDataTaskOperation.m; sourceTree = "<group>"; };
+		4EF7748BC9748DC46C07AFEEB3B240DE /* Pods_HeadStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HeadStart.framework; path = "Pods-HeadStart.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		506A69429EF792354557314F932E1F7F /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCircleStrokeSpin.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCircleStrokeSpin.swift; sourceTree = "<group>"; };
+		55297598F0F78656CBA885701F1F37A1 /* PINCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINCache-umbrella.h"; sourceTree = "<group>"; };
+		578E8AF58A829E8DAEBBF321A139BE9C /* FLAnimatedImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImage-umbrella.h"; sourceTree = "<group>"; };
+		5875335A7B994240246C3D0236A16D64 /* PINRemoteLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteLock.h; path = Pod/Classes/PINRemoteLock.h; sourceTree = "<group>"; };
+		59268B4DEF0E5D0A15814D67C5A0570D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		59350C78FA01D4DEBD71141CB77A3AD8 /* NSData+ImageDetectors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageDetectors.h"; path = "Pod/Classes/Categories/NSData+ImageDetectors.h"; sourceTree = "<group>"; };
+		5984EEB8B77F699F93464033CBD72DA5 /* PINURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINURLSessionManager.m; path = Pod/Classes/PINURLSessionManager.m; sourceTree = "<group>"; };
+		5996D79950415E95CB0C871C4201F17E /* NVActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseSync.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
+		5DD7DC983E26485B7E2FC84DA1AFD660 /* PINRemoteImageManagerResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageManagerResult.m; path = Pod/Classes/PINRemoteImageManagerResult.m; sourceTree = "<group>"; };
+		5E4223EBB3953D5876432FF168B34871 /* Pods-HeadStart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HeadStart-umbrella.h"; sourceTree = "<group>"; };
+		646AC90D1197A4362C1CA1CAB053A2D9 /* PINButton+PINRemoteImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINButton+PINRemoteImage.h"; path = "Pod/Classes/Image Categories/PINButton+PINRemoteImage.h"; sourceTree = "<group>"; };
+		664DB93FBE6ABF88F2F9430E049744C3 /* NVActivityIndicatorAnimationBallDoubleBounce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallDoubleBounce.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallDoubleBounce.swift; sourceTree = "<group>"; };
+		669710BF8A4E0EAC9FB8CA20B7983F73 /* PINRemoteImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PINRemoteImage.framework; path = PINRemoteImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA35023D5615601E67DF60ED6B144C6 /* NVActivityIndicatorViewable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorViewable.swift; path = Source/NVActivityIndicatorView/Presenter/NVActivityIndicatorViewable.swift; sourceTree = "<group>"; };
+		6C69197EBB3EEF40A22420CD53CCD14A /* NVActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationPacman.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
+		6C9A99734FFE68E59B77884A2A50C4D1 /* NVActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NVActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		6E8CC4AF208E528BC7F54AF8436D6268 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineSpinFadeLoader.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		6EAB0C27ABC0BAD387DF93B14DD18F68 /* NVActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseRise.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
+		6F84912C609FE9FA02D84B0C2F2D03AE /* PINRemoteImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImage.h; path = Pod/Classes/PINRemoteImage.h; sourceTree = "<group>"; };
+		6FE0CBF9FE94864837E07399FD0545B9 /* NVActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		70540077FE4A2D63617A7C0956CB2A48 /* PINRemoteImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PINRemoteImage-dummy.m"; sourceTree = "<group>"; };
+		73B0870EB1A2EED8A45D4D7E679BF2A4 /* NVActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		7701BBA8C6ADE4114717CF2A2F41F528 /* NSData+ImageDetectors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageDetectors.m"; path = "Pod/Classes/Categories/NSData+ImageDetectors.m"; sourceTree = "<group>"; };
+		777701570C9694F6A861DC841AEDBF62 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImageView.h; path = FLAnimatedImage/FLAnimatedImageView.h; sourceTree = "<group>"; };
+		78BA117D5AF771779454883E0FA82F3B /* FLAnimatedImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImage-prefix.pch"; sourceTree = "<group>"; };
+		79BF2F14D4626C40D4A5D88118BBA670 /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorShape.swift; path = Source/NVActivityIndicatorView/NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		7A147A7A536AD4A26E9ADFBA2CF38387 /* NVActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallBeat.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
+		7D51AF47F8C5BEFB5DE9D308049FFFA1 /* PINCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINCache-prefix.pch"; sourceTree = "<group>"; };
+		7EA2EB3CEDF180452151F40A5FE84F96 /* PINRemoteImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINRemoteImage-prefix.pch"; sourceTree = "<group>"; };
+		7FA8CE1E1010E523F5046B1C5C50C9C5 /* PINRemoteImageTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageTask.m; path = Pod/Classes/PINRemoteImageTask.m; sourceTree = "<group>"; };
+		7FA9BA18C92D64EA218130B1ECC78ACE /* PINProgressiveImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINProgressiveImage.m; path = Pod/Classes/PINProgressiveImage.m; sourceTree = "<group>"; };
+		82DAEB6754386CE4F9C78A22DA9162EC /* FLAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImage.m; path = FLAnimatedImage/FLAnimatedImage.m; sourceTree = "<group>"; };
+		838E806C887D3943B551CCE27CC441F5 /* NVActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRipple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
+		83B73BCE0542F9F4C241F4E38B830841 /* NVActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotate.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
+		83C5949D0F63DA4B697C8B547341A628 /* NVActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NVActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		844ADB9EBD8F5C8F7FA7D1F44B5038DA /* PINDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINDiskCache.m; path = PINCache/PINDiskCache.m; sourceTree = "<group>"; };
+		8770AF3A3AA2633582266EB5E9C595AA /* PINImage+WebP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINImage+WebP.h"; path = "Pod/Classes/Categories/PINImage+WebP.h"; sourceTree = "<group>"; };
+		887CAF26A746D511BE0F29EB060343F1 /* Pods-HeadStart-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeadStart-Info.plist"; sourceTree = "<group>"; };
+		89B59BBE2E99B97723D31695170535A4 /* NVActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationDelegate.swift; path = Source/NVActivityIndicatorView/NVActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		8B0D66E5C2694C2D9232D4315418A534 /* PINImageView+PINRemoteImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINImageView+PINRemoteImage.h"; path = "Pod/Classes/Image Categories/PINImageView+PINRemoteImage.h"; sourceTree = "<group>"; };
+		8CA7F554E3FB339B3D25BAB5D2D44C15 /* PINRemoteImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PINRemoteImage-Info.plist"; sourceTree = "<group>"; };
+		8CC261D77650FAB8B7246D18396FF1B5 /* PINURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINURLSessionManager.h; path = Pod/Classes/PINURLSessionManager.h; sourceTree = "<group>"; };
+		8E3D047D4A738E6BF6BD6C599E59F32E /* PINImage+DecodedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINImage+DecodedImage.m"; path = "Pod/Classes/Categories/PINImage+DecodedImage.m"; sourceTree = "<group>"; };
+		920E4E87904458E6CF24AF9455501F68 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotatePulse.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift; sourceTree = "<group>"; };
+		926FF6D44CE7A9AEE0CC503D9426F1E7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		93CD04B1F488794EA008FD1ABE403BB5 /* FLAnimatedImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FLAnimatedImage-Info.plist"; sourceTree = "<group>"; };
+		941E3A6144A90BCB2CE17B9D1ADF15CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		9462AA4C0A699293066D769AA6A229DA /* PINButton+PINRemoteImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINButton+PINRemoteImage.m"; path = "Pod/Classes/Image Categories/PINButton+PINRemoteImage.m"; sourceTree = "<group>"; };
+		96ACEAC73F952C24C2D383639B735207 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		98988C770ECE91FB5F795484ABE865B4 /* NVActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBlank.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E09DF31BB676074A640433928675DF8 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
+		9E417AA11603D5F4AA0FB3668B0B82CA /* FLAnimatedImageView+PINRemoteImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FLAnimatedImageView+PINRemoteImage.m"; path = "Pod/Classes/Image Categories/FLAnimatedImageView+PINRemoteImage.m"; sourceTree = "<group>"; };
+		A02305762C52D29906365220EA9F1FD7 /* Pods-HeadStart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HeadStart-dummy.m"; sourceTree = "<group>"; };
+		A0679D49DDAE34545970E00D264A81AB /* PINProgressiveImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINProgressiveImage.h; path = Pod/Classes/PINProgressiveImage.h; sourceTree = "<group>"; };
+		A18FF6223FA56DF0B7CA8C639CBC8436 /* PINRemoteImageProcessorTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageProcessorTask.h; path = Pod/Classes/PINRemoteImageProcessorTask.h; sourceTree = "<group>"; };
+		A60F5397918AD4769CCF667DFBFDFA1E /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
+		A776F94521E3594EDB63CD71664D80AC /* PINRemoteImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageManager.h; path = Pod/Classes/PINRemoteImageManager.h; sourceTree = "<group>"; };
+		A82685A55F20530F68B0D32B1CF10805 /* NVActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotateChase.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
+		AB540D60BF2019D2FCA8909B6993E9F3 /* NVActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorView.swift; path = Source/NVActivityIndicatorView/NVActivityIndicatorView.swift; sourceTree = "<group>"; };
+		AD1B5287450348D752A35E4AB8DF3B02 /* PINDataTaskOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINDataTaskOperation.h; path = Pod/Classes/PINDataTaskOperation.h; sourceTree = "<group>"; };
+		AD3D7C9E449364B528AAD55F452E440E /* Pods-HeadStart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HeadStart.modulemap"; sourceTree = "<group>"; };
+		AD5EB18612184AB1A3F56CA939AC85FF /* Pods-HeadStart-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeadStart-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF8286346C88098F1B6E44F89BC3DA13 /* NVActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationAudioEqualizer.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
+		B9DEB98D9657FDD8D8782FF8BD35754A /* PINRemoteImageDownloadTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageDownloadTask.h; path = Pod/Classes/PINRemoteImageDownloadTask.h; sourceTree = "<group>"; };
+		BAFA08D44EB7AD39CDCA975050225956 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
+		BD6C4E65187404EAF86F26BBAC352C90 /* PINMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINMemoryCache.m; path = PINCache/PINMemoryCache.m; sourceTree = "<group>"; };
+		BEA5F386B558FF493025C0CA4BD8AF0A /* NVActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSquareSpin.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
+		C0B99E9F0A36128B2587990121B7FA32 /* NVActivityIndicatorAnimationBallZigZag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZag.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZag.swift; sourceTree = "<group>"; };
+		C212F00FB34B94109B381E2C9DE670C4 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationTriangleSkewSpin.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
+		C612614A7308CDAB83B9A2819DA08C3D /* NVActivityIndicatorAnimationBallGridPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridPulse.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridPulse.swift; sourceTree = "<group>"; };
+		C6EDDC352C9E0CB076CAA6E9D647F2A6 /* PINRemoteImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PINRemoteImage.modulemap; sourceTree = "<group>"; };
+		C6F96B6775A43BCE705D550735EE3B61 /* PINImage+WebP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINImage+WebP.m"; path = "Pod/Classes/Categories/PINImage+WebP.m"; sourceTree = "<group>"; };
+		C8D26FCBDD160E524F1BEBA16762FAC6 /* PINCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PINCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9596607E9918154CEB1DF6E11FE73DE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		CCDF515D8E9D499648521161BA9D945C /* Pods-HeadStart-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HeadStart-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCE76660813807FC29839BBDDA882226 /* NVActivityIndicatorView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NVActivityIndicatorView.xcconfig; sourceTree = "<group>"; };
+		CFA3F59047F98C1D1EBE46A3F1319CC3 /* PINRemoteImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PINRemoteImage.xcconfig; sourceTree = "<group>"; };
+		D18D0976B91FA669ADE0C333371342F0 /* PINImageView+PINRemoteImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINImageView+PINRemoteImage.m"; path = "Pod/Classes/Image Categories/PINImageView+PINRemoteImage.m"; sourceTree = "<group>"; };
+		D1F1B8D0B089FB6CB2FF3AF6C18F7869 /* FLAnimatedImageView+PINRemoteImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FLAnimatedImageView+PINRemoteImage.h"; path = "Pod/Classes/Image Categories/FLAnimatedImageView+PINRemoteImage.h"; sourceTree = "<group>"; };
+		D386FB13666C3E07CF6B61AA3C4E7A7D /* Nullability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nullability.h; path = PINCache/Nullability.h; sourceTree = "<group>"; };
+		D39D2AF0D4C04E648EAEAA49BA74357F /* FLAnimatedImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FLAnimatedImage.modulemap; sourceTree = "<group>"; };
+		D7AE161DE275054E21EDB423432AAB60 /* PINCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PINCache.modulemap; sourceTree = "<group>"; };
+		D82195C5A0BECAE446D00287A4A469F0 /* PINRemoteImageCategoryManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageCategoryManager.m; path = Pod/Classes/PINRemoteImageCategoryManager.m; sourceTree = "<group>"; };
+		D8D2AB120386CBC5B0D3F0EA648A8B17 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZagDeflect.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
+		DA83581909BFBA9A166DCBA6B9F5035F /* NVActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScale.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
+		DC07AE45CAB69A5095C562EECD88C4AB /* PINCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PINCache.framework; path = PINCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCBDE155DB90475587153D7F549933D /* NVActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NVActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
+		E04BAF0F95EBF3AD1EC372DA9C0077D5 /* FLAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImageView.m; path = FLAnimatedImage/FLAnimatedImageView.m; sourceTree = "<group>"; };
+		E075C4F0A8E5910C9C86FACE988DFE11 /* PINRemoteImageDownloadTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageDownloadTask.m; path = Pod/Classes/PINRemoteImageDownloadTask.m; sourceTree = "<group>"; };
+		E0E5352D489C424ACBB3D2D53963817D /* NVActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleMultiple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
+		E1914DE4CDB37ED4BC92C305F8A28D09 /* PINRemoteImageProcessorTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageProcessorTask.m; path = Pod/Classes/PINRemoteImageProcessorTask.m; sourceTree = "<group>"; };
+		E1E3B9577AC637538CA52E0C5F3825B6 /* PINMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINMemoryCache.h; path = PINCache/PINMemoryCache.h; sourceTree = "<group>"; };
+		E67D4EF15AB60842A33183300F405D66 /* FLAnimatedImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLAnimatedImage.xcconfig; sourceTree = "<group>"; };
+		E74AAF10AA41907595B3313E55D2499E /* NVActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScale.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
+		EBCBB4205294677A2EEC79261D8AEE5E /* PINImage+DecodedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINImage+DecodedImage.h"; path = "Pod/Classes/Categories/PINImage+DecodedImage.h"; sourceTree = "<group>"; };
+		EEAD56A1DAD7DBF5655BE4D0753CEB1C /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FLAnimatedImage.framework; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8507E6D7C8AAF2238EC812CCC629BA /* NVActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulse.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
+		F1B140F7CE1E6D8F09128A077B704CF8 /* PINRemoteImageMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageMacros.h; path = Pod/Classes/PINRemoteImageMacros.h; sourceTree = "<group>"; };
+		F470E8AE76A3E430542A5D3912E8A172 /* NVActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallTrianglePath.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
+		F5B15F72A77D2BD955846AB8E45FA571 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NVActivityIndicatorView.framework; path = NVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E88C5953E0B2954C8E1BA9A5D0FDD2 /* NVActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridBeat.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
+		FD2927F3C0EFAD8A6A391DAEA5266C4F /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
+		FDC7DB15415FB95DC2BE796279415755 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOut.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40A0636539D5B89BDA7AE48D1FA96F07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9860A9B8847CB2E32913B53ED7C9BA8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		515B9B637880F2CAF16709E1FF258829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBB09DCF87B6CF3FF89EC6A8B2D4E1A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEA0CA44627D99F4C19D1E9E0D4DCEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C3E47DB6A11B235F7F7F794CFCD19BE /* Accelerate.framework in Frameworks */,
+				C9F1A204E02C6491567236E0E1F27D46 /* FLAnimatedImage.framework in Frameworks */,
+				AA47F3BDE530ABB2B4F1A1A59D78613A /* Foundation.framework in Frameworks */,
+				40857BD39439F4422A9DF084F0EF574B /* ImageIO.framework in Frameworks */,
+				9620E91FFEA58DF4DD4C41BE08766081 /* PINCache.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907C9B6973FF982F5A728DCC26F74119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A70B4292CD6C2DBB88207E8FC900D9 /* Foundation.framework in Frameworks */,
+				5CC0FC90D2422366B8BCD02DFA08AC76 /* QuartzCore.framework in Frameworks */,
+				84B0B55E2A8E8EDE0866CA2D2A206406 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C26804AA687EAC33AD46FBCB5EA99767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F1FFB9D3D119EAD6945BF49639CDDB /* CoreGraphics.framework in Frameworks */,
+				8687A069F0CEF173F22F450E9B2D6D0D /* Foundation.framework in Frameworks */,
+				5B08A65CCDFBEEC102113BDFC4BE8C03 /* ImageIO.framework in Frameworks */,
+				DB55A77A560140E077C2EB90D729EE44 /* MobileCoreServices.framework in Frameworks */,
+				7A3B041862879D335DBFB8CE8E1927D0 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		192902462B5BC1AF816684EED0E17139 /* NVActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				816B9D870C2AEEC01F62B6B953D5C421 /* Presenter */,
+				E7E1A06E4945693FD78229E6957C7D65 /* Support Files */,
+			);
+			name = NVActivityIndicatorView;
+			path = NVActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		26D49493D8ED98AC64909446AE6254A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CCD53DBF7E44E2D90DB32F539B8C79A /* FLAnimatedImage.framework */,
+				C8D26FCBDD160E524F1BEBA16762FAC6 /* PINCache.framework */,
+				AC531C97C794958E2C7700EF06210D0A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B21E3DB19C5DD2994928E8249F35B74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				449BE9C59AF9CEEFBC669CB01DB22ED5 /* FLAnimatedImage */,
+				192902462B5BC1AF816684EED0E17139 /* NVActivityIndicatorView */,
+				72358AF99625C2E165EE3892C523770B /* PINCache */,
+				3DBF269974075F61CAED125E7830F538 /* PINRemoteImage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3DBF269974075F61CAED125E7830F538 /* PINRemoteImage */ = {
+			isa = PBXGroup;
+			children = (
+				E738DD7FD1320254DCFCF0DAC92BD217 /* Core */,
+				6770A3197C28FA2FFA00921996AC7BFA /* FLAnimatedImage */,
+				7B427047CF79DAECA5C7AE9E7F21F5FE /* Support Files */,
+			);
+			name = PINRemoteImage;
+			path = PINRemoteImage;
+			sourceTree = "<group>";
+		};
+		449BE9C59AF9CEEFBC669CB01DB22ED5 /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				2126E6B1C6E3F8B2174316BDC7AF3131 /* FLAnimatedImage.h */,
+				82DAEB6754386CE4F9C78A22DA9162EC /* FLAnimatedImage.m */,
+				777701570C9694F6A861DC841AEDBF62 /* FLAnimatedImageView.h */,
+				E04BAF0F95EBF3AD1EC372DA9C0077D5 /* FLAnimatedImageView.m */,
+				DFA193F4EBB6B5570682B2323DA4D85C /* Support Files */,
+			);
+			name = FLAnimatedImage;
+			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		6770A3197C28FA2FFA00921996AC7BFA /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				D1F1B8D0B089FB6CB2FF3AF6C18F7869 /* FLAnimatedImageView+PINRemoteImage.h */,
+				9E417AA11603D5F4AA0FB3668B0B82CA /* FLAnimatedImageView+PINRemoteImage.m */,
+			);
+			name = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		72358AF99625C2E165EE3892C523770B /* PINCache */ = {
+			isa = PBXGroup;
+			children = (
+				D386FB13666C3E07CF6B61AA3C4E7A7D /* Nullability.h */,
+				2BB55CAC8098B85B1B74B45E7970B60C /* PINCache.h */,
+				1FA3FFE2B42D2A4F87F487591F759785 /* PINCache.m */,
+				006E498BCA45B0B2F713459ACDE9FA8A /* PINCacheObjectSubscripting.h */,
+				269C36AD988585AA9D24F8D27E412F6E /* PINDiskCache.h */,
+				844ADB9EBD8F5C8F7FA7D1F44B5038DA /* PINDiskCache.m */,
+				E1E3B9577AC637538CA52E0C5F3825B6 /* PINMemoryCache.h */,
+				BD6C4E65187404EAF86F26BBAC352C90 /* PINMemoryCache.m */,
+				F66EC19C83780A476DE01A632B378865 /* Support Files */,
+			);
+			name = PINCache;
+			path = PINCache;
+			sourceTree = "<group>";
+		};
+		7B427047CF79DAECA5C7AE9E7F21F5FE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6EDDC352C9E0CB076CAA6E9D647F2A6 /* PINRemoteImage.modulemap */,
+				CFA3F59047F98C1D1EBE46A3F1319CC3 /* PINRemoteImage.xcconfig */,
+				70540077FE4A2D63617A7C0956CB2A48 /* PINRemoteImage-dummy.m */,
+				8CA7F554E3FB339B3D25BAB5D2D44C15 /* PINRemoteImage-Info.plist */,
+				7EA2EB3CEDF180452151F40A5FE84F96 /* PINRemoteImage-prefix.pch */,
+				0DA9D66FF8EB1C485E480E746409463C /* PINRemoteImage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PINRemoteImage";
+			sourceTree = "<group>";
+		};
+		816B9D870C2AEEC01F62B6B953D5C421 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AF8286346C88098F1B6E44F89BC3DA13 /* NVActivityIndicatorAnimationAudioEqualizer.swift */,
+				7A147A7A536AD4A26E9ADFBA2CF38387 /* NVActivityIndicatorAnimationBallBeat.swift */,
+				45C279A597CD90F914A9E32BFB2FADE2 /* NVActivityIndicatorAnimationBallClipRotate.swift */,
+				9E09DF31BB676074A640433928675DF8 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */,
+				920E4E87904458E6CF24AF9455501F68 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */,
+				664DB93FBE6ABF88F2F9430E049744C3 /* NVActivityIndicatorAnimationBallDoubleBounce.swift */,
+				F6E88C5953E0B2954C8E1BA9A5D0FDD2 /* NVActivityIndicatorAnimationBallGridBeat.swift */,
+				C612614A7308CDAB83B9A2819DA08C3D /* NVActivityIndicatorAnimationBallGridPulse.swift */,
+				EF8507E6D7C8AAF2238EC812CCC629BA /* NVActivityIndicatorAnimationBallPulse.swift */,
+				6EAB0C27ABC0BAD387DF93B14DD18F68 /* NVActivityIndicatorAnimationBallPulseRise.swift */,
+				5996D79950415E95CB0C871C4201F17E /* NVActivityIndicatorAnimationBallPulseSync.swift */,
+				83B73BCE0542F9F4C241F4E38B830841 /* NVActivityIndicatorAnimationBallRotate.swift */,
+				A82685A55F20530F68B0D32B1CF10805 /* NVActivityIndicatorAnimationBallRotateChase.swift */,
+				DA83581909BFBA9A166DCBA6B9F5035F /* NVActivityIndicatorAnimationBallScale.swift */,
+				E0E5352D489C424ACBB3D2D53963817D /* NVActivityIndicatorAnimationBallScaleMultiple.swift */,
+				838E806C887D3943B551CCE27CC441F5 /* NVActivityIndicatorAnimationBallScaleRipple.swift */,
+				A60F5397918AD4769CCF667DFBFDFA1E /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */,
+				FD2927F3C0EFAD8A6A391DAEA5266C4F /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */,
+				F470E8AE76A3E430542A5D3912E8A172 /* NVActivityIndicatorAnimationBallTrianglePath.swift */,
+				C0B99E9F0A36128B2587990121B7FA32 /* NVActivityIndicatorAnimationBallZigZag.swift */,
+				D8D2AB120386CBC5B0D3F0EA648A8B17 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */,
+				98988C770ECE91FB5F795484ABE865B4 /* NVActivityIndicatorAnimationBlank.swift */,
+				506A69429EF792354557314F932E1F7F /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */,
+				1EDDBAD33F44232FBF788406500C2192 /* NVActivityIndicatorAnimationCubeTransition.swift */,
+				89B59BBE2E99B97723D31695170535A4 /* NVActivityIndicatorAnimationDelegate.swift */,
+				E74AAF10AA41907595B3313E55D2499E /* NVActivityIndicatorAnimationLineScale.swift */,
+				0DC0FBD6FC62308EDA28645947C8A5F5 /* NVActivityIndicatorAnimationLineScaleParty.swift */,
+				FDC7DB15415FB95DC2BE796279415755 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */,
+				BAFA08D44EB7AD39CDCA975050225956 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */,
+				6E8CC4AF208E528BC7F54AF8436D6268 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */,
+				193B8F01711E8DDEDDC85BB693232FB5 /* NVActivityIndicatorAnimationOrbit.swift */,
+				6C69197EBB3EEF40A22420CD53CCD14A /* NVActivityIndicatorAnimationPacman.swift */,
+				12A205A3CE004F9E7E07D6F0851F1A86 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */,
+				BEA5F386B558FF493025C0CA4BD8AF0A /* NVActivityIndicatorAnimationSquareSpin.swift */,
+				C212F00FB34B94109B381E2C9DE670C4 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */,
+				299E42BE3B82901778B8A003B1E0F313 /* NVActivityIndicatorPresenter.swift */,
+				79BF2F14D4626C40D4A5D88118BBA670 /* NVActivityIndicatorShape.swift */,
+				AB540D60BF2019D2FCA8909B6993E9F3 /* NVActivityIndicatorView.swift */,
+				6AA35023D5615601E67DF60ED6B144C6 /* NVActivityIndicatorViewable.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		AC531C97C794958E2C7700EF06210D0A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				96ACEAC73F952C24C2D383639B735207 /* Accelerate.framework */,
+				941E3A6144A90BCB2CE17B9D1ADF15CB /* CoreGraphics.framework */,
+				47DD5C76C5FBA965B8F8FDCA6D8C930A /* Foundation.framework */,
+				C9596607E9918154CEB1DF6E11FE73DE /* ImageIO.framework */,
+				59268B4DEF0E5D0A15814D67C5A0570D /* MobileCoreServices.framework */,
+				926FF6D44CE7A9AEE0CC503D9426F1E7 /* QuartzCore.framework */,
+				20EF75D5EE4778C4E3BD20A3C977B83A /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B640ED68D194BF789DD79A4820C65D99 /* Pods-HeadStart */ = {
+			isa = PBXGroup;
+			children = (
+				AD3D7C9E449364B528AAD55F452E440E /* Pods-HeadStart.modulemap */,
+				CCDF515D8E9D499648521161BA9D945C /* Pods-HeadStart-acknowledgements.markdown */,
+				AD5EB18612184AB1A3F56CA939AC85FF /* Pods-HeadStart-acknowledgements.plist */,
+				A02305762C52D29906365220EA9F1FD7 /* Pods-HeadStart-dummy.m */,
+				887CAF26A746D511BE0F29EB060343F1 /* Pods-HeadStart-Info.plist */,
+				5E4223EBB3953D5876432FF168B34871 /* Pods-HeadStart-umbrella.h */,
+				3E56B7357C8425B603374A0B8C1ACB78 /* Pods-HeadStart.debug.xcconfig */,
+				33FF5A2C4DA04323476AB833627EED67 /* Pods-HeadStart.release.xcconfig */,
+			);
+			name = "Pods-HeadStart";
+			path = "Target Support Files/Pods-HeadStart";
+			sourceTree = "<group>";
+		};
+		CEBA7B6A6FC993D661F78C17CC0BD0E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEAD56A1DAD7DBF5655BE4D0753CEB1C /* FLAnimatedImage.framework */,
+				F5B15F72A77D2BD955846AB8E45FA571 /* NVActivityIndicatorView.framework */,
+				DC07AE45CAB69A5095C562EECD88C4AB /* PINCache.framework */,
+				669710BF8A4E0EAC9FB8CA20B7983F73 /* PINRemoteImage.framework */,
+				4EF7748BC9748DC46C07AFEEB3B240DE /* Pods_HeadStart.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				26D49493D8ED98AC64909446AE6254A8 /* Frameworks */,
+				2B21E3DB19C5DD2994928E8249F35B74 /* Pods */,
+				CEBA7B6A6FC993D661F78C17CC0BD0E9 /* Products */,
+				F4377853C5520257363C0FFB74891DB6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DFA193F4EBB6B5570682B2323DA4D85C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D39D2AF0D4C04E648EAEAA49BA74357F /* FLAnimatedImage.modulemap */,
+				E67D4EF15AB60842A33183300F405D66 /* FLAnimatedImage.xcconfig */,
+				3EF97CCBEB729C586EEB2A94328F92C2 /* FLAnimatedImage-dummy.m */,
+				93CD04B1F488794EA008FD1ABE403BB5 /* FLAnimatedImage-Info.plist */,
+				78BA117D5AF771779454883E0FA82F3B /* FLAnimatedImage-prefix.pch */,
+				578E8AF58A829E8DAEBBF321A139BE9C /* FLAnimatedImage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FLAnimatedImage";
+			sourceTree = "<group>";
+		};
+		E738DD7FD1320254DCFCF0DAC92BD217 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				59350C78FA01D4DEBD71141CB77A3AD8 /* NSData+ImageDetectors.h */,
+				7701BBA8C6ADE4114717CF2A2F41F528 /* NSData+ImageDetectors.m */,
+				646AC90D1197A4362C1CA1CAB053A2D9 /* PINButton+PINRemoteImage.h */,
+				9462AA4C0A699293066D769AA6A229DA /* PINButton+PINRemoteImage.m */,
+				AD1B5287450348D752A35E4AB8DF3B02 /* PINDataTaskOperation.h */,
+				4CFACE03025EDAEE0DC5650F76A8E0F4 /* PINDataTaskOperation.m */,
+				EBCBB4205294677A2EEC79261D8AEE5E /* PINImage+DecodedImage.h */,
+				8E3D047D4A738E6BF6BD6C599E59F32E /* PINImage+DecodedImage.m */,
+				8770AF3A3AA2633582266EB5E9C595AA /* PINImage+WebP.h */,
+				C6F96B6775A43BCE705D550735EE3B61 /* PINImage+WebP.m */,
+				8B0D66E5C2694C2D9232D4315418A534 /* PINImageView+PINRemoteImage.h */,
+				D18D0976B91FA669ADE0C333371342F0 /* PINImageView+PINRemoteImage.m */,
+				A0679D49DDAE34545970E00D264A81AB /* PINProgressiveImage.h */,
+				7FA9BA18C92D64EA218130B1ECC78ACE /* PINProgressiveImage.m */,
+				6F84912C609FE9FA02D84B0C2F2D03AE /* PINRemoteImage.h */,
+				401DB9FBD876B38278B51690DB030428 /* PINRemoteImageCallbacks.h */,
+				3D14E1066F76B9479FE68062891050E0 /* PINRemoteImageCallbacks.m */,
+				2B2E0E867D358CA436083DD92C415D4E /* PINRemoteImageCategoryManager.h */,
+				D82195C5A0BECAE446D00287A4A469F0 /* PINRemoteImageCategoryManager.m */,
+				B9DEB98D9657FDD8D8782FF8BD35754A /* PINRemoteImageDownloadTask.h */,
+				E075C4F0A8E5910C9C86FACE988DFE11 /* PINRemoteImageDownloadTask.m */,
+				F1B140F7CE1E6D8F09128A077B704CF8 /* PINRemoteImageMacros.h */,
+				A776F94521E3594EDB63CD71664D80AC /* PINRemoteImageManager.h */,
+				35AABD60AE5FF5BE22F961BBD1A71433 /* PINRemoteImageManager.m */,
+				1EE827AFB97E11CE19147F9394FC8E0A /* PINRemoteImageManagerResult.h */,
+				5DD7DC983E26485B7E2FC84DA1AFD660 /* PINRemoteImageManagerResult.m */,
+				A18FF6223FA56DF0B7CA8C639CBC8436 /* PINRemoteImageProcessorTask.h */,
+				E1914DE4CDB37ED4BC92C305F8A28D09 /* PINRemoteImageProcessorTask.m */,
+				3F15E0E723EF7AB3DAE06C09BD557634 /* PINRemoteImageTask.h */,
+				7FA8CE1E1010E523F5046B1C5C50C9C5 /* PINRemoteImageTask.m */,
+				5875335A7B994240246C3D0236A16D64 /* PINRemoteLock.h */,
+				3241C7A03D7453CCF842978B145FE5FF /* PINRemoteLock.m */,
+				8CC261D77650FAB8B7246D18396FF1B5 /* PINURLSessionManager.h */,
+				5984EEB8B77F699F93464033CBD72DA5 /* PINURLSessionManager.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E7E1A06E4945693FD78229E6957C7D65 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				83C5949D0F63DA4B697C8B547341A628 /* NVActivityIndicatorView.modulemap */,
+				CCE76660813807FC29839BBDDA882226 /* NVActivityIndicatorView.xcconfig */,
+				6C9A99734FFE68E59B77884A2A50C4D1 /* NVActivityIndicatorView-dummy.m */,
+				DDCBDE155DB90475587153D7F549933D /* NVActivityIndicatorView-Info.plist */,
+				6FE0CBF9FE94864837E07399FD0545B9 /* NVActivityIndicatorView-prefix.pch */,
+				73B0870EB1A2EED8A45D4D7E679BF2A4 /* NVActivityIndicatorView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NVActivityIndicatorView";
+			sourceTree = "<group>";
+		};
+		F4377853C5520257363C0FFB74891DB6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B640ED68D194BF789DD79A4820C65D99 /* Pods-HeadStart */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F66EC19C83780A476DE01A632B378865 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7AE161DE275054E21EDB423432AAB60 /* PINCache.modulemap */,
+				0E65163AB301274A8110B5DDEF6878EB /* PINCache.xcconfig */,
+				1F9BEB110B9D404D4E043EEFA9AFEEBC /* PINCache-dummy.m */,
+				167D84E9A0F2474ED6D64061D3F1D825 /* PINCache-Info.plist */,
+				7D51AF47F8C5BEFB5DE9D308049FFFA1 /* PINCache-prefix.pch */,
+				55297598F0F78656CBA885701F1F37A1 /* PINCache-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PINCache";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5A6DC5301F099FAE5C072AAA9A1D6667 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19CD67D3D8A1EBE73C1596854215596 /* FLAnimatedImage-umbrella.h in Headers */,
+				B7BB784E0F33437037CEA2AD51196248 /* FLAnimatedImage.h in Headers */,
+				753576B2AFDC8214EF0B204B209F0D1A /* FLAnimatedImageView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8963C1FD10E421DB2AA82E2DAF83753F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505609504F185EAAC0FDF30003B70F8C /* FLAnimatedImageView+PINRemoteImage.h in Headers */,
+				F36EFE23ABFBAD55A78B6B456B3E8C90 /* NSData+ImageDetectors.h in Headers */,
+				91E4D516B14454557EC636E2DC5C148F /* PINButton+PINRemoteImage.h in Headers */,
+				E5D6AF9DB93DBD657A1665AC32AC928F /* PINDataTaskOperation.h in Headers */,
+				6705BD5EB3824B47711EDDE0B9CBD6E3 /* PINImage+DecodedImage.h in Headers */,
+				2FF088AD6ACE8739F458176F490F14A4 /* PINImage+WebP.h in Headers */,
+				A512DEEDF0B63DEF4B9EDCC2CDEC0C18 /* PINImageView+PINRemoteImage.h in Headers */,
+				6F4BBA113F825B12E9EF6F00C57CD64D /* PINProgressiveImage.h in Headers */,
+				1E737CABAAB8102864A116AE51071069 /* PINRemoteImage-umbrella.h in Headers */,
+				B79676BD6FB7C470E2895C42593DDDEA /* PINRemoteImage.h in Headers */,
+				6724FFE67E8291F059BD8C8DF6FEC636 /* PINRemoteImageCallbacks.h in Headers */,
+				18654D742D6420B84464DF49AA5D29E8 /* PINRemoteImageCategoryManager.h in Headers */,
+				EBD4986B46C03FADE7DD71B0FF3B9CE8 /* PINRemoteImageDownloadTask.h in Headers */,
+				CE85CBA8FA9C050D92CF8C09EFD9DE5E /* PINRemoteImageMacros.h in Headers */,
+				5586925BE1F49B2CA7B3329EE2405C34 /* PINRemoteImageManager.h in Headers */,
+				2C31C7AE680B5B9EA47975B9653458FF /* PINRemoteImageManagerResult.h in Headers */,
+				7F2429051103760E749823F536A276B5 /* PINRemoteImageProcessorTask.h in Headers */,
+				DB9B67E7E7BD5A2ACDAF217CD3A26BE6 /* PINRemoteImageTask.h in Headers */,
+				2FD4703B1693E8A615F32A5E81851160 /* PINRemoteLock.h in Headers */,
+				B50581B31D0D83B95CBE1B0A83B1CD24 /* PINURLSessionManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		937113543913F36AB72ABC85378851A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				549469C9AD768F0101DEF8BEADC06306 /* Pods-HeadStart-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EBBC7ECCF6E8AF636E00E53D070B43E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4965E1D6FF3E6A30FA40DF14EDF663F5 /* Nullability.h in Headers */,
+				4858785C304EAA3F49BFD43A53D4160F /* PINCache-umbrella.h in Headers */,
+				7C4CBAF15CD8DFFEFB4187F3C17A1341 /* PINCache.h in Headers */,
+				ECC0947C74863804A9F9A2C26B123E29 /* PINCacheObjectSubscripting.h in Headers */,
+				52493378592C2DAF2FDDC2C0E55568BA /* PINDiskCache.h in Headers */,
+				81BE5F5287079F8C36BBBE7E0900A928 /* PINMemoryCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC613BE6ED85EFC030D23BED1A98A36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82862AA4EC1076A840182E5C0271BF0E /* NVActivityIndicatorView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		02468E4F74D2F434912741862EE578C3 /* PINRemoteImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB1AB45DEDEA84ED47BDE7FFB880CBA /* Build configuration list for PBXNativeTarget "PINRemoteImage" */;
+			buildPhases = (
+				8963C1FD10E421DB2AA82E2DAF83753F /* Headers */,
+				6FC63A4A0BA2CE8425F99A8C74C5E038 /* Sources */,
+				8FEA0CA44627D99F4C19D1E9E0D4DCEF /* Frameworks */,
+				92139E9A65768D13F647B2643AB4FC66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F31014BA9F049F338FEFC63A6063C7C3 /* PBXTargetDependency */,
+				052A35BB7254932716188F0AE532AB4D /* PBXTargetDependency */,
+			);
+			name = PINRemoteImage;
+			productName = PINRemoteImage;
+			productReference = 669710BF8A4E0EAC9FB8CA20B7983F73 /* PINRemoteImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54B1439EA0C8737E1BAF1F8CEF27B62C /* NVActivityIndicatorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC049F11516B9FB230A8FBBAC5EFAF10 /* Build configuration list for PBXNativeTarget "NVActivityIndicatorView" */;
+			buildPhases = (
+				DEC613BE6ED85EFC030D23BED1A98A36 /* Headers */,
+				751157CDF906BE304CAF58FE7BA4E9BA /* Sources */,
+				907C9B6973FF982F5A728DCC26F74119 /* Frameworks */,
+				44154340E1444E4F3CA81B5944C06C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NVActivityIndicatorView;
+			productName = NVActivityIndicatorView;
+			productReference = F5B15F72A77D2BD955846AB8E45FA571 /* NVActivityIndicatorView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F111FA0695D7341183345C1E3B3BB86 /* FLAnimatedImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223F5A8B86B4484DD481208F9A9E30E7 /* Build configuration list for PBXNativeTarget "FLAnimatedImage" */;
+			buildPhases = (
+				5A6DC5301F099FAE5C072AAA9A1D6667 /* Headers */,
+				1ED07DFD1BB0B568BFEF6EDD41AE8A0D /* Sources */,
+				C26804AA687EAC33AD46FBCB5EA99767 /* Frameworks */,
+				1AC306099B77C2343CA93A1427E92910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLAnimatedImage;
+			productName = FLAnimatedImage;
+			productReference = EEAD56A1DAD7DBF5655BE4D0753CEB1C /* FLAnimatedImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D50FB3EC50169B780BAE2A1FC76443CB /* PINCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25EA7230631FCE67ABC689594C86C53E /* Build configuration list for PBXNativeTarget "PINCache" */;
+			buildPhases = (
+				9EBBC7ECCF6E8AF636E00E53D070B43E /* Headers */,
+				87F5529EF3C100DE6CEAABBAB1CDA139 /* Sources */,
+				40A0636539D5B89BDA7AE48D1FA96F07 /* Frameworks */,
+				412E9E1B49CB0084F9DC04525160FBB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PINCache;
+			productName = PINCache;
+			productReference = DC07AE45CAB69A5095C562EECD88C4AB /* PINCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EA259FF6536709115FD395250C2FA364 /* Pods-HeadStart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2872BDDD6E56EDEC300C1DA070290C74 /* Build configuration list for PBXNativeTarget "Pods-HeadStart" */;
+			buildPhases = (
+				937113543913F36AB72ABC85378851A5 /* Headers */,
+				912ED14F852EC3FF31F39F864146B3C4 /* Sources */,
+				515B9B637880F2CAF16709E1FF258829 /* Frameworks */,
+				62B1B9CAA8237A0F5D69095383610137 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3571B3E6C819384782FE45FC11AF59C6 /* PBXTargetDependency */,
+				E5E6E7ED045FE62A56A915615C29B545 /* PBXTargetDependency */,
+				A520EE8548716FEEA4DB7DCFDD83FD4C /* PBXTargetDependency */,
+				A4F276A8A48AAB990DF5B3E8BBE8570F /* PBXTargetDependency */,
+			);
+			name = "Pods-HeadStart";
+			productName = "Pods-HeadStart";
+			productReference = 4EF7748BC9748DC46C07AFEEB3B240DE /* Pods_HeadStart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CEBA7B6A6FC993D661F78C17CC0BD0E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F111FA0695D7341183345C1E3B3BB86 /* FLAnimatedImage */,
+				54B1439EA0C8737E1BAF1F8CEF27B62C /* NVActivityIndicatorView */,
+				D50FB3EC50169B780BAE2A1FC76443CB /* PINCache */,
+				02468E4F74D2F434912741862EE578C3 /* PINRemoteImage */,
+				EA259FF6536709115FD395250C2FA364 /* Pods-HeadStart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AC306099B77C2343CA93A1427E92910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412E9E1B49CB0084F9DC04525160FBB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44154340E1444E4F3CA81B5944C06C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B1B9CAA8237A0F5D69095383610137 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92139E9A65768D13F647B2643AB4FC66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ED07DFD1BB0B568BFEF6EDD41AE8A0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A8FBD7F24B060B3C6BFADDAE97024E /* FLAnimatedImage-dummy.m in Sources */,
+				0C39F3031226B02EFB8A049EAC792AE5 /* FLAnimatedImage.m in Sources */,
+				D2D5FE5E52DB3382E99AE09A92138DA2 /* FLAnimatedImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC63A4A0BA2CE8425F99A8C74C5E038 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76D70E1E2A8C05B3E53AF187E03CF5B /* FLAnimatedImageView+PINRemoteImage.m in Sources */,
+				D4456741E1E6C337C07D48D5F6EAC1F0 /* NSData+ImageDetectors.m in Sources */,
+				048CEB48664177E8B57C1409DE73EBCC /* PINButton+PINRemoteImage.m in Sources */,
+				979EC079A99941268BC734C1DE4F0794 /* PINDataTaskOperation.m in Sources */,
+				31A48F5220F0158D2E846517B543B53C /* PINImage+DecodedImage.m in Sources */,
+				6CAB9148ABD2236556BA8EAB66B01A59 /* PINImage+WebP.m in Sources */,
+				76AEFCEC3FAA110189B32E9A7B813BEF /* PINImageView+PINRemoteImage.m in Sources */,
+				F0BC72C763A28D76005F8513337B70CB /* PINProgressiveImage.m in Sources */,
+				807C65CC32C0946CBAD3558ECCF2C95E /* PINRemoteImage-dummy.m in Sources */,
+				8FA47949CC77DE9AE664C387F3C58FE3 /* PINRemoteImageCallbacks.m in Sources */,
+				A7C3331C1D6C2249631BE6A1D54B55AB /* PINRemoteImageCategoryManager.m in Sources */,
+				EA58683A66F87AA1815B118759923543 /* PINRemoteImageDownloadTask.m in Sources */,
+				F5270BB19CD1DA6B6D75C7B558587D73 /* PINRemoteImageManager.m in Sources */,
+				A2BCB72B4762FA9E51415A459A73CB29 /* PINRemoteImageManagerResult.m in Sources */,
+				342F6B072BE4E2254E68BF8684071641 /* PINRemoteImageProcessorTask.m in Sources */,
+				9E03AB5FDD66BC9E500406BDD8C163A2 /* PINRemoteImageTask.m in Sources */,
+				F0BC7FD1A8B8D0B380E85AC064EABEB6 /* PINRemoteLock.m in Sources */,
+				F70E86DCE585E795BD9D3EB8DBF2307F /* PINURLSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		751157CDF906BE304CAF58FE7BA4E9BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F34F8961C6C5A82D03627E43907EED /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
+				478D927565C9922FD7CFDE8520D87D81 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
+				4E8F9B0F535F34A47D1E01B5008D88DF /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
+				0A049810D911F2BE93DBB6DED9F85F9E /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
+				C3CDFE14B71893B7CB729FE8CD774898 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
+				7E827949633FFF0BFB3EA0AB00E7981E /* NVActivityIndicatorAnimationBallDoubleBounce.swift in Sources */,
+				BABDEEA0E400185112FC54048CFAEE33 /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */,
+				3EA01D63D0204092024D113ADC9B4C26 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */,
+				D62F3F1D3C2FEF3FF373FC98C9EE38E9 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */,
+				759757524FF111AEFBB5E236A3D19749 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */,
+				784708BBECB561B3319073D4A60A851E /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
+				B7DD9E55C13191ABF50159BFF1964F76 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */,
+				53F1C3093A17BF73042AF4BAB0E6B030 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,
+				D38B7844BB5E179AB653102430112F55 /* NVActivityIndicatorAnimationBallScale.swift in Sources */,
+				547FD24D18F637E68341E9F714B8D173 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
+				F47C7B7A22E39AEFC60CDC340315787A /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
+				4F7AB1D7316D3B8C31208ABF2D73CC31 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
+				BBE0890CA1E7E3C13426610AAA119F43 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
+				DB1E9B160B4DBD103B933A5619F5ABE5 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
+				173B2AB93E6069FDDF700BA452E92999 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */,
+				E85C43B65C95128C5BDA0F48599FEE35 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
+				D7939CCB7D607B840E329C823E3C719C /* NVActivityIndicatorAnimationBlank.swift in Sources */,
+				CE4A42C71FB0A896E776CF9EC7BB1509 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */,
+				6A0BB21F82E342EC6809AA0F45BA4FFE /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
+				241D8706075A6FB075A5CFA2E60873C2 /* NVActivityIndicatorAnimationDelegate.swift in Sources */,
+				D5E044D8443D80A34DF2626AFB87FF73 /* NVActivityIndicatorAnimationLineScale.swift in Sources */,
+				7056AD6E8676C1D600CD3E0F66642078 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */,
+				F93A7D854E9DE74090AE78651377004B /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
+				06C67BCBA6A874BD3880821F5DBB0A89 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
+				D37527398E12D52F839C0C9973775170 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				294E54C2F064E420252BC02E9E693C0B /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
+				5DCAE6B70121FFEFA47B0A623777F1AE /* NVActivityIndicatorAnimationPacman.swift in Sources */,
+				88C546770279761A8EB932E1FC115A76 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
+				6552CAEB9AA077C793B8FA13C1B49B2F /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */,
+				3DDA9AC778332AD5C791AB22D387B251 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
+				0250367B9C6A10F20A3EFA4C38993F5A /* NVActivityIndicatorPresenter.swift in Sources */,
+				5BAA2E8935DDC767AA844976A263A145 /* NVActivityIndicatorShape.swift in Sources */,
+				3BB7737D1AFDED41F90C79EB8DE80FE8 /* NVActivityIndicatorView-dummy.m in Sources */,
+				DDE307664FA93D696E71ADD1D74C7F37 /* NVActivityIndicatorView.swift in Sources */,
+				7C0A63CAE4A3DFEB5FF026A2501D86EB /* NVActivityIndicatorViewable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F5529EF3C100DE6CEAABBAB1CDA139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9DBDCDF85AF548FB6145907FC2B7C /* PINCache-dummy.m in Sources */,
+				98D7005AEEEE984FE5C75DCF879CA33D /* PINCache.m in Sources */,
+				B8F2BA15419957313614012DE159E56B /* PINDiskCache.m in Sources */,
+				74F46FDFA4FDF1CB7247E827FEE6D3BA /* PINMemoryCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912ED14F852EC3FF31F39F864146B3C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D575650591913594C02E088BADFFB5CE /* Pods-HeadStart-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		052A35BB7254932716188F0AE532AB4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PINCache;
+			target = D50FB3EC50169B780BAE2A1FC76443CB /* PINCache */;
+			targetProxy = 102E8DA450E245183B6B53D3F43AB727 /* PBXContainerItemProxy */;
+		};
+		3571B3E6C819384782FE45FC11AF59C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLAnimatedImage;
+			target = 6F111FA0695D7341183345C1E3B3BB86 /* FLAnimatedImage */;
+			targetProxy = DE4416DF45CA11EEABE4B03B4B5A248D /* PBXContainerItemProxy */;
+		};
+		A4F276A8A48AAB990DF5B3E8BBE8570F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PINRemoteImage;
+			target = 02468E4F74D2F434912741862EE578C3 /* PINRemoteImage */;
+			targetProxy = 3BA131C78C48335311DA10449086922A /* PBXContainerItemProxy */;
+		};
+		A520EE8548716FEEA4DB7DCFDD83FD4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PINCache;
+			target = D50FB3EC50169B780BAE2A1FC76443CB /* PINCache */;
+			targetProxy = 495A32E5B722EADA68CD6406C8B51D58 /* PBXContainerItemProxy */;
+		};
+		E5E6E7ED045FE62A56A915615C29B545 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NVActivityIndicatorView;
+			target = 54B1439EA0C8737E1BAF1F8CEF27B62C /* NVActivityIndicatorView */;
+			targetProxy = 7798C2B888ED4F03F63C71F793EB5C23 /* PBXContainerItemProxy */;
+		};
+		F31014BA9F049F338FEFC63A6063C7C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLAnimatedImage;
+			target = 6F111FA0695D7341183345C1E3B3BB86 /* FLAnimatedImage */;
+			targetProxy = 747B1C71923E56DBBE7588A4A1CB3900 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		45A5C43E87130C32871B54F85665BA4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33FF5A2C4DA04323476AB833627EED67 /* Pods-HeadStart.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeadStart/Pods-HeadStart-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeadStart/Pods-HeadStart.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8AF35AC50DC38FA1DA4042EE15856434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE76660813807FC29839BBDDA882226 /* NVActivityIndicatorView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = NVActivityIndicatorView;
+				PRODUCT_NAME = NVActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8FCAE843310ADF2A7B7CE490213B8533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E65163AB301274A8110B5DDEF6878EB /* PINCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PINCache/PINCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PINCache/PINCache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PINCache/PINCache.modulemap";
+				PRODUCT_MODULE_NAME = PINCache;
+				PRODUCT_NAME = PINCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99B358A2429635FEF3773D5C4397C0EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E56B7357C8425B603374A0B8C1ACB78 /* Pods-HeadStart.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeadStart/Pods-HeadStart-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeadStart/Pods-HeadStart.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9EB3325FC808D0F46E3CEC20009A9DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA3F59047F98C1D1EBE46A3F1319CC3 /* PINRemoteImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PINRemoteImage/PINRemoteImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PINRemoteImage/PINRemoteImage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PINRemoteImage/PINRemoteImage.modulemap";
+				PRODUCT_MODULE_NAME = PINRemoteImage;
+				PRODUCT_NAME = PINRemoteImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF99A7F1D2711EDF3003FF3727F4A24A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE76660813807FC29839BBDDA882226 /* NVActivityIndicatorView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = NVActivityIndicatorView;
+				PRODUCT_NAME = NVActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF9AB5D83CCADF57890E3F52ECDFB4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA3F59047F98C1D1EBE46A3F1319CC3 /* PINRemoteImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PINRemoteImage/PINRemoteImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PINRemoteImage/PINRemoteImage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PINRemoteImage/PINRemoteImage.modulemap";
+				PRODUCT_MODULE_NAME = PINRemoteImage;
+				PRODUCT_NAME = PINRemoteImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCB7E7D286E5F00F02103747D480B59F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E67D4EF15AB60842A33183300F405D66 /* FLAnimatedImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FLAnimatedImage/FLAnimatedImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FLAnimatedImage/FLAnimatedImage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FLAnimatedImage/FLAnimatedImage.modulemap";
+				PRODUCT_MODULE_NAME = FLAnimatedImage;
+				PRODUCT_NAME = FLAnimatedImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDD73BE712A506ED3067FB94D3F08A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E65163AB301274A8110B5DDEF6878EB /* PINCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PINCache/PINCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PINCache/PINCache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PINCache/PINCache.modulemap";
+				PRODUCT_MODULE_NAME = PINCache;
+				PRODUCT_NAME = PINCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D88B4F75F8C3216FBA0B7EF494DBD2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E67D4EF15AB60842A33183300F405D66 /* FLAnimatedImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FLAnimatedImage/FLAnimatedImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FLAnimatedImage/FLAnimatedImage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FLAnimatedImage/FLAnimatedImage.modulemap";
+				PRODUCT_MODULE_NAME = FLAnimatedImage;
+				PRODUCT_NAME = FLAnimatedImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		223F5A8B86B4484DD481208F9A9E30E7 /* Build configuration list for PBXNativeTarget "FLAnimatedImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB7E7D286E5F00F02103747D480B59F /* Debug */,
+				D88B4F75F8C3216FBA0B7EF494DBD2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25EA7230631FCE67ABC689594C86C53E /* Build configuration list for PBXNativeTarget "PINCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FCAE843310ADF2A7B7CE490213B8533 /* Debug */,
+				CDD73BE712A506ED3067FB94D3F08A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2872BDDD6E56EDEC300C1DA070290C74 /* Build configuration list for PBXNativeTarget "Pods-HeadStart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B358A2429635FEF3773D5C4397C0EE /* Debug */,
+				45A5C43E87130C32871B54F85665BA4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB1AB45DEDEA84ED47BDE7FFB880CBA /* Build configuration list for PBXNativeTarget "PINRemoteImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB3325FC808D0F46E3CEC20009A9DE7 /* Debug */,
+				BF9AB5D83CCADF57890E3F52ECDFB4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC049F11516B9FB230A8FBBAC5EFAF10 /* Build configuration list for PBXNativeTarget "NVActivityIndicatorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF99A7F1D2711EDF3003FF3727F4A24A /* Debug */,
+				8AF35AC50DC38FA1DA4042EE15856434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
