@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HSLocationWarningViewController" customModule="HeadStart" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Service Disabled!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTc-2Q-nMI" customClass="CommonBoldLabel">
+                    <rect key="frame" x="92.5" y="321.5" width="190" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="stn-BV-vSG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please  update your location from settings." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHa-CU-9K1" customClass="CommonSmallLabel">
+                    <rect key="frame" x="37.5" y="355.5" width="300" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="gJz-sO-xPS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationDisabled" translatesAutoresizingMaskIntoConstraints="NO" id="8kM-sQ-u4I">
+                    <rect key="frame" x="123.5" y="173.5" width="128" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="d1T-Lk-yB8"/>
+                        <constraint firstAttribute="width" constant="128" id="i9l-CL-HCE"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1N7-Gq-2iz">
+                    <rect key="frame" x="60" y="537" width="255" height="40"/>
+                    <color key="backgroundColor" name="selectTabBarColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ytt-Fu-giU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                    <state key="normal" title="Settings">
+                        <color key="titleColor" name="recentCheckedInAddressBgColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="settingsBtnAction:" destination="-1" eventType="touchUpInside" id="Aqd-B2-Yt5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hTc-2Q-nMI" firstAttribute="top" secondItem="8kM-sQ-u4I" secondAttribute="bottom" constant="20" id="9Hx-VV-ig2"/>
+                <constraint firstItem="hTc-2Q-nMI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="I2D-uC-qhe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1N7-Gq-2iz" secondAttribute="bottom" constant="90" id="QS1-D6-6gg"/>
+                <constraint firstItem="FHa-CU-9K1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bkJ-UQ-c4G"/>
+                <constraint firstItem="1N7-Gq-2iz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="hyG-qY-H6T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1N7-Gq-2iz" secondAttribute="trailing" constant="60" id="otv-J8-oHJ"/>
+                <constraint firstItem="hTc-2Q-nMI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="q5b-9F-Zjc"/>
+                <constraint firstItem="FHa-CU-9K1" firstAttribute="top" secondItem="hTc-2Q-nMI" secondAttribute="bottom" constant="10" id="rFp-0a-Fzq"/>
+                <constraint firstItem="8kM-sQ-u4I" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="y2E-ao-rU2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="locationDisabled" width="495" height="495"/>
+        <namedColor name="recentCheckedInAddressBgColor">
+            <color red="0.93725490196078431" green="0.94901960784313721" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="selectTabBarColor">
+            <color red="0.38039215686274508" green="0.27450980392156865" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

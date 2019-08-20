@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Settings"; ObjectID = "1N7-Gq-2iz"; */
+"1N7-Gq-2iz.normalTitle" = "ਸੈਟਿੰਗਾਂ";
+
+/* Class = "UILabel"; text = "Please  update your location from settings."; ObjectID = "FHa-CU-9K1"; */
+"FHa-CU-9K1.text" = "ਕਿਰਪਾ ਕਰਕੇ ਸੈਟਿੰਗਜ਼ ਤੋਂ ਆਪਣੇ ਨਿਰਧਾਰਿਤ ਸਥਾਨ ਨੂੰ ਅਪਡੇਟ ਕਰੋ.";
+
+/* Class = "UILabel"; text = "Location Service Disabled!"; ObjectID = "hTc-2Q-nMI"; */
+"hTc-2Q-nMI.text" = "ਸਥਾਨ ਸੇਵਾ ਅਸਮਰੱਥ ਹੈ!";
