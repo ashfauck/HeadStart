@@ -8,15 +8,15 @@
 
 import Foundation
 
-class HSConstants: NSObject {
+public class HSConstants: NSObject {
     
-    static let shared = HSConstants()
+    static public let shared = HSConstants()
     
-    var stagingUrl:String = ""
-    var testingUrl:String = ""
-    var releaseUrl:String = ""
+    public var stagingUrl:String = ""
+    public var testingUrl:String = ""
+    public var releaseUrl:String = ""
     
-    var environment:HSNetworkEnvironment = .release // by default will point release url
+    public var environment:HSNetworkEnvironment = .release // by default will point release url
     
     
     
