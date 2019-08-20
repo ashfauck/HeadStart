@@ -315,7 +315,7 @@ extension UIView {
         isUserInteractionEnabled = true
     }
     
-    func showLoadingHUD(loaderType:NVActivityIndicatorType? = nil)
+    public func showLoadingHUD(loaderType:NVActivityIndicatorType? = nil)
     {
         DispatchQueue.main.async
             {
@@ -348,7 +348,7 @@ extension UIView {
         }
     }
 
-    func hideLoadingHUD()
+    public func hideLoadingHUD()
     {
         DispatchQueue.main.async
             {
