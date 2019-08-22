@@ -68,7 +68,7 @@ extension UIViewController:UIPopoverPresentationControllerDelegate {
         static var id : Int?
     }
     
-    var pageId: Int {
+    public var pageId: Int {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.id) as? Int ?? 0
         } set {
