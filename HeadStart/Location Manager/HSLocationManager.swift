@@ -9,19 +9,20 @@
 import Foundation
 import CoreLocation
 
-protocol LocationProvider
+public protocol LocationProvider
 {
     var isUserAuthorized: Bool { get }
+    var isNotDetermined:Bool  { get }
 }
 
 extension CLLocationManager: LocationProvider
 {
-    var isUserAuthorized: Bool
+    public var isUserAuthorized: Bool
     {
         return [.authorizedAlways, .authorizedWhenInUse].contains(CLLocationManager.authorizationStatus())
     }
     
-    var isNotDetermined:Bool
+    public var isNotDetermined:Bool
     {
         return CLLocationManager.authorizationStatus() == .notDetermined
     }

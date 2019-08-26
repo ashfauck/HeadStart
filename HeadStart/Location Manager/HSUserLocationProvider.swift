@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 public enum UserLocationError: Error
 {
@@ -19,4 +20,5 @@ public protocol HSUserLocationProvider
 {
     func findUserLocation(then: @escaping UserLocationCompletionBlock)
     func stopUserLocationUpdate()
+    var locationManager:CLLocationManager { get }
 }

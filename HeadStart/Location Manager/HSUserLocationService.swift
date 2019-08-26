@@ -14,7 +14,7 @@ public class HSUserLocationService: NSObject, HSUserLocationProvider {
     
     fileprivate var locationCompletionBlock: UserLocationCompletionBlock?
     fileprivate var isLocatoinDisableScreenOpened:Bool = false
-    private lazy var locationManager: CLLocationManager =
+    public lazy var locationManager: CLLocationManager =
     {
         // Initialize Location Manager
         let locationManager = CLLocationManager()
