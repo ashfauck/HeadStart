@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import UIKit
 
-class HSUserLocationService: NSObject, HSUserLocationProvider {
+public class HSUserLocationService: NSObject, HSUserLocationProvider {
     
     fileprivate var locationCompletionBlock: UserLocationCompletionBlock?
     fileprivate var isLocatoinDisableScreenOpened:Bool = false
@@ -31,7 +31,7 @@ class HSUserLocationService: NSObject, HSUserLocationProvider {
         return locationManager
     }()
     
-    func findUserLocation(then: @escaping UserLocationCompletionBlock)
+    public func findUserLocation(then: @escaping UserLocationCompletionBlock)
     {
         self.locationCompletionBlock = then
         
@@ -63,7 +63,7 @@ class HSUserLocationService: NSObject, HSUserLocationProvider {
         }
     }
     
-    func stopUserLocationUpdate()
+    public func stopUserLocationUpdate()
     {
         self.locationManager.stopUpdatingLocation()
         self.locationManager.stopMonitoringSignificantLocationChanges()
@@ -73,7 +73,7 @@ class HSUserLocationService: NSObject, HSUserLocationProvider {
 
 extension HSUserLocationService: CLLocationManagerDelegate
 {
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus)
+    public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus)
     {
         if status == .authorizedWhenInUse || status == .authorizedAlways
         {
@@ -81,7 +81,7 @@ extension HSUserLocationService: CLLocationManagerDelegate
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
         if let location = locations.last
         {
@@ -93,7 +93,7 @@ extension HSUserLocationService: CLLocationManagerDelegate
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
+    public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
     {
         locationCompletionBlock?(nil, .canNotBeLocated)
     }
