@@ -8,23 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		048B0656230BD0C600818D4E /* HeadStart.h in Headers */ = {isa = PBXBuildFile; fileRef = 048B0654230BD0C600818D4E /* HeadStart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		049715622314004A00E2056F /* HSLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049715612314004A00E2056F /* HSLocationViewModel.swift */; };
 		04F719A0230BD7FB00A7A787 /* NBUIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7198F230BD7FB00A7A787 /* NBUIButton+Extensions.swift */; };
-		04F719A1230BD7FB00A7A787 /* NBDateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71990230BD7FB00A7A787 /* NBDateFormatter+Extensions.swift */; };
-		04F719A2230BD7FB00A7A787 /* NBDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71991230BD7FB00A7A787 /* NBDate+Extensions.swift */; };
-		04F719A3230BD7FB00A7A787 /* NBUITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71992230BD7FB00A7A787 /* NBUITextField+Extensions.swift */; };
-		04F719A4230BD7FB00A7A787 /* NBUIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71993230BD7FB00A7A787 /* NBUIImage+Extensions.swift */; };
-		04F719A5230BD7FB00A7A787 /* NBUIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71994230BD7FB00A7A787 /* NBUIColor+Extensions.swift */; };
-		04F719A6230BD7FB00A7A787 /* NBUITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71995230BD7FB00A7A787 /* NBUITableView+Extensions.swift */; };
-		04F719A7230BD7FB00A7A787 /* NBUIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71996230BD7FB00A7A787 /* NBUIViewController+Extensions.swift */; };
-		04F719A8230BD7FB00A7A787 /* NBNSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71997230BD7FB00A7A787 /* NBNSObject+Extensions.swift */; };
-		04F719A9230BD7FB00A7A787 /* NBString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71998230BD7FB00A7A787 /* NBString+Extensions.swift */; };
-		04F719AA230BD7FB00A7A787 /* NBUIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71999230BD7FB00A7A787 /* NBUIFont+Extensions.swift */; };
-		04F719AB230BD7FB00A7A787 /* NBUICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7199A230BD7FB00A7A787 /* NBUICollectionView+Extensions.swift */; };
-		04F719AC230BD7FB00A7A787 /* NBUIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7199B230BD7FB00A7A787 /* NBUIView+Extensions.swift */; };
-		04F719AD230BD7FB00A7A787 /* NBUITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7199C230BD7FB00A7A787 /* NBUITextView+Extensions.swift */; };
-		04F719AE230BD7FB00A7A787 /* NBArray+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7199D230BD7FB00A7A787 /* NBArray+Extensions.swift */; };
-		04F719AF230BD7FB00A7A787 /* NBUIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7199E230BD7FB00A7A787 /* NBUIImageView+Extensions.swift */; };
-		04F719B0230BD7FB00A7A787 /* NBUIControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7199F230BD7FB00A7A787 /* NBUIControl+Extensions.swift */; };
+		04F719A1230BD7FB00A7A787 /* HSDateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71990230BD7FB00A7A787 /* HSDateFormatter+Extensions.swift */; };
+		04F719A2230BD7FB00A7A787 /* HSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71991230BD7FB00A7A787 /* HSDate+Extensions.swift */; };
+		04F719A3230BD7FB00A7A787 /* HSUITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71992230BD7FB00A7A787 /* HSUITextField+Extensions.swift */; };
+		04F719A4230BD7FB00A7A787 /* HSUIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71993230BD7FB00A7A787 /* HSUIImage+Extensions.swift */; };
+		04F719A5230BD7FB00A7A787 /* HSUIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71994230BD7FB00A7A787 /* HSUIColor+Extensions.swift */; };
+		04F719A6230BD7FB00A7A787 /* HSUITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71995230BD7FB00A7A787 /* HSUITableView+Extensions.swift */; };
+		04F719A7230BD7FB00A7A787 /* HSUIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71996230BD7FB00A7A787 /* HSUIViewController+Extensions.swift */; };
+		04F719A8230BD7FB00A7A787 /* HSNSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71997230BD7FB00A7A787 /* HSNSObject+Extensions.swift */; };
+		04F719A9230BD7FB00A7A787 /* HSString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71998230BD7FB00A7A787 /* HSString+Extensions.swift */; };
+		04F719AA230BD7FB00A7A787 /* HSUIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F71999230BD7FB00A7A787 /* HSUIFont+Extensions.swift */; };
+		04F719AB230BD7FB00A7A787 /* HSUICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7199A230BD7FB00A7A787 /* HSUICollectionView+Extensions.swift */; };
+		04F719AC230BD7FB00A7A787 /* HSUIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7199B230BD7FB00A7A787 /* HSUIView+Extensions.swift */; };
+		04F719AD230BD7FB00A7A787 /* HSUITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7199C230BD7FB00A7A787 /* HSUITextView+Extensions.swift */; };
+		04F719AE230BD7FB00A7A787 /* HSArray+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7199D230BD7FB00A7A787 /* HSArray+Extensions.swift */; };
+		04F719AF230BD7FB00A7A787 /* HSUIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7199E230BD7FB00A7A787 /* HSUIImageView+Extensions.swift */; };
+		04F719B0230BD7FB00A7A787 /* HSUIControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7199F230BD7FB00A7A787 /* HSUIControl+Extensions.swift */; };
 		04F719C1230BD80F00A7A787 /* HSURLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719B4230BD80F00A7A787 /* HSURLParameterEncoding.swift */; };
 		04F719C2230BD80F00A7A787 /* HSJsonParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719B5230BD80F00A7A787 /* HSJsonParameterEncoding.swift */; };
 		04F719C3230BD80F00A7A787 /* HSParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719B6230BD80F00A7A787 /* HSParameterEncoding.swift */; };
@@ -39,7 +40,7 @@
 		04F719DC230BDE3E00A7A787 /* HSLocationWarningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F719D3230BDE3E00A7A787 /* HSLocationWarningViewController.xib */; };
 		04F719DD230BDE3E00A7A787 /* HSLocationWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719D6230BDE3E00A7A787 /* HSLocationWarningViewController.swift */; };
 		04F719DE230BDE3E00A7A787 /* HSUserLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719D7230BDE3E00A7A787 /* HSUserLocationProvider.swift */; };
-		04F719DF230BDE3E00A7A787 /* AFLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719D8230BDE3E00A7A787 /* AFLocationManager.swift */; };
+		04F719DF230BDE3E00A7A787 /* HSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719D8230BDE3E00A7A787 /* HSLocationManager.swift */; };
 		04F719E0230BDE3E00A7A787 /* HSUserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719D9230BDE3E00A7A787 /* HSUserLocation.swift */; };
 		04F719E6230BF10B00A7A787 /* HSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719E5230BF10B00A7A787 /* HSConstants.swift */; };
 		F68FE009E5F46B76EDD5F5C0 /* Pods_HeadStart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB233CE640297C50B12EEE0 /* Pods_HeadStart.framework */; };
@@ -49,23 +50,24 @@
 		048B0651230BD0C600818D4E /* HeadStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HeadStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		048B0654230BD0C600818D4E /* HeadStart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadStart.h; sourceTree = "<group>"; };
 		048B0655230BD0C600818D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049715612314004A00E2056F /* HSLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSLocationViewModel.swift; sourceTree = "<group>"; };
 		04F7198F230BD7FB00A7A787 /* NBUIButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBUIButton+Extensions.swift"; sourceTree = "<group>"; };
-		04F71990230BD7FB00A7A787 /* NBDateFormatter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBDateFormatter+Extensions.swift"; sourceTree = "<group>"; };
-		04F71991230BD7FB00A7A787 /* NBDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBDate+Extensions.swift"; sourceTree = "<group>"; };
-		04F71992230BD7FB00A7A787 /* NBUITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBUITextField+Extensions.swift"; sourceTree = "<group>"; };
-		04F71993230BD7FB00A7A787 /* NBUIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBUIImage+Extensions.swift"; sourceTree = "<group>"; };
-		04F71994230BD7FB00A7A787 /* NBUIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBUIColor+Extensions.swift"; sourceTree = "<group>"; };
-		04F71995230BD7FB00A7A787 /* NBUITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBUITableView+Extensions.swift"; sourceTree = "<group>"; };
-		04F71996230BD7FB00A7A787 /* NBUIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBUIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		04F71997230BD7FB00A7A787 /* NBNSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBNSObject+Extensions.swift"; sourceTree = "<group>"; };
-		04F71998230BD7FB00A7A787 /* NBString+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBString+Extensions.swift"; sourceTree = "<group>"; };
-		04F71999230BD7FB00A7A787 /* NBUIFont+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBUIFont+Extensions.swift"; sourceTree = "<group>"; };
-		04F7199A230BD7FB00A7A787 /* NBUICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBUICollectionView+Extensions.swift"; sourceTree = "<group>"; };
-		04F7199B230BD7FB00A7A787 /* NBUIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBUIView+Extensions.swift"; sourceTree = "<group>"; };
-		04F7199C230BD7FB00A7A787 /* NBUITextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBUITextView+Extensions.swift"; sourceTree = "<group>"; };
-		04F7199D230BD7FB00A7A787 /* NBArray+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBArray+Extensions.swift"; sourceTree = "<group>"; };
-		04F7199E230BD7FB00A7A787 /* NBUIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBUIImageView+Extensions.swift"; sourceTree = "<group>"; };
-		04F7199F230BD7FB00A7A787 /* NBUIControl+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NBUIControl+Extensions.swift"; sourceTree = "<group>"; };
+		04F71990230BD7FB00A7A787 /* HSDateFormatter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSDateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		04F71991230BD7FB00A7A787 /* HSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSDate+Extensions.swift"; sourceTree = "<group>"; };
+		04F71992230BD7FB00A7A787 /* HSUITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSUITextField+Extensions.swift"; sourceTree = "<group>"; };
+		04F71993230BD7FB00A7A787 /* HSUIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSUIImage+Extensions.swift"; sourceTree = "<group>"; };
+		04F71994230BD7FB00A7A787 /* HSUIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSUIColor+Extensions.swift"; sourceTree = "<group>"; };
+		04F71995230BD7FB00A7A787 /* HSUITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSUITableView+Extensions.swift"; sourceTree = "<group>"; };
+		04F71996230BD7FB00A7A787 /* HSUIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSUIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		04F71997230BD7FB00A7A787 /* HSNSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSNSObject+Extensions.swift"; sourceTree = "<group>"; };
+		04F71998230BD7FB00A7A787 /* HSString+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSString+Extensions.swift"; sourceTree = "<group>"; };
+		04F71999230BD7FB00A7A787 /* HSUIFont+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSUIFont+Extensions.swift"; sourceTree = "<group>"; };
+		04F7199A230BD7FB00A7A787 /* HSUICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSUICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		04F7199B230BD7FB00A7A787 /* HSUIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSUIView+Extensions.swift"; sourceTree = "<group>"; };
+		04F7199C230BD7FB00A7A787 /* HSUITextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSUITextView+Extensions.swift"; sourceTree = "<group>"; };
+		04F7199D230BD7FB00A7A787 /* HSArray+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSArray+Extensions.swift"; sourceTree = "<group>"; };
+		04F7199E230BD7FB00A7A787 /* HSUIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSUIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		04F7199F230BD7FB00A7A787 /* HSUIControl+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSUIControl+Extensions.swift"; sourceTree = "<group>"; };
 		04F719B4230BD80F00A7A787 /* HSURLParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSURLParameterEncoding.swift; sourceTree = "<group>"; };
 		04F719B5230BD80F00A7A787 /* HSJsonParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSJsonParameterEncoding.swift; sourceTree = "<group>"; };
 		04F719B6230BD80F00A7A787 /* HSParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSParameterEncoding.swift; sourceTree = "<group>"; };
@@ -83,7 +85,7 @@
 		04F719D5230BDE3E00A7A787 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/HSLocationWarningViewController.strings; sourceTree = "<group>"; };
 		04F719D6230BDE3E00A7A787 /* HSLocationWarningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSLocationWarningViewController.swift; sourceTree = "<group>"; };
 		04F719D7230BDE3E00A7A787 /* HSUserLocationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUserLocationProvider.swift; sourceTree = "<group>"; };
-		04F719D8230BDE3E00A7A787 /* AFLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFLocationManager.swift; sourceTree = "<group>"; };
+		04F719D8230BDE3E00A7A787 /* HSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSLocationManager.swift; sourceTree = "<group>"; };
 		04F719D9230BDE3E00A7A787 /* HSUserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUserLocation.swift; sourceTree = "<group>"; };
 		04F719E5230BF10B00A7A787 /* HSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConstants.swift; sourceTree = "<group>"; };
 		2EB233CE640297C50B12EEE0 /* Pods_HeadStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeadStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,22 +140,22 @@
 			isa = PBXGroup;
 			children = (
 				04F7198F230BD7FB00A7A787 /* NBUIButton+Extensions.swift */,
-				04F71990230BD7FB00A7A787 /* NBDateFormatter+Extensions.swift */,
-				04F71991230BD7FB00A7A787 /* NBDate+Extensions.swift */,
-				04F71992230BD7FB00A7A787 /* NBUITextField+Extensions.swift */,
-				04F71993230BD7FB00A7A787 /* NBUIImage+Extensions.swift */,
-				04F71994230BD7FB00A7A787 /* NBUIColor+Extensions.swift */,
-				04F71995230BD7FB00A7A787 /* NBUITableView+Extensions.swift */,
-				04F71996230BD7FB00A7A787 /* NBUIViewController+Extensions.swift */,
-				04F71997230BD7FB00A7A787 /* NBNSObject+Extensions.swift */,
-				04F71998230BD7FB00A7A787 /* NBString+Extensions.swift */,
-				04F71999230BD7FB00A7A787 /* NBUIFont+Extensions.swift */,
-				04F7199A230BD7FB00A7A787 /* NBUICollectionView+Extensions.swift */,
-				04F7199B230BD7FB00A7A787 /* NBUIView+Extensions.swift */,
-				04F7199C230BD7FB00A7A787 /* NBUITextView+Extensions.swift */,
-				04F7199D230BD7FB00A7A787 /* NBArray+Extensions.swift */,
-				04F7199E230BD7FB00A7A787 /* NBUIImageView+Extensions.swift */,
-				04F7199F230BD7FB00A7A787 /* NBUIControl+Extensions.swift */,
+				04F71990230BD7FB00A7A787 /* HSDateFormatter+Extensions.swift */,
+				04F71991230BD7FB00A7A787 /* HSDate+Extensions.swift */,
+				04F71992230BD7FB00A7A787 /* HSUITextField+Extensions.swift */,
+				04F71993230BD7FB00A7A787 /* HSUIImage+Extensions.swift */,
+				04F71994230BD7FB00A7A787 /* HSUIColor+Extensions.swift */,
+				04F71995230BD7FB00A7A787 /* HSUITableView+Extensions.swift */,
+				04F71996230BD7FB00A7A787 /* HSUIViewController+Extensions.swift */,
+				04F71997230BD7FB00A7A787 /* HSNSObject+Extensions.swift */,
+				04F71998230BD7FB00A7A787 /* HSString+Extensions.swift */,
+				04F71999230BD7FB00A7A787 /* HSUIFont+Extensions.swift */,
+				04F7199A230BD7FB00A7A787 /* HSUICollectionView+Extensions.swift */,
+				04F7199B230BD7FB00A7A787 /* HSUIView+Extensions.swift */,
+				04F7199C230BD7FB00A7A787 /* HSUITextView+Extensions.swift */,
+				04F7199D230BD7FB00A7A787 /* HSArray+Extensions.swift */,
+				04F7199E230BD7FB00A7A787 /* HSUIImageView+Extensions.swift */,
+				04F7199F230BD7FB00A7A787 /* HSUIControl+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,9 +212,10 @@
 			isa = PBXGroup;
 			children = (
 				04F719CC230BDE3E00A7A787 /* HSUserLocationService.swift */,
+				049715612314004A00E2056F /* HSLocationViewModel.swift */,
 				04F719CD230BDE3E00A7A787 /* Location Warning */,
 				04F719D7230BDE3E00A7A787 /* HSUserLocationProvider.swift */,
-				04F719D8230BDE3E00A7A787 /* AFLocationManager.swift */,
+				04F719D8230BDE3E00A7A787 /* HSLocationManager.swift */,
 				04F719D9230BDE3E00A7A787 /* HSUserLocation.swift */,
 			);
 			path = "Location Manager";
@@ -258,7 +261,6 @@
 				CDF66A18990180B5EE28E290 /* Pods-HeadStart.debug.xcconfig */,
 				AF07754881510586D4B13581 /* Pods-HeadStart.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -373,35 +375,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F719C1230BD80F00A7A787 /* HSURLParameterEncoding.swift in Sources */,
-				04F719AF230BD7FB00A7A787 /* NBUIImageView+Extensions.swift in Sources */,
+				04F719AF230BD7FB00A7A787 /* HSUIImageView+Extensions.swift in Sources */,
 				04F719DA230BDE3E00A7A787 /* HSUserLocationService.swift in Sources */,
 				04F719E0230BDE3E00A7A787 /* HSUserLocation.swift in Sources */,
 				04F719E6230BF10B00A7A787 /* HSConstants.swift in Sources */,
-				04F719A1230BD7FB00A7A787 /* NBDateFormatter+Extensions.swift in Sources */,
+				04F719A1230BD7FB00A7A787 /* HSDateFormatter+Extensions.swift in Sources */,
 				04F719C2230BD80F00A7A787 /* HSJsonParameterEncoding.swift in Sources */,
 				04F719C3230BD80F00A7A787 /* HSParameterEncoding.swift in Sources */,
-				04F719A8230BD7FB00A7A787 /* NBNSObject+Extensions.swift in Sources */,
+				04F719A8230BD7FB00A7A787 /* HSNSObject+Extensions.swift in Sources */,
 				04F719C7230BD80F00A7A787 /* HSHttpMethod.swift in Sources */,
-				04F719A2230BD7FB00A7A787 /* NBDate+Extensions.swift in Sources */,
-				04F719A4230BD7FB00A7A787 /* NBUIImage+Extensions.swift in Sources */,
+				04F719A2230BD7FB00A7A787 /* HSDate+Extensions.swift in Sources */,
+				04F719A4230BD7FB00A7A787 /* HSUIImage+Extensions.swift in Sources */,
 				04F719C5230BD80F00A7A787 /* HSNetworkLogger.swift in Sources */,
-				04F719A6230BD7FB00A7A787 /* NBUITableView+Extensions.swift in Sources */,
+				04F719A6230BD7FB00A7A787 /* HSUITableView+Extensions.swift in Sources */,
 				04F719C9230BD80F00A7A787 /* HSNetworkResponse.swift in Sources */,
-				04F719A5230BD7FB00A7A787 /* NBUIColor+Extensions.swift in Sources */,
+				04F719A5230BD7FB00A7A787 /* HSUIColor+Extensions.swift in Sources */,
 				04F719A0230BD7FB00A7A787 /* NBUIButton+Extensions.swift in Sources */,
+				049715622314004A00E2056F /* HSLocationViewModel.swift in Sources */,
 				04F719DE230BDE3E00A7A787 /* HSUserLocationProvider.swift in Sources */,
-				04F719AA230BD7FB00A7A787 /* NBUIFont+Extensions.swift in Sources */,
-				04F719A7230BD7FB00A7A787 /* NBUIViewController+Extensions.swift in Sources */,
+				04F719AA230BD7FB00A7A787 /* HSUIFont+Extensions.swift in Sources */,
+				04F719A7230BD7FB00A7A787 /* HSUIViewController+Extensions.swift in Sources */,
 				04F719C8230BD80F00A7A787 /* HSRequestTaskType.swift in Sources */,
-				04F719AD230BD7FB00A7A787 /* NBUITextView+Extensions.swift in Sources */,
-				04F719AE230BD7FB00A7A787 /* NBArray+Extensions.swift in Sources */,
-				04F719B0230BD7FB00A7A787 /* NBUIControl+Extensions.swift in Sources */,
+				04F719AD230BD7FB00A7A787 /* HSUITextView+Extensions.swift in Sources */,
+				04F719AE230BD7FB00A7A787 /* HSArray+Extensions.swift in Sources */,
+				04F719B0230BD7FB00A7A787 /* HSUIControl+Extensions.swift in Sources */,
 				04F719DD230BDE3E00A7A787 /* HSLocationWarningViewController.swift in Sources */,
-				04F719AC230BD7FB00A7A787 /* NBUIView+Extensions.swift in Sources */,
-				04F719A9230BD7FB00A7A787 /* NBString+Extensions.swift in Sources */,
-				04F719AB230BD7FB00A7A787 /* NBUICollectionView+Extensions.swift in Sources */,
-				04F719A3230BD7FB00A7A787 /* NBUITextField+Extensions.swift in Sources */,
-				04F719DF230BDE3E00A7A787 /* AFLocationManager.swift in Sources */,
+				04F719AC230BD7FB00A7A787 /* HSUIView+Extensions.swift in Sources */,
+				04F719A9230BD7FB00A7A787 /* HSString+Extensions.swift in Sources */,
+				04F719AB230BD7FB00A7A787 /* HSUICollectionView+Extensions.swift in Sources */,
+				04F719A3230BD7FB00A7A787 /* HSUITextField+Extensions.swift in Sources */,
+				04F719DF230BDE3E00A7A787 /* HSLocationManager.swift in Sources */,
 				04F719C4230BD80F00A7A787 /* HSNetworkEnvironment.swift in Sources */,
 				04F719C6230BD80F00A7A787 /* HSRequestSchema.swift in Sources */,
 			);

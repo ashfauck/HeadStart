@@ -1,9 +1,9 @@
 //
-//  AFUIViewController+Extensions.swift
+//  HSUIViewController+Extensions.swift
 //  HeadStart
 //
 //  Created by Ashfauck on 3/22/19.
-//  Copyright © 2019 Vagus. All rights reserved.
+//  Copyright © 2019 Ashfauck. All rights reserved.
 //
 
 import Foundation

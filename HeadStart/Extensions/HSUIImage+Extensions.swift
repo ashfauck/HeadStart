@@ -1,9 +1,9 @@
 //
-//  NBUIImage+Extensions.swift
+//  HSUIImage+Extensions.swift
 //  HeadStart
 //
 //  Created by Ashfauck Thaminsali on 7/5/19.
-//  Copyright © 2019 ORGware. All rights reserved.
+//  Copyright © 2019 Ashfauck. All rights reserved.
 //
 
 import Foundation

@@ -1,9 +1,9 @@
 //
-//  NBRequestTaskType.swift
+//  HSRequestTaskType.swift
 //  HeadStart
 //
 //  Created by Ashfauck Thaminsali on 4/25/19.
-//  Copyright © 2019 ORGware. All rights reserved.
+//  Copyright © 2019 Ashfauck. All rights reserved.
 //
 
 import UIKit

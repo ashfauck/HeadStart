@@ -3,7 +3,7 @@
 //  HeadStart
 //
 //  Created by Ashfauck on 3/26/19.
-//  Copyright © 2019 Vagus. All rights reserved.
+//  Copyright © 2019 Ashfauck. All rights reserved.
 //
 
 import UIKit

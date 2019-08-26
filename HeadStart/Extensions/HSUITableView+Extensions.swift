@@ -1,9 +1,9 @@
 //
-//  AFUITableView+Extensions.swift
+//  HSUITableView+Extensions.swift
 //  HeadStart
 //
 //  Created by Ashfauck on 3/22/19.
-//  Copyright © 2019 Vagus. All rights reserved.
+//  Copyright © 2019 Ashfauck. All rights reserved.
 //
 
 import Foundation
@@ -30,7 +30,7 @@ extension UITableView
     {
 
 //        DispatchQueue.main.async {
-//            let emptyDataView = NBEmptyDataSetView(frame: self.frame)
+//            let emptyDataView = HSEmptyDataSetView(frame: self.frame)
 //            emptyDataView.tag = 20002
 ////            self.addSubview(emptyDataView)
 //            self.backgroundView = emptyDataView
