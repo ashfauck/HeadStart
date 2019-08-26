@@ -9,9 +9,9 @@
 import Foundation
 import CoreLocation
 
-typealias Coordinate = CLLocationCoordinate2D
+public typealias Coordinate = CLLocationCoordinate2D
 
-protocol HSUserLocation
+public protocol HSUserLocation
 {
     var coordinate: Coordinate { get }
 }

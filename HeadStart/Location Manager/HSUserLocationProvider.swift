@@ -8,14 +8,14 @@
 
 import Foundation
 
-enum UserLocationError: Error
+public enum UserLocationError: Error
 {
     case canNotBeLocated
 }
 
-typealias UserLocationCompletionBlock = (HSUserLocation?, UserLocationError?) -> Void
+public typealias UserLocationCompletionBlock = (HSUserLocation?, UserLocationError?) -> Void
 
-protocol HSUserLocationProvider
+public protocol HSUserLocationProvider
 {
     func findUserLocation(then: @escaping UserLocationCompletionBlock)
     func stopUserLocationUpdate()

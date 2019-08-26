@@ -12,13 +12,13 @@ public class HSLocationViewModel: NSObject
 {
     
     
-    static let shared = HSLocationViewModel(locationProvider: HSUserLocationService())
+    public static let shared = HSLocationViewModel(locationProvider: HSUserLocationService())
     
-    var locationProvider:HSUserLocationProvider
+    public var locationProvider:HSUserLocationProvider
     
-    var userLocationCompletion:UserLocationCompletionBlock?
+    public var userLocationCompletion:UserLocationCompletionBlock?
     
-    var userLocation:Coordinate? = nil
+    public var userLocation:Coordinate? = nil
     
     init(locationProvider:HSUserLocationProvider)
     {
@@ -29,7 +29,7 @@ public class HSLocationViewModel: NSObject
         self.requestUserLocation()
     }
     
-    func requestUserLocation()
+    public func requestUserLocation()
     {
         locationProvider.findUserLocation { [weak self] location, error in
             if error == nil
@@ -48,7 +48,7 @@ public class HSLocationViewModel: NSObject
         }
     }
     
-    func stopUserLocationUpdate()
+    public func stopUserLocationUpdate()
     {
         self.userLocation = nil
         self.userLocationCompletion = nil
