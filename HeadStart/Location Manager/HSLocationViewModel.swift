@@ -25,8 +25,6 @@ public class HSLocationViewModel: NSObject
         self.locationProvider = locationProvider
         
         super.init()
-        
-        self.requestUserLocation()
     }
     
     public func requestUserLocation()
