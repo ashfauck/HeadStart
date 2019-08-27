@@ -20,5 +20,4 @@ public protocol HSUserLocationProvider
 {
     func findUserLocation(then: @escaping UserLocationCompletionBlock)
     func stopUserLocationUpdate()
-    var locationManager:CLLocationManager { get }
 }
