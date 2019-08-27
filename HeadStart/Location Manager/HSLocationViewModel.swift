@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 public class HSLocationViewModel: NSObject
 {
@@ -20,15 +21,20 @@ public class HSLocationViewModel: NSObject
     
     public var userLocation:Coordinate? = nil
     
+    public var locationManager = CLLocationManager()
+
     init(locationProvider:HSUserLocationProvider)
     {
         self.locationProvider = locationProvider
         
         super.init()
+        
+        self.locationManager = locationProvider.locationManager
     }
     
     public func requestUserLocation()
     {
+        
         locationProvider.findUserLocation { [weak self] location, error in
             if error == nil
             {

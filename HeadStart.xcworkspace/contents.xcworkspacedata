@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:HeadStart.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:HeadStart.xcodeproj">
    </FileRef>
    <FileRef
