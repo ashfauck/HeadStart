@@ -14,23 +14,22 @@ public class HSUserLocationService: NSObject, HSUserLocationProvider {
     
     fileprivate var locationCompletionBlock: UserLocationCompletionBlock?
     fileprivate var isLocatoinDisableScreenOpened:Bool = false
-    public lazy var locationManager: CLLocationManager =
+    public var locationManager: CLLocationManager = CLLocationManager()
+    
+    public override func awakeFromNib()
     {
-        // Initialize Location Manager
-        let locationManager = CLLocationManager()
+        super.awakeFromNib()
         
         // Configure Location Manager
-        locationManager.delegate = self
+        self.locationManager.delegate = self
         
-        locationManager.activityType = .automotiveNavigation
+        self.locationManager.activityType = .automotiveNavigation
         
-        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         
-        locationManager.startMonitoringSignificantLocationChanges()
-
-        return locationManager
-    }()
-    
+        self.locationManager.startMonitoringSignificantLocationChanges()
+        
+    }
     public func findUserLocation(then: @escaping UserLocationCompletionBlock)
     {
         self.locationCompletionBlock = then
