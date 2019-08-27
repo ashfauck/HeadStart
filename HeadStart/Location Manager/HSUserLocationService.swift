@@ -11,38 +11,42 @@ import CoreLocation
 import UIKit
 
 public class HSUserLocationService: NSObject, HSUserLocationProvider {
+    public var locationManager: CLLocationManager = CLLocationManager()
+    
     
     fileprivate var locationCompletionBlock: UserLocationCompletionBlock?
     fileprivate var isLocatoinDisableScreenOpened:Bool = false
-    public var locationManager: CLLocationManager = CLLocationManager()
+    public var locationManagers: CLLocationManager = CLLocationManager()
     
     public override func awakeFromNib()
     {
         super.awakeFromNib()
         
         // Configure Location Manager
-        self.locationManager.delegate = self
+        self.locationManagers.delegate = self
         
-        self.locationManager.activityType = .automotiveNavigation
+        self.locationManagers.activityType = .automotiveNavigation
         
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        self.locationManagers.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         
-        self.locationManager.startMonitoringSignificantLocationChanges()
+        self.locationManagers.startMonitoringSignificantLocationChanges()
         
+        self.locationManager = self.locationManagers
     }
+    
     public func findUserLocation(then: @escaping UserLocationCompletionBlock)
     {
         self.locationCompletionBlock = then
         
-        if locationManager.isNotDetermined
+        if locationManagers.isNotDetermined
         {
             isLocatoinDisableScreenOpened = false
-            locationManager.requestAlwaysAuthorization()
+            locationManagers.requestAlwaysAuthorization()
         }
-        else if locationManager.isUserAuthorized
+        else if locationManagers.isUserAuthorized
         {
             isLocatoinDisableScreenOpened = false
-            locationManager.startUpdatingLocation()
+            locationManagers.startUpdatingLocation()
         }
         else
         {
@@ -64,8 +68,8 @@ public class HSUserLocationService: NSObject, HSUserLocationProvider {
     
     public func stopUserLocationUpdate()
     {
-        self.locationManager.stopUpdatingLocation()
-        self.locationManager.stopMonitoringSignificantLocationChanges()
+        self.locationManagers.stopUpdatingLocation()
+        self.locationManagers.stopMonitoringSignificantLocationChanges()
     }
 }
 
@@ -76,7 +80,7 @@ extension HSUserLocationService: CLLocationManagerDelegate
     {
         if status == .authorizedWhenInUse || status == .authorizedAlways
         {
-            locationManager.startUpdatingLocation()
+            locationManagers.startUpdatingLocation()
         }
     }
     
