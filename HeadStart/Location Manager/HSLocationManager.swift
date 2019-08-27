@@ -13,12 +13,12 @@ public protocol LocationProvider
 {
     var isUserAuthorized: Bool { get }
     var isNotDetermined:Bool  { get }
-    var status:AuthorizationStatus { get }
+    var status:CLAuthorizationStatus { get }
 }
 
 extension CLLocationManager: LocationProvider
 {
-    public var status: AuthorizationStatus {
+    public var status: CLAuthorizationStatus {
         return CLLocationManager.authorizationStatus()
     }
     
