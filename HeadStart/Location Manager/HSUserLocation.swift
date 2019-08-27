@@ -18,11 +18,11 @@ public protocol HSUserLocation
 
 extension CLLocation: HSUserLocation { }
 
-public typealias AuthorizationStatus = CLAuthorizationStatus
-
-public protocol HSLocationManager
-{
-    var status: AuthorizationStatus { get }
-}
-
-extension CLLocationManager: HSLocationManager { }
+//public typealias AuthorizationStatus = CLAuthorizationStatus
+//
+//public protocol HSLocationManager
+//{
+//    var status: AuthorizationStatus { get }
+//}
+//
+//extension CLLocationManager: HSLocationManager { }
