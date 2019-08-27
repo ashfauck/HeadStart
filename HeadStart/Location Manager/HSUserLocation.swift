@@ -24,3 +24,5 @@ public protocol HSLocationManager
 {
     var status: AuthorizationStatus { get }
 }
+
+extension CLLocationManager: HSLocationManager { }

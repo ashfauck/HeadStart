@@ -1,0 +1,11 @@
+framework module HeadStart {
+  umbrella header "HeadStart.h"
+
+  export *
+  module * { export * }
+}
+
+module HeadStart.Swift {
+    header "HeadStart-Swift.h"
+    requires objc
+}
