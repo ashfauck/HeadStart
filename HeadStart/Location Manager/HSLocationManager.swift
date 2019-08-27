@@ -13,10 +13,15 @@ public protocol LocationProvider
 {
     var isUserAuthorized: Bool { get }
     var isNotDetermined:Bool  { get }
+    var status:AuthorizationStatus { get }
 }
 
 extension CLLocationManager: LocationProvider
 {
+    public var status: AuthorizationStatus {
+        return CLLocationManager.authorizationStatus()
+    }
+    
     public var isUserAuthorized: Bool
     {
         return [.authorizedAlways, .authorizedWhenInUse].contains(CLLocationManager.authorizationStatus())
@@ -26,5 +31,4 @@ extension CLLocationManager: LocationProvider
     {
         return CLLocationManager.authorizationStatus() == .notDetermined
     }
-    
 }
