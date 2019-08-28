@@ -127,7 +127,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
 
         opacityView.backgroundColor = SlideMenuOptions.opacityViewBackgroundColor
 
-        opacityView.autoresizingMask = [UIViewAutoresizing.flexibleHeight, UIViewAutoresizing.flexibleWidth]
+        opacityView.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight, UIView.AutoresizingMask.flexibleWidth]
         opacityView.layer.opacity = 0.0
         view.insertSubview(opacityView, at: 1)
       if leftViewController != nil {
@@ -139,7 +139,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
         leftFrame.size.height = leftFrame.size.height - leftOffset
         leftContainerView = UIView(frame: leftFrame)
         leftContainerView.backgroundColor = UIColor.clear
-        leftContainerView.autoresizingMask = [UIViewAutoresizing.flexibleHeight, UIViewAutoresizing.flexibleWidth]
+        leftContainerView.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight, UIView.AutoresizingMask.flexibleWidth]
         view.insertSubview(leftContainerView, at: 2)
         addLeftGestures()
       }
@@ -153,7 +153,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
         rightFrame.size.height = rightFrame.size.height - rightOffset
         rightContainerView = UIView(frame: rightFrame)
         rightContainerView.backgroundColor = UIColor.clear
-        rightContainerView.autoresizingMask = [UIViewAutoresizing.flexibleHeight,UIViewAutoresizing.flexibleWidth]
+        rightContainerView.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight,UIView.AutoresizingMask.flexibleWidth]
         view.insertSubview(rightContainerView, at: 3)
         addRightGestures()
       }
@@ -336,7 +336,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
         static var startPointOfPan: CGPoint = CGPoint.zero
         static var wasOpenAtStartOfPan: Bool = false
         static var wasHiddenAtStartOfPan: Bool = false
-        static var lastState : UIGestureRecognizerState = .ended
+        static var lastState : UIGestureRecognizer.State = .ended
     }
     
     @objc func handleLeftPanGesture(panGesture: UIPanGestureRecognizer) {
@@ -415,7 +415,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
         static var startPointOfPan: CGPoint = CGPoint.zero
         static var wasOpenAtStartOfPan: Bool = false
         static var wasHiddenAtStartOfPan: Bool = false
-        static var lastState : UIGestureRecognizerState = .ended
+        static var lastState : UIGestureRecognizer.State = .ended
     }
     
     @objc func handleRightPanGesture(panGesture: UIPanGestureRecognizer) {
@@ -505,7 +505,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
         
         addShadowToView(targetContainerView: leftContainerView)
         
-        UIView.animate(withDuration: duration, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: { [weak self]() -> Void in
+        UIView.animate(withDuration: duration, delay: 0.0, options: UIView.AnimationOptions.curveEaseInOut, animations: { [weak self]() -> Void in
             if let strongSelf = self {
                 strongSelf.leftContainerView.frame = frame
                 strongSelf.opacityView.layer.opacity = Float(SlideMenuOptions.contentViewOpacity)
@@ -537,7 +537,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
     
         addShadowToView(targetContainerView: rightContainerView)
     
-        UIView.animate(withDuration: duration, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: { [weak self]() -> Void in
+        UIView.animate(withDuration: duration, delay: 0.0, options: UIView.AnimationOptions.curveEaseInOut, animations: { [weak self]() -> Void in
             if let strongSelf = self {
                 strongSelf.rightContainerView.frame = frame
                 strongSelf.opacityView.layer.opacity = Float(SlideMenuOptions.contentViewOpacity)
@@ -566,7 +566,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
             duration = Double(fmax(0.1, fmin(1.0, duration)))
         }
         
-        UIView.animate(withDuration: duration, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: { [weak self]() -> Void in
+        UIView.animate(withDuration: duration, delay: 0.0, options: UIView.AnimationOptions.curveEaseInOut, animations: { [weak self]() -> Void in
             if let strongSelf = self {
                 strongSelf.leftContainerView.frame = frame
                 strongSelf.opacityView.layer.opacity = 0.0
@@ -597,7 +597,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
             duration = Double(fmax(0.1, fmin(1.0, duration)))
         }
     
-        UIView.animate(withDuration: duration, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: { [weak self]() -> Void in
+        UIView.animate(withDuration: duration, delay: 0.0, options: UIView.AnimationOptions.curveEaseInOut, animations: { [weak self]() -> Void in
             if let strongSelf = self {
                 strongSelf.rightContainerView.frame = frame
                 strongSelf.opacityView.layer.opacity = 0.0
@@ -871,7 +871,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
         if (SlideMenuOptions.hideStatusBar) {
             DispatchQueue.main.async {
                 if let window = UIApplication.shared.keyWindow {
-                    window.windowLevel = UIWindowLevelStatusBar+1
+                    window.windowLevel = UIWindow.Level.statusBar+1
                 }
             }//dispatch_async(dispatch_get_main_queue(),{})
         }
@@ -881,7 +881,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
         if (SlideMenuOptions.hideStatusBar) {
             DispatchQueue.main.async {
                 if let window = UIApplication.shared.keyWindow {
-                    window.windowLevel = UIWindowLevelNormal
+                    window.windowLevel = UIWindow.Level.normal
                 }
             }
         }
@@ -889,10 +889,10 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
     
     private func setUpViewController(targetView: UIView, targetViewController: UIViewController?) {
         if let viewController = targetViewController {
-            addChildViewController(viewController)
+            addChild(viewController)
             viewController.view.frame = targetView.bounds
             targetView.addSubview(viewController.view)
-            viewController.didMove(toParentViewController: self)
+            viewController.didMove(toParent: self)
         }
     }
     
@@ -900,9 +900,9 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
     private func removeViewController(viewController: UIViewController?) {
         if let _viewController = viewController {
             _viewController.view.layer.removeAllAnimations()
-            _viewController.willMove(toParentViewController: nil)
+            _viewController.willMove(toParent: nil)
             _viewController.view.removeFromSuperview()
-            _viewController.removeFromParentViewController()
+            _viewController.removeFromParent()
         }
     }
     
@@ -1020,13 +1020,13 @@ extension UIViewController {
     
     public func addLeftBarButtonWithImage(buttonImage: UIImage) {
 
-        let leftButton: UIBarButtonItem = UIBarButtonItem(image: buttonImage, style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.toggleLeft))
+        let leftButton: UIBarButtonItem = UIBarButtonItem(image: buttonImage, style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.toggleLeft))
         
         navigationItem.leftBarButtonItem = leftButton
     }
     
     public func addRightBarButtonWithImage(buttonImage: UIImage) {
-        let rightButton: UIBarButtonItem = UIBarButtonItem(image: buttonImage, style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.toggleRight))
+        let rightButton: UIBarButtonItem = UIBarButtonItem(image: buttonImage, style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.toggleRight))
         navigationItem.rightBarButtonItem = rightButton;
     }
     
