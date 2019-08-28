@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045848D723165CB400808E00 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045848D623165CB400808E00 /* SlideMenuController.swift */; };
 		048B0656230BD0C600818D4E /* HeadStart.h in Headers */ = {isa = PBXBuildFile; fileRef = 048B0654230BD0C600818D4E /* HeadStart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		049715622314004A00E2056F /* HSLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049715612314004A00E2056F /* HSLocationViewModel.swift */; };
 		04F719A0230BD7FB00A7A787 /* NBUIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7198F230BD7FB00A7A787 /* NBUIButton+Extensions.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045848D623165CB400808E00 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
 		048B0651230BD0C600818D4E /* HeadStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HeadStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		048B0654230BD0C600818D4E /* HeadStart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadStart.h; sourceTree = "<group>"; };
 		048B0655230BD0C600818D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045848D823165CBA00808E00 /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				045848D623165CB400808E00 /* SlideMenuController.swift */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
 		048B0647230BD0C600818D4E = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				04F719E4230BF0F700A7A787 /* Constants */,
+				045848D823165CBA00808E00 /* Side Menu */,
 				04F719CB230BDE3E00A7A787 /* Location Manager */,
 				04F719B1230BD80F00A7A787 /* Network Layer */,
 				04F7198E230BD7FB00A7A787 /* Extensions */,
@@ -397,6 +408,7 @@
 				04F719AA230BD7FB00A7A787 /* HSUIFont+Extensions.swift in Sources */,
 				04F719A7230BD7FB00A7A787 /* HSUIViewController+Extensions.swift in Sources */,
 				04F719C8230BD80F00A7A787 /* HSRequestTaskType.swift in Sources */,
+				045848D723165CB400808E00 /* SlideMenuController.swift in Sources */,
 				04F719AD230BD7FB00A7A787 /* HSUITextView+Extensions.swift in Sources */,
 				04F719AE230BD7FB00A7A787 /* HSArray+Extensions.swift in Sources */,
 				04F719B0230BD7FB00A7A787 /* HSUIControl+Extensions.swift in Sources */,
