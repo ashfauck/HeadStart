@@ -29,7 +29,7 @@ public class HSLocationViewModel: NSObject
     public func requestUserLocation()
     {
         
-        locationProvider.findUserLocation { [weak self] location, error in
+        locationService.findUserLocation { [weak self] location, error in
             if error == nil
             {
                 self?.userLocation = location?.coordinate
@@ -50,7 +50,7 @@ public class HSLocationViewModel: NSObject
     {
         self.userLocation = nil
         self.userLocationCompletion = nil
-        self.locationProvider.stopUserLocationUpdate()
+        self.locationService.stopUserLocationUpdate()
     }
 
 }
