@@ -18,9 +18,9 @@ public class HSUserLocationService: NSObject, HSUserLocationProvider {
     fileprivate var isLocatoinDisableScreenOpened:Bool = false
     public var locationManagers: CLLocationManager = CLLocationManager()
     
-    public override func awakeFromNib()
+    public override init()
     {
-        super.awakeFromNib()
+        super.init()
         
         // Configure Location Manager
         self.locationManagers.delegate = self
