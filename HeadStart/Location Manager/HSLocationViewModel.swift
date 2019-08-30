@@ -11,11 +11,9 @@ import CoreLocation
 
 public class HSLocationViewModel: NSObject
 {
+    public static let shared = HSLocationViewModel()
     
-    
-    public static let shared = HSLocationViewModel(locationProvider: HSUserLocationService())
-    
-    public var locationProvider:HSUserLocationProvider
+    public let locationService = HSUserLocationService()
     
     public var userLocationCompletion:UserLocationCompletionBlock?
     
@@ -23,13 +21,9 @@ public class HSLocationViewModel: NSObject
     
     public var locationManager = CLLocationManager()
 
-    init(locationProvider:HSUserLocationProvider)
+    override init()
     {
-        self.locationProvider = locationProvider
-        
         super.init()
-        
-        self.locationManager = locationProvider.locationManager
     }
     
     public func requestUserLocation()
