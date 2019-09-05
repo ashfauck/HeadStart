@@ -21,12 +21,12 @@ public class HSConstants: NSObject {
     public var rightViewWidthSize: CGFloat = UIScreen.main.bounds.size.width * 0.85
     
     
-    func setLeftViewWidthSize(size:CGFloat)
+    public func setLeftViewWidthSize(size:CGFloat)
     {
         self.leftViewWidthSize = size
     }
     
-    func setRightViewWidthSize(size:CGFloat)
+    public func setRightViewWidthSize(size:CGFloat)
     {
         self.rightViewWidthSize = size
     }
