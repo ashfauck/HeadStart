@@ -17,9 +17,8 @@ public class HSConstants: NSObject {
     public var releaseUrl:String = ""
     
     public var environment:HSNetworkEnvironment = .release // by default will point release url
-    
-    
-    
+    public var leftViewWidthSize: CGFloat = UIScreen.main.bounds.size.width * 0.85
+    public var rightViewWidthSize: CGFloat = UIScreen.main.bounds.size.width * 0.85
     
     
     

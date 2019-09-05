@@ -19,7 +19,7 @@ import UIKit
 }
 
 public struct SlideMenuOptions {
-    public static var leftViewWidth: CGFloat = UIScreen.main.bounds.width * 0.85
+    public static var leftViewWidth: CGFloat = HSConstants.shared.leftViewWidthSize 
     public static var leftBezelWidth: CGFloat? = UIScreen.main.bounds.width * 0.85
     public static var contentViewScale: CGFloat = 1.0//0.96
     public static var contentViewOpacity: CGFloat = 0.44
@@ -28,7 +28,7 @@ public struct SlideMenuOptions {
     public static var shadowOffset: CGSize = CGSize(width: 0, height: 0)
     public static var panFromBezel: Bool = true
     public static var animationDuration: CGFloat = 0.4
-    public static var rightViewWidth: CGFloat = 270.0
+    public static var rightViewWidth: CGFloat = HSConstants.shared.rightViewWidthSize
     public static var rightBezelWidth: CGFloat? = 16.0
     public static var rightPanFromBezel: Bool = true
     public static var hideStatusBar: Bool = true //false
