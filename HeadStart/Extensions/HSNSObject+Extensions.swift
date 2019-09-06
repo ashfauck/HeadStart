@@ -118,3 +118,45 @@ extension NSMutableData {
         append(data!)
     }
 }
+
+
+//MARK: - UINavigationBar Extension
+
+extension UINavigationBar {
+    
+    func transparentBackground()  {
+        self.setBackgroundImage(UIImage(), for: .default)
+        self.shadowImage = UIImage()
+        self.isTranslucent = true
+        self.isUserInteractionEnabled = true
+    }
+    
+    func nilTransparentBackground()  {
+        self.setBackgroundImage(nil, for: .default)
+        self.isTranslucent = false
+    }
+    
+    func setBottomBorderColor(color: UIColor)
+    {
+        let navigationSeparator = UIView(frame: CGRect(x: 0, y: self.frame.size.height - 0.5, width: self.frame.size.width, height: 0.5))
+        navigationSeparator.backgroundColor = color
+        navigationSeparator.isOpaque = true
+        navigationSeparator.tag = 123
+        if let oldView = self.viewWithTag(123) {
+            oldView.removeFromSuperview()
+        }
+        self.addSubview(navigationSeparator)
+    }
+}
+
+extension UINavigationController {
+    
+    @IBInspectable var isBarTransparent:Bool {
+        set {
+            self.navigationBar.transparentBackground()
+        }
+        get {
+            return false
+        }
+    }
+}

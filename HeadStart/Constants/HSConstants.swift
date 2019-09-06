@@ -8,25 +8,25 @@
 
 import Foundation
 
-public class HSConstants: NSObject {
+open class HSConstants: NSObject {
     
-    static public let shared = HSConstants()
+    public static let shared = HSConstants()
     
-    public var stagingUrl:String = ""
-    public var testingUrl:String = ""
-    public var releaseUrl:String = ""
+    open var stagingUrl:String = ""
+    open var testingUrl:String = ""
+    open var releaseUrl:String = ""
     
-    public var environment:HSNetworkEnvironment = .release // by default will point release url
-    public var leftViewWidthSize: CGFloat = UIScreen.main.bounds.size.width * 0.85
-    public var rightViewWidthSize: CGFloat = UIScreen.main.bounds.size.width * 0.85
+    open var environment:HSNetworkEnvironment = .release // by default will point release url
+    open var leftViewWidthSize: CGFloat = UIScreen.main.bounds.size.width * 0.85
+    open var rightViewWidthSize: CGFloat = UIScreen.main.bounds.size.width * 0.85
     
     
-    public func setLeftViewWidthSize(size:CGFloat)
+    open func setLeftViewWidthSize(size:CGFloat)
     {
         self.leftViewWidthSize = size
     }
     
-    public func setRightViewWidthSize(size:CGFloat)
+    open func setRightViewWidthSize(size:CGFloat)
     {
         self.rightViewWidthSize = size
     }

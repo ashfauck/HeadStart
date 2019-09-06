@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043CC5322322435600CAABC8 /* HeadStart.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 043CC5312322435600CAABC8 /* HeadStart.podspec */; };
 		045848D723165CB400808E00 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045848D623165CB400808E00 /* SlideMenuController.swift */; };
 		048B0656230BD0C600818D4E /* HeadStart.h in Headers */ = {isa = PBXBuildFile; fileRef = 048B0654230BD0C600818D4E /* HeadStart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		049715622314004A00E2056F /* HSLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049715612314004A00E2056F /* HSLocationViewModel.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043CC5312322435600CAABC8 /* HeadStart.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HeadStart.podspec; sourceTree = SOURCE_ROOT; };
 		045848D623165CB400808E00 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
 		048B0651230BD0C600818D4E /* HeadStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HeadStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		048B0654230BD0C600818D4E /* HeadStart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadStart.h; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		048B0653230BD0C600818D4E /* HeadStart */ = {
 			isa = PBXGroup;
 			children = (
+				043CC5312322435600CAABC8 /* HeadStart.podspec */,
 				04F719E4230BF0F700A7A787 /* Constants */,
 				045848D823165CBA00808E00 /* Side Menu */,
 				04F719CB230BDE3E00A7A787 /* Location Manager */,
@@ -350,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F719DB230BDE3E00A7A787 /* HSLocationWarningViewController.strings in Resources */,
+				043CC5322322435600CAABC8 /* HeadStart.podspec in Resources */,
 				04F719DC230BDE3E00A7A787 /* HSLocationWarningViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
