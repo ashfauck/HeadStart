@@ -14,6 +14,7 @@ public typealias Coordinate = CLLocationCoordinate2D
 public protocol HSUserLocation
 {
     var coordinate: Coordinate { get }
+    var speed:CLLocationSpeed { get }
 }
 
 extension CLLocation: HSUserLocation { }
