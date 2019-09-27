@@ -76,7 +76,7 @@ public struct HSUploadMultiPartEncoder: ParameterEncoder
         }
         
         body.appendString(boundaryPrefix)
-        body.appendString("Content-Disposition: form-data; name=\"filedirect\"; filename=\"\(filename)\"\r\n")
+        body.appendString("Content-Disposition: form-data; name=\"file\"; filename=\"\(filename)\"\r\n")
         body.appendString("Content-Type: \(mimeType)\r\n\r\n")
         body.append(data)
         body.appendString("\r\n")
