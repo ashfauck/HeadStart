@@ -265,6 +265,7 @@ extension UIView {
     
     final public func prepareKeyboardDismissOnTap() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tappedOnView))
+        tapGesture.cancelsTouchesInView = true
         self.addGestureRecognizer(tapGesture)
     }
     
