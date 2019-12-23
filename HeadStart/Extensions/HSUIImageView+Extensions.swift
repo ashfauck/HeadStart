@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-//import PINRemoteImage
+import PINRemoteImage
 
 extension UIImageView
 {
@@ -26,18 +26,18 @@ extension UIImageView
         
         guard let url = url else { return }
         
-//        if url is String, let urlString = url as? String,let imageUrl = urlString.toURL()
-//        {
-//            self.pin_setImage(from: imageUrl, placeholderImage: placeHolderImage)
-//        }
-//        else if url is URL, let imageUrl = url as? URL
-//        {
-//            self.pin_setImage(from: imageUrl, placeholderImage: placeHolderImage)
-//        }
-//        else
-//        {
-//            self.image = placeHolderImage
-//        }
+        if url is String, let urlString = url as? String,let imageUrl = urlString.toURL()
+        {
+            self.pin_setImage(from: imageUrl, placeholderImage: placeHolderImage)
+        }
+        else if url is URL, let imageUrl = url as? URL
+        {
+            self.pin_setImage(from: imageUrl, placeholderImage: placeHolderImage)
+        }
+        else
+        {
+            self.image = placeHolderImage
+        }
         
     }
     
@@ -64,7 +64,7 @@ extension UIImageView
                 
                 DispatchQueue.main.async
                     { [unowned self] in
-                        self.image = placeholder
+                        self.image = placeHolderImage
                 }
                 
                 URLSession.shared.dataTask(with: imageUrl, completionHandler: { (data, response, error) in
