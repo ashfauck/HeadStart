@@ -121,12 +121,17 @@ public struct HSMultipleUploadMultiPartEncoder: ParameterEncoder
         
         fileParts.forEach { (filePart) in
             
-            body.appendString(boundaryPrefix)
-            body.appendString("Content-Disposition: form-data; name=\"attachment\"; filename=\"\(filePart.filename)\"\r\n")
-            body.appendString("Content-Type: \(filePart.mimeType)\r\n\r\n")
-            body.append(filePart.data)
-            body.appendString("\r\n")
-            body.appendString("--".appending(boundary.appending("--")))
+            if let fileName = filePart.filename, let data = filePart.data, let mimeType = filePart.mimeType
+            {
+                body.appendString(boundaryPrefix)
+                body.appendString("Content-Disposition: form-data; name=\"attachment\"; filename=\"\(fileName)\"\r\n")
+                body.appendString("Content-Type: \(mimeType)\r\n\r\n")
+                body.append(data)
+                body.appendString("\r\n")
+                body.appendString("--".appending(boundary.appending("--")))
+            }
+            
+            
         }
         
         
