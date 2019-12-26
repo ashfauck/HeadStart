@@ -128,13 +128,14 @@ public struct HSMultipleUploadMultiPartEncoder: ParameterEncoder
                 body.appendString("Content-Disposition: form-data; name=\"\(fileName)\"; filename=\"\(filename)\"\r\n")
                 body.appendString("Content-Type: \(mimeType)\r\n\r\n")
                 body.append(data)
-                body.appendString("\r\n")
-                body.appendString("--".appending(boundary.appending("--")))
             }
             
             
         }
-        
+
+        body.appendString("\r\n")
+        body.appendString("--".appending(boundary.appending("--")))
+
         
         return body as Data
     }
