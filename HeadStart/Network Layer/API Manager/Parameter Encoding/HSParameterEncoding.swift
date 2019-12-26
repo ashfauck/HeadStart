@@ -21,6 +21,7 @@ public enum ParameterEncoding {
     case urlAndJsonEncoding
     case jsonStringEncoding // sign in
     case uploadingMultiPart
+    case multipleUploadingMultiPart
     
     public func encode(urlRequest: inout URLRequest,
                        bodyParameters: Parameters?,
@@ -57,6 +58,12 @@ public enum ParameterEncoding {
                 try HSJSONStringParameterEncoder().encode(urlRequest: &urlRequest, with: bodyParameters)
                 
             case .uploadingMultiPart:
+                
+                guard let parameters = bodyParameters else { return }
+                
+                try HSUploadMultiPartEncoder().encode(urlRequest: &urlRequest, with: parameters)
+                
+            case .multipleUploadingMultiPart:
                 
                 guard let parameters = bodyParameters else { return }
                 

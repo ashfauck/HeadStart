@@ -85,3 +85,59 @@ public struct HSUploadMultiPartEncoder: ParameterEncoder
         return body as Data
     }
 }
+
+
+public struct HSMultipleUploadMultiPartEncoder: ParameterEncoder
+{
+    public func encode(urlRequest: inout URLRequest, with parameters: Parameters) throws {
+        
+        let boundary = "Boundary-\(UUID().uuidString)"
+        
+        if let fileParts = parameters["fileParts"] as? [FilePartData], fileParts.count > 0
+        {
+            let bodyData = self.createBody(parameters: [:], boundary: boundary, fileParts: fileParts)
+            
+            urlRequest.httpBody = bodyData
+            
+            if urlRequest.value(forHTTPHeaderField: "Content-Type") == nil
+            {
+                urlRequest.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+            }
+        }
+    }
+    
+    func createBody(parameters: [String: String],
+                    boundary: String, fileParts:[FilePartData]) -> Data {
+        let body = NSMutableData()
+        
+        let boundaryPrefix = "--\(boundary)\r\n"
+        
+        for (key, value) in parameters
+        {
+            body.appendString(boundaryPrefix)
+            body.appendString("Content-Disposition: form-data; name=\"\(key)\"\r\n\r\n")
+            body.appendString("\(value)\r\n")
+        }
+        
+        fileParts.forEach { (filePart) in
+            
+            body.appendString(boundaryPrefix)
+            body.appendString("Content-Disposition: form-data; name=\"attachment\"; filename=\"\(filePart.filename)\"\r\n")
+            body.appendString("Content-Type: \(filePart.mimeType)\r\n\r\n")
+            body.append(filePart.data)
+            body.appendString("\r\n")
+            body.appendString("--".appending(boundary.appending("--")))
+        }
+        
+        
+        return body as Data
+    }
+}
+
+
+public struct FilePartData
+{
+    var filename:String
+    var mimeType:String
+    var data:Data
+}
