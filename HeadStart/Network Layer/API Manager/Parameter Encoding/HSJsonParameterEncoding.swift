@@ -141,7 +141,7 @@ public struct FilePartData
     var mimeType:String?
     var data:Data?
     
-    init(fileName:String, mimeType:String, data:Data)
+    init(fileName:String?, mimeType:String?, data:Data?)
     {
         self.filename = fileName
         self.mimeType = mimeType
