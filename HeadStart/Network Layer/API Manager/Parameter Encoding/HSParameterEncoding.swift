@@ -67,7 +67,7 @@ public enum ParameterEncoding {
                 
                 guard let parameters = bodyParameters else { return }
                 
-                try HSUploadMultiPartEncoder().encode(urlRequest: &urlRequest, with: parameters)
+                try HSMultipleUploadMultiPartEncoder().encode(urlRequest: &urlRequest, with: parameters)
             }
         }
         catch
