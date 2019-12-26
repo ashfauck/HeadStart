@@ -142,9 +142,9 @@ public struct HSMultipleUploadMultiPartEncoder: ParameterEncoder
 
 public struct FilePartData
 {
-    var filename:String?
-    var mimeType:String?
-    var data:Data?
+    public var filename:String?
+    public var mimeType:String?
+    public var data:Data?
     
     init(fileName:String?, mimeType:String?, data:Data?)
     {
