@@ -95,7 +95,7 @@ public struct HSMultipleUploadMultiPartEncoder: ParameterEncoder
         
         if let fileParts = parameters["fileParts"] as? [FilePartData], fileParts.count > 0, let fileName = parameters["fileName"] as? String
         {
-            let bodyData = self.createBody(parameters: [:], boundary: boundary, fileParts: fileParts, fileName: fileName)
+            let bodyData = self.createMulitpleBody(parameters: [:], boundary: boundary, fileParts: fileParts, fileName: fileName)
             
             urlRequest.httpBody = bodyData
             
@@ -106,7 +106,7 @@ public struct HSMultipleUploadMultiPartEncoder: ParameterEncoder
         }
     }
     
-    func createBody(parameters: [String: String],
+    func createMulitpleBody(parameters: [String: String],
                     boundary: String, fileParts:[FilePartData], fileName:String) -> Data
     {
         let body = NSMutableData()
