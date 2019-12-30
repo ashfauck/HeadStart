@@ -121,19 +121,13 @@ public struct HSMultipleUploadMultiPartEncoder: ParameterEncoder
         }
         
         fileParts.forEach { (filePart) in
-            
-            if let filename = filePart.filename, let data = filePart.data, let mimeType = filePart.mimeType
-            {
                 body.appendString(boundaryPrefix)
-                body.appendString("Content-Disposition: form-data; name=\"\(fileName)\"; filename=\"\(filename)\"\r\n")
-                body.appendString("Content-Type: \(mimeType)\r\n\r\n")
-                body.append(data)
-            }
-            
-            
+                body.appendString("Content-Disposition: form-data; name=\"\(filePart.key)\"; filename=\"\(filePart.filename)\"\r\n")
+                body.appendString("Content-Type: \(filePart.mimeType)\r\n\r\n")
+                body.append(filePart.data)
+                body.appendString("\r\n")
         }
 
-        body.appendString("\r\n")
         body.appendString("--".appending(boundary.appending("--")))
 
         
@@ -142,17 +136,16 @@ public struct HSMultipleUploadMultiPartEncoder: ParameterEncoder
        
     func createDataBody(withParameters params: [String : String]?, media: [FilePartData]?, boundary: String) -> Data
     {
-        
         let lineBreak = "\r\n"
-        let body = NSMutableData()
+        var body = Data()
         
         if let parameters = params
         {
             for (key, value) in parameters
             {
-                body.appendString("--\(boundary + lineBreak)")
-                body.appendString("Content-Disposition: form-data; name=\"\(key)\"\(lineBreak + lineBreak)")
-                body.appendString("\(value + lineBreak)")
+                body.append("--\(boundary + lineBreak)")
+                body.append("Content-Disposition: form-data; name=\"\(key)\"\(lineBreak + lineBreak)")
+                body.append("\(value + lineBreak)")
             }
         }
         
@@ -160,29 +153,29 @@ public struct HSMultipleUploadMultiPartEncoder: ParameterEncoder
         {
             for photo in media
             {
-                body.appendString("--\(boundary + lineBreak)")
-                body.appendString("Content-Disposition: form-data; name=\"\(photo.key ?? "")\"; filename=\"\(photo.filename ?? "")\"\(lineBreak)")
-                body.appendString("Content-Type: \(photo.mimeType ?? "" + lineBreak + lineBreak)")
-                body.append(photo.data ?? Data())
-                body.appendString(lineBreak)
+                body.append("--\(boundary + lineBreak)")
+                body.append("Content-Disposition: form-data; name=\"\(photo.key)\"; filename=\"\(photo.filename)\"\(lineBreak)")
+                body.append("Content-Type: \(photo.mimeType + lineBreak + lineBreak)")
+                body.append(photo.data)
+                body.append(lineBreak)
             }
         }
         
-        body.appendString("--\(boundary)--\(lineBreak)")
+        body.append("--\(boundary)--\(lineBreak)")
         
-        return body as Data
+        return body
     }
 }
 
 
 public struct FilePartData
 {
-    public var filename:String?
-    public var mimeType:String?
-    public var data:Data?
-    public var key:String?
+    public var filename:String
+    public var mimeType:String
+    public var data:Data
+    public var key:String
 
-    public init(fileName:String?, mimeType:String?, data:Data?, key:String?)
+    public init(fileName:String, mimeType:String, data:Data, key:String)
     {
         self.filename = fileName
         self.mimeType = mimeType
