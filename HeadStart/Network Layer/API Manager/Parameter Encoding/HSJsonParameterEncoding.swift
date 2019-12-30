@@ -93,9 +93,9 @@ public struct HSMultipleUploadMultiPartEncoder: ParameterEncoder
         
         let boundary = "Boundary-\(UUID().uuidString)"
         
-        if let fileParts = parameters["fileParts"] as? [FilePartData], fileParts.count > 0, let fileName = parameters["fileName"] as? String
+        if let fileParts = parameters["fileParts"] as? [FilePartData], fileParts.count > 0
         {
-            let bodyData = self.createMulitpleBody(parameters: [:], boundary: boundary, fileParts: fileParts, fileName: fileName)
+            let bodyData = self.createDataBody(withParameters: [:], media: fileParts, boundary: boundary)
             
             urlRequest.httpBody = bodyData
             
@@ -139,6 +139,39 @@ public struct HSMultipleUploadMultiPartEncoder: ParameterEncoder
         
         return body as Data
     }
+       
+    func createDataBody(withParameters params: [String : String]?, media: [FilePartData]?, boundary: String) -> Data
+    {
+        
+        let lineBreak = "\r\n"
+        let body = NSMutableData()
+        
+        if let parameters = params
+        {
+            for (key, value) in parameters
+            {
+                body.appendString("--\(boundary + lineBreak)")
+                body.appendString("Content-Disposition: form-data; name=\"\(key)\"\(lineBreak + lineBreak)")
+                body.appendString("\(value + lineBreak)")
+            }
+        }
+        
+        if let media = media
+        {
+            for photo in media
+            {
+                body.appendString("--\(boundary + lineBreak)")
+                body.appendString("Content-Disposition: form-data; name=\"\(photo.key ?? "")\"; filename=\"\(photo.filename ?? "")\"\(lineBreak)")
+                body.appendString("Content-Type: \(photo.mimeType ?? "" + lineBreak + lineBreak)")
+                body.append(photo.data ?? Data())
+                body.appendString(lineBreak)
+            }
+        }
+        
+        body.appendString("--\(boundary)--\(lineBreak)")
+        
+        return body as Data
+    }
 }
 
 
@@ -147,11 +180,13 @@ public struct FilePartData
     public var filename:String?
     public var mimeType:String?
     public var data:Data?
-    
-    public init(fileName:String?, mimeType:String?, data:Data?)
+    public var key:String?
+
+    public init(fileName:String?, mimeType:String?, data:Data?, key:String?)
     {
         self.filename = fileName
         self.mimeType = mimeType
         self.data = data
+        self.key = key
     }
 }
