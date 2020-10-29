@@ -45,5 +45,14 @@ extension UICollectionView
         _ = (rowCount == 0) ? self.setEmptyMessage(message,textColor:textColor) : self.restore()
     }
     
-    
+    public func dequeueReusableCell<T: UICollectionViewCell>(ofType type: T.Type, for indexPath: IndexPath) -> T
+    {
+        guard let cell = dequeueReusableCell(withReuseIdentifier: type.className, for: indexPath) as? T
+        else
+        {
+            fatalError("Couldn't find UICollectionViewCell of class \(type.className)")
+        }
+        
+        return cell
+    }
 }

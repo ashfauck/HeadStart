@@ -109,21 +109,32 @@ extension UIViewController:UIPopoverPresentationControllerDelegate {
         self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
-    public func showToast(message : String, duration: CGFloat) {
+    public func showToast(message : String, duration: CGFloat)
+    {
+        let toastLabel = UILabel(frame: CGRect.zero)
         
-        guard let window = UIApplication.shared.keyWindow else { return }
-        
-        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 75, y: self.view.frame.size.height-100, width: 150, height: 35))
         toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         toastLabel.textColor = UIColor.white
         toastLabel.textAlignment = .center;
         toastLabel.font = UIFont(name: "Montserrat-Light", size: 12.0)
         toastLabel.text = message
+        
         toastLabel.alpha = 1.0
-        toastLabel.layer.cornerRadius = 10;
         toastLabel.clipsToBounds  =  true
-        window.addSubview(toastLabel)
-        UIView.animate(withDuration: TimeInterval(duration), delay: 0.1, options: .curveEaseOut, animations: {
+        toastLabel.numberOfLines = 0
+
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.translatesAutoresizingMaskIntoConstraints = false
+
+        self.view.addSubview(toastLabel)
+        
+        let c1 = NSLayoutConstraint(item: toastLabel, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 65)
+        let c2 = NSLayoutConstraint(item: toastLabel, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: -65)
+        let c3 = NSLayoutConstraint(item: toastLabel, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1, constant: -75)
+
+        self.view.addConstraints([c1,c2,c3])
+
+        UIView.animate(withDuration: TimeInterval(duration), delay: 0.0, options: .curveEaseOut, animations: {
             toastLabel.alpha = 0.0
         }, completion: {(isCompleted) in
             toastLabel.removeFromSuperview()

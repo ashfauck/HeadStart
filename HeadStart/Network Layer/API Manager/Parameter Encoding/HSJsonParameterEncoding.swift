@@ -95,7 +95,18 @@ public struct HSMultipleUploadMultiPartEncoder: ParameterEncoder
         
         if let fileParts = parameters["fileParts"] as? [FilePartData], fileParts.count > 0
         {
-            let bodyData = self.createDataBody(withParameters: [:], media: fileParts, boundary: boundary)
+            var bodyDict:[String:String] = [:]
+            
+            parameters.forEach { (dict) in
+                
+                if dict.key != "fileParts", let value = dict.value as? String
+                {
+                    bodyDict[dict.key] = value
+                }
+                
+            }
+            
+            let bodyData = self.createDataBody(withParameters: bodyDict, media: fileParts, boundary: boundary)
             
             urlRequest.httpBody = bodyData
             

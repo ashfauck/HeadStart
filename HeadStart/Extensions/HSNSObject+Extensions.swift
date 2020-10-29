@@ -82,6 +82,12 @@ extension NSObject
         let array = shuffled.prefix(length)
         return String(array)
     }
+    
+    
+    /// String describing the class name.
+    public static var className: String {
+        return String(describing: self)
+    }
 }
 
 extension DispatchQueue
@@ -167,5 +173,19 @@ extension UINavigationController {
         get {
             return false
         }
+    }
+}
+
+
+public extension UIAlertController
+{
+    public func show()
+    {
+        let alertWindow = UIWindow(frame: UIScreen.main.bounds)
+        alertWindow.rootViewController = UIViewController()
+        alertWindow.windowLevel = UIWindow.Level.alert + 1
+        alertWindow.makeKeyAndVisible()
+
+        alertWindow.rootViewController?.present(self, animated: true, completion: nil)
     }
 }

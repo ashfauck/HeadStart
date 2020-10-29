@@ -14,44 +14,44 @@ extension UIButton
     public func setImageUrl(url:Any?,placeHolderImage:UIImage?)
     {
         
-//        guard let url = url else { return }
-//
-//        if url is String
-//        {
-//            if let urlString = url as? String,let imageUrl = urlString.toURL()
-//            {
-////                self.pin_setImage(from: imageUrl, placeholderImage: placeHolderImage)
-//            }
-//        }
-//        else if url is URL
-//        {
-//            if let imageUrl = url as? URL
-//            {
-////                self.pin_setImage(from: imageUrl, placeholderImage: placeHolderImage)
-//            }
-//        }
+        guard let url = url else { return }
+
+        if url is String
+        {
+            if let urlString = url as? String,let imageUrl = urlString.toURL()
+            {
+                self.pin_setImage(from: imageUrl, placeholderImage: placeHolderImage)
+            }
+        }
+        else if url is URL
+        {
+            if let imageUrl = url as? URL
+            {
+                self.pin_setImage(from: imageUrl, placeholderImage: placeHolderImage)
+            }
+        }
     }
     
-    public func setBackgroundImageUrl(url:Any?,placeHolderImage:UIImage?)
-    {
-        
+//    public func setBackgroundImageUrl(url:Any?,placeHolderImage:UIImage?)
+//    {
+//
 //        guard let url = url else { return }
 //
 //        if url is String
 //        {
 //            if let urlString = url as? String,let imageUrl = urlString.toURL()
 //            {
-////                self.sd_setBackgroundImage(with: imageUrl, for: .normal, completed: nil)
+//                self.sd_setBackgroundImage(with: imageUrl, for: .normal, completed: nil)
 //            }
 //        }
 //        else if url is URL
 //        {
 //            if let imageUrl = url as? URL
 //            {
-////                self.self.sd_setBackgroundImage(with: imageUrl, for: .normal, completed: nil)
+//                self.self.sd_setBackgroundImage(with: imageUrl, for: .normal, completed: nil)
 //            }
 //        }
-    }
+//    }
 }
 
 extension UIBarButtonItem {
@@ -72,5 +72,19 @@ extension UIBarButtonItem {
     
     @objc public func didTapButton(sender: Any) {
         actionClosure?()
+    }
+}
+
+extension UILabel
+{
+    func underline() {
+        if let textString = self.text, textString.count > 0
+        {
+            let attributedString = NSMutableAttributedString(string: textString)
+            
+            attributedString.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: NSRange(location: 0, length: attributedString.length))
+            
+            attributedText = attributedString
+        }
     }
 }

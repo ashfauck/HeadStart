@@ -55,5 +55,26 @@ extension Date
         return Calendar.current.dateComponents([.year], from: self, to: Date()).year!
     }
     
-
+    public func local() -> Date
+    {
+        let nowUTC = Date()
+        
+        let timeZoneOffset = Double(TimeZone.current.secondsFromGMT(for: nowUTC))
+        
+        guard let localDate = Calendar.current.date(byAdding: .second, value: Int(timeZoneOffset), to: nowUTC) else {return Date()}
+        
+        return localDate
+    }
+    
+    public func localTime() -> Date
+    {
+        let timezone = TimeZone.current
+        let seconds = TimeInterval(timezone.secondsFromGMT(for: self))
+        return Date(timeInterval: seconds, since: self)
+    }
+    
+    public func timeStamp() -> Int
+    {
+        return Int(self.timeIntervalSince1970)
+    }
 }

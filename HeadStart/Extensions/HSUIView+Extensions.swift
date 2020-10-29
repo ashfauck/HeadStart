@@ -418,4 +418,43 @@ extension UIView {
         }
     }
     
+    public func addShadow(show : Bool)
+    {
+        if show == true
+        {
+            //            let path = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.cornerRadius)
+            layer.masksToBounds = false
+            layer.shadowColor = UIColor.black.cgColor
+            layer.shadowOpacity = 0.3
+            layer.shadowOffset = CGSize(width: 0, height: 1)
+            layer.shadowRadius = 2
+            //            layer.shadowPath = path.cgPath
+            //        obj.layer.shadowPath = UIBezierPath(rect: bounds).cgPath
+            //        obj.layer.shouldRasterize = true
+            //        obj.layer.rasterizationScale = scalb ? UIScreen.main.scale : 1
+        }
+        else
+        {
+            layer.masksToBounds = true
+            layer.shadowColor = UIColor.clear.cgColor
+            layer.shadowOpacity = 0
+            layer.shadowOffset = CGSize(width: 0, height: 0)
+            layer.shadowRadius = 0
+        }
+    }
+    
+    
+    public func createDashedLine(from point1: CGPoint, to point2: CGPoint, color: UIColor, strokeLength: NSNumber, gapLength: NSNumber, width: CGFloat)
+    {
+        let shapeLayer = CAShapeLayer()
+
+        shapeLayer.strokeColor = color.cgColor
+        shapeLayer.lineWidth = width
+        shapeLayer.lineDashPattern = [strokeLength, gapLength]
+
+        let path = CGMutablePath()
+        path.addLines(between: [point1, point2])
+        shapeLayer.path = path
+        layer.addSublayer(shapeLayer)
+    }
 }
