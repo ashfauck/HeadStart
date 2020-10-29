@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 spec.name = "HeadStart"
 spec.version = "0.0.47"
 spec.summary = "Framework for users who would like to head start their project with high level structure."
-spec.homepage = "https://github.com/ashfuack/HeadStart"
+spec.homepage = "https://github.com/ashfauck/HeadStart"
 spec.license = { type: 'MIT', file: 'LICENSE' }
 spec.authors = { "Ashfauck Thaminsali" => 'ashfauck@gmail.com' }
 spec.social_media_url = "https://github.com/ashfauck/HeadStart"
