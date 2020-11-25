@@ -224,6 +224,15 @@ extension UITextField {
 
         datePickerView.backgroundColor = UIColor.gray
         
+        if #available(iOS 13.4, *)
+        {
+            datePickerView.preferredDatePickerStyle = .wheels
+        }
+        else
+        {
+            // Fallback on earlier versions
+        }
+
         if let dateMode = datePickerMode
         {
             datePickerView.datePickerMode = dateMode
