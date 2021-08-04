@@ -350,7 +350,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
         }
         
         switch panGesture.state {
-            case UIGestureRecognizerState.began:
+        case UIGestureRecognizer.State.began:
                 if LeftPanState.lastState != .ended &&  LeftPanState.lastState != .cancelled &&  LeftPanState.lastState != .failed {
                     return
                 }
@@ -369,7 +369,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
                 leftViewController?.beginAppearanceTransition(LeftPanState.wasHiddenAtStartOfPan, animated: true)
                 addShadowToView(targetContainerView: leftContainerView)
                 setOpenWindowLevel()
-            case UIGestureRecognizerState.changed:
+        case UIGestureRecognizer.State.changed:
                 if LeftPanState.lastState != .began && LeftPanState.lastState != .changed {
                     return
                 }
@@ -378,7 +378,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
                 leftContainerView.frame = applyLeftTranslation(translation: translation, toFrame: LeftPanState.frameAtStartOfPan)
                 applyLeftOpacity()
                 applyLeftContentViewScale()
-            case UIGestureRecognizerState.ended, UIGestureRecognizerState.cancelled:
+        case UIGestureRecognizer.State.ended, UIGestureRecognizer.State.cancelled:
                 if LeftPanState.lastState != .changed {
                     return
                 }
@@ -403,7 +403,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
                     track(trackAction: .LeftFlickClose)
 
                 }
-            case UIGestureRecognizerState.failed, UIGestureRecognizerState.possible:
+        case UIGestureRecognizer.State.failed, UIGestureRecognizer.State.possible:
                 break
         @unknown default:
             break
@@ -431,7 +431,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
         }
         
         switch panGesture.state {
-        case UIGestureRecognizerState.began:
+        case UIGestureRecognizer.State.began:
             if RightPanState.lastState != .ended &&  RightPanState.lastState != .cancelled &&  RightPanState.lastState != .failed {
                 return
             }
@@ -451,7 +451,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
             
             addShadowToView(targetContainerView: rightContainerView)
             setOpenWindowLevel()
-        case UIGestureRecognizerState.changed:
+        case UIGestureRecognizer.State.changed:
             if RightPanState.lastState != .began && RightPanState.lastState != .changed {
                 return
             }
@@ -461,7 +461,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
             applyRightOpacity()
             applyRightContentViewScale()
             
-        case UIGestureRecognizerState.ended, UIGestureRecognizerState.cancelled:
+        case UIGestureRecognizer.State.ended, UIGestureRecognizer.State.cancelled:
             if RightPanState.lastState != .changed {
                 return
             }
@@ -485,7 +485,7 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
                 
                 track(trackAction: .RightFlickClose)
             }
-        case UIGestureRecognizerState.failed, UIGestureRecognizerState.possible:
+        case UIGestureRecognizer.State.failed, UIGestureRecognizer.State.possible:
             break
             
         @unknown default:
