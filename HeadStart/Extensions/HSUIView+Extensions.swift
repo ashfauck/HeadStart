@@ -458,3 +458,19 @@ extension UIView {
         layer.addSublayer(shapeLayer)
     }
 }
+
+public class HSShadowView: UIView
+{
+    public override func awakeFromNib()
+    {
+        super.awakeFromNib()
+        
+        self.dropShadow(show: true)
+    }
+    
+    public override func layoutSubviews()
+    {
+        super.layoutSubviews()
+        
+    }
+}

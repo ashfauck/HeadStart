@@ -80,4 +80,24 @@ extension Array {
         
         return found
     }
+    
+    public func unique<T:Hashable>(map: ((Element) -> (T)))  -> [Element]
+    {
+        //:- The unique list kept in a Set for fast retrieval
+        var set = Set<T>()
+        
+        //Keeping the unique list of elements but ordered
+        var arrayOrdered = [Element]()
+        
+        for value in self
+        {
+            if !set.contains(map(value))
+            {
+                set.insert(map(value))
+                arrayOrdered.append(value)
+            }
+        }
+        
+        return arrayOrdered
+    }
 }

@@ -109,3 +109,16 @@ extension UITableView
         return cell
     }
 }
+
+extension UITableViewCell
+{
+    public static var identifier: String
+    {
+        return String(describing: self)
+    }
+    
+    public static var nib: UINib
+    {
+        return UINib(nibName: String(describing: self), bundle: nil)
+    }
+}

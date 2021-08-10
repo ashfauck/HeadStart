@@ -211,6 +211,23 @@ extension DateFormatter
         
         return dateFormatter
     }()
+    
+    public static let yyyyMMddhhmmssDateFormatters: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        formatter.timeZone = TimeZone(abbreviation: "GMT")
+        formatter.locale = Locale.current
+        return formatter
+    }()
+    
+    public static let ddMMyyyyhhmmaHHmmFormatters: DateFormatter =
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale.current
+        dateFormatter.timeZone = TimeZone.current
+        dateFormatter.dateFormat = "MMM-dd-yyyy hh:mm a" //DateFormat.ddMMyyyyHHmmFormat.rawValue
+        return dateFormatter
+    }()
 }
 
 

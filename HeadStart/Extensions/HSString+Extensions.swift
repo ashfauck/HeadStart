@@ -252,4 +252,35 @@ extension String {
         return NSLocalizedString(self, tableName: tableName, value: "\(self)", comment: "")
     }
 
+    // Validate pincode with count
+    func isValidPincode(pinCount:Int) -> Bool
+    {
+        let pinRegex = "^[0-9]{\(pinCount),}$"
+        return NSPredicate(format: "SELF MATCHES %@", pinRegex).evaluate(with: self)
+    }
+    
+    func isDigits()->Bool
+    {
+        let charcterSet  = NSCharacterSet(charactersIn: "0123456789").inverted
+        let inputString = self.components(separatedBy: charcterSet)
+        let filtered = inputString.joined(separator: "")
+        return  self == filtered
+    }
 }
+
+extension NSMutableAttributedString
+{
+    public func setAsHyperLink(textToFind:String, linkURL:String) -> Bool
+    {
+        let foundRange = self.mutableString.range(of: textToFind)
+        
+        if foundRange.location != NSNotFound
+        {
+            self.addAttribute(.link, value: linkURL, range: foundRange)
+            return true
+        }
+        
+        return false
+    }
+}
+

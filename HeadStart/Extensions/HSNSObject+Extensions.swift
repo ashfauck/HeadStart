@@ -177,7 +177,7 @@ extension UINavigationController {
 }
 
 
-public extension UIAlertController
+extension UIAlertController
 {
     public func show()
     {
@@ -187,5 +187,58 @@ public extension UIAlertController
         alertWindow.makeKeyAndVisible()
 
         alertWindow.rootViewController?.present(self, animated: true, completion: nil)
+    }
+}
+
+extension Int
+{
+    public var getAsDate: Date
+    {
+        let convertedDate = Date(timeIntervalSince1970: TimeInterval(self))
+        
+        return convertedDate
+    }
+}
+
+extension Encodable
+{
+    public var getDictionary: [String: Any]?
+    {
+        guard let data = try? JSONEncoder().encode(self) else { return nil }
+        
+        return (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)).flatMap { $0 as? [String: Any] }
+    }
+}
+
+extension Dictionary
+{
+    public mutating func switchKeys(fromKey: Key, toKey: Key)
+    {
+        if let entry = removeValue(forKey: fromKey)
+        {
+            self[toKey] = entry
+        }
+    }
+}
+
+
+extension UIButton
+{
+    public func setButtonImageUrl(url:Any?,placeHolderImage:UIImage?)
+    {   
+        guard let url = url else { return }
+
+        if url is String, let urlString = url as? String,let imageUrl = urlString.toURL()
+        {
+            self.pin_setImage(from: imageUrl, placeholderImage: placeHolderImage)
+        }
+        else if url is URL, let imageUrl = url as? URL
+        {
+            self.pin_setImage(from: imageUrl, placeholderImage: placeHolderImage)
+        }
+        else
+        {
+            self.imageView?.image = placeHolderImage
+        }
     }
 }

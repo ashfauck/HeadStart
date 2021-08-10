@@ -49,6 +49,36 @@ public enum HSNetworkResponse:Error {
     
 }
 
+extension HSNetworkResponse
+{
+    public var detailedResponse:String
+    {
+        switch self
+        {
+        case .success:
+            return "Success".localized()
+        case .authenticationError:
+            return "You need to be authenticated first.".localized()
+        case .badRequest:
+            return  "Bad request".localized()
+        case .outdated:
+            return "The url you requested is outdated."
+        case .requestFailed:
+            return "Network request failed.".localized()
+        case .notFound:
+            return "Not found".localized()
+        case .noData:
+            return "Response returned with no data to decode.".localized()
+        case .unableToDecode:
+            return "We could not decode the response.".localized()
+        case .networkFailed:
+            return "Unable to connect to the internet".localized()
+        case .commonError:
+            return self.localizedDescription
+        }
+    }
+}
+
 extension HTTPURLResponse
 {
     public func verifyResponse() -> ResponseCheck<String>

@@ -141,4 +141,36 @@ extension UIViewController:UIPopoverPresentationControllerDelegate {
         })
     }
     
+    public func tableViewReloadWithHeights(tableView:UITableView, listHeight: NSLayoutConstraint)
+    {
+        listHeight.constant = CGFloat.greatestFiniteMagnitude
+        tableView.reloadData()
+        tableView.layoutIfNeeded()
+        listHeight.constant = tableView.contentSize.height
+        
+        self.view.layoutSubviews()
+    }
+    
+    public func collectionViewReloadWithHeights(collectionView:UICollectionView, listHeight: NSLayoutConstraint)
+    {
+        listHeight.constant = CGFloat.greatestFiniteMagnitude
+        collectionView.reloadData()
+        collectionView.layoutIfNeeded()
+        listHeight.constant = collectionView.contentSize.height
+        
+        self.view.layoutSubviews()
+    }
+    
+    public func makeCall(phoneNumber:String)
+    {
+        if let phoneCallURL = URL(string: "tel://\(phoneNumber)")
+        {
+            let application:UIApplication = UIApplication.shared
+            
+            if (application.canOpenURL(phoneCallURL))
+            {
+                application.open(phoneCallURL, options: [:], completionHandler: nil)
+            }
+        }
+    }
 }
