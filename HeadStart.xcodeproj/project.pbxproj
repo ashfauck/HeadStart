@@ -45,6 +45,18 @@
 		04F719DF230BDE3E00A7A787 /* HSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719D8230BDE3E00A7A787 /* HSLocationManager.swift */; };
 		04F719E0230BDE3E00A7A787 /* HSUserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719D9230BDE3E00A7A787 /* HSUserLocation.swift */; };
 		04F719E6230BF10B00A7A787 /* HSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F719E5230BF10B00A7A787 /* HSConstants.swift */; };
+		2486521726C67BA600509A8F /* Common.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2486521626C67BA600509A8F /* Common.storyboard */; };
+		2486522226C67BE300509A8F /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2486521926C67BE300509A8F /* PhotoCollectionViewCell.xib */; };
+		2486522326C67BE300509A8F /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2486521A26C67BE300509A8F /* ImageCollectionViewCell.xib */; };
+		2486522426C67BE300509A8F /* ApplicationViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486521B26C67BE300509A8F /* ApplicationViewerViewController.swift */; };
+		2486522526C67BE300509A8F /* PhotoAttachmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486521C26C67BE300509A8F /* PhotoAttachmentViewModel.swift */; };
+		2486522626C67BE300509A8F /* AttachmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486521D26C67BE300509A8F /* AttachmentDetailViewController.swift */; };
+		2486522726C67BE300509A8F /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486521E26C67BE300509A8F /* ImageZoomViewController.swift */; };
+		2486522826C67BE300509A8F /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486521F26C67BE300509A8F /* ImageCollectionViewCell.swift */; };
+		2486522926C67BE300509A8F /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486522026C67BE300509A8F /* PhotoCollectionViewCell.swift */; };
+		2486522A26C67BE300509A8F /* PhotoAttachmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486522126C67BE300509A8F /* PhotoAttachmentViewController.swift */; };
+		2486522D26C67DF300509A8F /* HSStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486522C26C67DF300509A8F /* HSStoryboard.swift */; };
+		2486523026C67F4C00509A8F /* HSAttachmentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486522F26C67F4C00509A8F /* HSAttachmentsModel.swift */; };
 		F68FE009E5F46B76EDD5F5C0 /* Pods_HeadStart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB233CE640297C50B12EEE0 /* Pods_HeadStart.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +104,18 @@
 		04F719D8230BDE3E00A7A787 /* HSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSLocationManager.swift; sourceTree = "<group>"; };
 		04F719D9230BDE3E00A7A787 /* HSUserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUserLocation.swift; sourceTree = "<group>"; };
 		04F719E5230BF10B00A7A787 /* HSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSConstants.swift; sourceTree = "<group>"; };
+		2486521626C67BA600509A8F /* Common.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Common.storyboard; sourceTree = "<group>"; };
+		2486521926C67BE300509A8F /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		2486521A26C67BE300509A8F /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		2486521B26C67BE300509A8F /* ApplicationViewerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationViewerViewController.swift; sourceTree = "<group>"; };
+		2486521C26C67BE300509A8F /* PhotoAttachmentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAttachmentViewModel.swift; sourceTree = "<group>"; };
+		2486521D26C67BE300509A8F /* AttachmentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentDetailViewController.swift; sourceTree = "<group>"; };
+		2486521E26C67BE300509A8F /* ImageZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
+		2486521F26C67BE300509A8F /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		2486522026C67BE300509A8F /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		2486522126C67BE300509A8F /* PhotoAttachmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAttachmentViewController.swift; sourceTree = "<group>"; };
+		2486522C26C67DF300509A8F /* HSStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSStoryboard.swift; sourceTree = "<group>"; };
+		2486522F26C67F4C00509A8F /* HSAttachmentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSAttachmentsModel.swift; sourceTree = "<group>"; };
 		2EB233CE640297C50B12EEE0 /* Pods_HeadStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeadStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF07754881510586D4B13581 /* Pods-HeadStart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadStart.release.xcconfig"; path = "Target Support Files/Pods-HeadStart/Pods-HeadStart.release.xcconfig"; sourceTree = "<group>"; };
 		CDF66A18990180B5EE28E290 /* Pods-HeadStart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadStart.debug.xcconfig"; path = "Target Support Files/Pods-HeadStart/Pods-HeadStart.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				043CC5312322435600CAABC8 /* HeadStart.podspec */,
+				2486521326C6760A00509A8F /* Screens */,
 				04F719E4230BF0F700A7A787 /* Constants */,
 				045848D823165CBA00808E00 /* Side Menu */,
 				04F719CB230BDE3E00A7A787 /* Location Manager */,
@@ -257,8 +282,67 @@
 			isa = PBXGroup;
 			children = (
 				04F719E5230BF10B00A7A787 /* HSConstants.swift */,
+				2486522C26C67DF300509A8F /* HSStoryboard.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		2486521326C6760A00509A8F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2486522E26C67F2E00509A8F /* Model */,
+				2486521526C67B8800509A8F /* View */,
+				2486521426C67B7200509A8F /* Controller */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2486521426C67B7200509A8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2486521826C67BE300509A8F /* Image Attachments */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2486521526C67B8800509A8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2486521626C67BA600509A8F /* Common.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2486521826C67BE300509A8F /* Image Attachments */ = {
+			isa = PBXGroup;
+			children = (
+				2486522B26C67C0B00509A8F /* Cell */,
+				2486521B26C67BE300509A8F /* ApplicationViewerViewController.swift */,
+				2486521C26C67BE300509A8F /* PhotoAttachmentViewModel.swift */,
+				2486521D26C67BE300509A8F /* AttachmentDetailViewController.swift */,
+				2486521E26C67BE300509A8F /* ImageZoomViewController.swift */,
+				2486522126C67BE300509A8F /* PhotoAttachmentViewController.swift */,
+			);
+			path = "Image Attachments";
+			sourceTree = "<group>";
+		};
+		2486522B26C67C0B00509A8F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2486522026C67BE300509A8F /* PhotoCollectionViewCell.swift */,
+				2486521926C67BE300509A8F /* PhotoCollectionViewCell.xib */,
+				2486521F26C67BE300509A8F /* ImageCollectionViewCell.swift */,
+				2486521A26C67BE300509A8F /* ImageCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2486522E26C67F2E00509A8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2486522F26C67F4C00509A8F /* HSAttachmentsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5E563A6387522F821E486F09 /* Frameworks */ = {
@@ -353,7 +437,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F719DB230BDE3E00A7A787 /* HSLocationWarningViewController.strings in Resources */,
+				2486522226C67BE300509A8F /* PhotoCollectionViewCell.xib in Resources */,
+				2486521726C67BA600509A8F /* Common.storyboard in Resources */,
 				043CC5322322435600CAABC8 /* HeadStart.podspec in Resources */,
+				2486522326C67BE300509A8F /* ImageCollectionViewCell.xib in Resources */,
 				04F719DC230BDE3E00A7A787 /* HSLocationWarningViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +477,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2486522426C67BE300509A8F /* ApplicationViewerViewController.swift in Sources */,
+				2486522926C67BE300509A8F /* PhotoCollectionViewCell.swift in Sources */,
 				04F719C1230BD80F00A7A787 /* HSURLParameterEncoding.swift in Sources */,
 				04F719AF230BD7FB00A7A787 /* HSUIImageView+Extensions.swift in Sources */,
 				04F719DA230BDE3E00A7A787 /* HSUserLocationService.swift in Sources */,
@@ -401,25 +490,32 @@
 				04F719A8230BD7FB00A7A787 /* HSNSObject+Extensions.swift in Sources */,
 				04F719C7230BD80F00A7A787 /* HSHttpMethod.swift in Sources */,
 				04F719A2230BD7FB00A7A787 /* HSDate+Extensions.swift in Sources */,
+				2486522526C67BE300509A8F /* PhotoAttachmentViewModel.swift in Sources */,
 				04F719A4230BD7FB00A7A787 /* HSUIImage+Extensions.swift in Sources */,
 				04F719C5230BD80F00A7A787 /* HSNetworkLogger.swift in Sources */,
+				2486522826C67BE300509A8F /* ImageCollectionViewCell.swift in Sources */,
 				04F719A6230BD7FB00A7A787 /* HSUITableView+Extensions.swift in Sources */,
 				04F719C9230BD80F00A7A787 /* HSNetworkResponse.swift in Sources */,
 				04F719A5230BD7FB00A7A787 /* HSUIColor+Extensions.swift in Sources */,
 				04F719A0230BD7FB00A7A787 /* NBUIButton+Extensions.swift in Sources */,
 				049715622314004A00E2056F /* HSLocationViewModel.swift in Sources */,
 				04F719DE230BDE3E00A7A787 /* HSUserLocationProvider.swift in Sources */,
+				2486523026C67F4C00509A8F /* HSAttachmentsModel.swift in Sources */,
 				04F719AA230BD7FB00A7A787 /* HSUIFont+Extensions.swift in Sources */,
 				04F719A7230BD7FB00A7A787 /* HSUIViewController+Extensions.swift in Sources */,
 				04F719C8230BD80F00A7A787 /* HSRequestTaskType.swift in Sources */,
 				045848D723165CB400808E00 /* SlideMenuController.swift in Sources */,
 				04F719AD230BD7FB00A7A787 /* HSUITextView+Extensions.swift in Sources */,
 				04F719AE230BD7FB00A7A787 /* HSArray+Extensions.swift in Sources */,
+				2486522726C67BE300509A8F /* ImageZoomViewController.swift in Sources */,
 				04F719B0230BD7FB00A7A787 /* HSUIControl+Extensions.swift in Sources */,
+				2486522626C67BE300509A8F /* AttachmentDetailViewController.swift in Sources */,
 				04F719DD230BDE3E00A7A787 /* HSLocationWarningViewController.swift in Sources */,
 				04F719AC230BD7FB00A7A787 /* HSUIView+Extensions.swift in Sources */,
 				04F719A9230BD7FB00A7A787 /* HSString+Extensions.swift in Sources */,
+				2486522A26C67BE300509A8F /* PhotoAttachmentViewController.swift in Sources */,
 				04F719AB230BD7FB00A7A787 /* HSUICollectionView+Extensions.swift in Sources */,
+				2486522D26C67DF300509A8F /* HSStoryboard.swift in Sources */,
 				04F719A3230BD7FB00A7A787 /* HSUITextField+Extensions.swift in Sources */,
 				04F719DF230BDE3E00A7A787 /* HSLocationManager.swift in Sources */,
 				04F719C4230BD80F00A7A787 /* HSNetworkEnvironment.swift in Sources */,
@@ -592,7 +688,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.50;
+				MARKETING_VERSION = 0.0.51;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashfauck.HeadStart;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -619,7 +715,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.50;
+				MARKETING_VERSION = 0.0.51;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashfauck.HeadStart;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
