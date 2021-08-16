@@ -9,29 +9,29 @@
 import UIKit
 import WebKit
 
-class ApplicationViewerViewController: UIViewController
+public class ApplicationViewerViewController: UIViewController
 {
 
     // MARK: - Properties
 
     var webView:WKWebView!
     
-    var url: Any? = nil
-    var titleName:String = ""
+    public var url: Any? = nil
+    public var titleName:String = ""
     
     // MARK: - IBOutlets
     
     
     // MARK: - Life cycle
     
-    override func viewDidLoad()
+    public override func viewDidLoad()
     {
         super.viewDidLoad()
         
         self.navigationItem.title = titleName
     }
     
-    override func viewWillAppear(_ animated: Bool)
+    public override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
         
@@ -40,7 +40,7 @@ class ApplicationViewerViewController: UIViewController
     
     // MARK: - Set up
 
-    override func loadView()
+    public override func loadView()
     {
         super.loadView()
         
@@ -80,7 +80,7 @@ class ApplicationViewerViewController: UIViewController
         }
     }
 
-    override func didReceiveMemoryWarning()
+    public override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
     }
@@ -96,27 +96,27 @@ class ApplicationViewerViewController: UIViewController
 extension ApplicationViewerViewController: WKNavigationDelegate,WKUIDelegate
 {
     
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!)
+    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!)
     {
         self.view.hideLoadingHUD()
     }
     
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!)
+    public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!)
     {
         self.view.showLoadingHUD()
     }
     
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error)
+    public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error)
     {
         self.view.hideLoadingHUD()
     }
     
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
            decisionHandler(.allow)
 
     }
     
-    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
            decisionHandler(.allow)
 
     }

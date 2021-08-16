@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-struct HSStoryboard
+public struct HSStoryboard
 {
-    static let common:UIStoryboard = UIStoryboard.init(name: "Common", bundle: nil)
+    static public let common:UIStoryboard = UIStoryboard.init(name: "Common", bundle: nil)
 }
 

@@ -9,24 +9,24 @@
 import UIKit
 import Photos
 
-class PhotoAttachmentViewModel: NSObject
+public class PhotoAttachmentViewModel: NSObject
 {
     
-    var allPhotos: PHFetchResult<PHAsset>? = nil
-    var selectedPhotos:[PHAsset] = []
+    public var allPhotos: PHFetchResult<PHAsset>? = nil
+    public var selectedPhotos:[PHAsset] = []
 
     lazy var imageManager: PHCachingImageManager = {
         return PHCachingImageManager()
     }()
 
     var previousPreheatRect = CGRect.zero
-    var isMultiSelect:Bool = false
-    var didUpdateLoading:((_ success:Bool)->())?
-    var alertMessage:((_ message:String)->())?
-    var permissionDenied:((_ message:String)->())?
-    var updateView:(()->())?
+    public var isMultiSelect:Bool = false
+    public var didUpdateLoading:((_ success:Bool)->())?
+    public var alertMessage:((_ message:String)->())?
+    public var permissionDenied:((_ message:String)->())?
+    public var updateView:(()->())?
     var addedSuccessfully:((_ imageInfos: [ImageAndInfo]) -> ())?
-    var openCamera:(()->())?
+    public var openCamera:(()->())?
 
     
     

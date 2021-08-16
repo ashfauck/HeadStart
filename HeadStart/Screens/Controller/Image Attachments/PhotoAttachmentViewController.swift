@@ -20,7 +20,7 @@ protocol PhotoAttachmentDelegate: NSObjectProtocol
     func getArrayOfImageFromCameraRoll(success:Bool, imageInfos:[ImageAndInfo]?, errorMessage:String?)
 }
 
-class PhotoAttachmentViewController: UIViewController
+public class PhotoAttachmentViewController: UIViewController
 {
 
     
@@ -37,7 +37,7 @@ class PhotoAttachmentViewController: UIViewController
     
     // MARK: - Life cycle
 
-    override func viewDidLoad()
+    public override func viewDidLoad()
     {
         super.viewDidLoad()
         
@@ -49,13 +49,13 @@ class PhotoAttachmentViewController: UIViewController
     }
     
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         PHPhotoLibrary.shared().register(self)
     }
     
-    override func viewWillDisappear(_ animated: Bool)
+    public override func viewWillDisappear(_ animated: Bool)
     {
         super.viewWillDisappear(animated)
         
@@ -246,12 +246,12 @@ class PhotoAttachmentViewController: UIViewController
 
 extension PhotoAttachmentViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate
 {
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+    public func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
     {
         self.dismiss(animated: true, completion: nil)
     }
 
-   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
     {
         if let chosenImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage, let imageData = chosenImage.jpegData(compressionQuality: 0.5), let compressedJPGImage = UIImage(data: imageData)
         {
@@ -264,7 +264,7 @@ extension PhotoAttachmentViewController: UIImagePickerControllerDelegate, UINavi
 
 extension PhotoAttachmentViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         guard let photos = self.viewModel.allPhotos else { return 0 }
         
@@ -272,7 +272,7 @@ extension PhotoAttachmentViewController: UICollectionViewDelegate,UICollectionVi
     }
     
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotoCollectionViewCell.identifier, for: indexPath) as? PhotoCollectionViewCell, let photos = self.viewModel.allPhotos else { return UICollectionViewCell() }
 
@@ -293,7 +293,7 @@ extension PhotoAttachmentViewController: UICollectionViewDelegate,UICollectionVi
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
         if indexPath.item == 0
         {
@@ -335,7 +335,7 @@ extension PhotoAttachmentViewController: UICollectionViewDelegate,UICollectionVi
     }
     
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
         return CGSize(width: (collectionView.frame.size.width - 10) / 3  , height: ( (collectionView.frame.size.width - 10) / 3 ))
     }
@@ -414,7 +414,7 @@ extension PhotoAttachmentViewController: PHPhotoLibraryChangeObserver
         }
     }
     
-    func photoLibraryDidChange(_ changeInstance: PHChange)
+    public func photoLibraryDidChange(_ changeInstance: PHChange)
     {
         guard let photos = self.viewModel.allPhotos, let changes = changeInstance.changeDetails(for: photos) else { return }
         

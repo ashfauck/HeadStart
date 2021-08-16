@@ -23,7 +23,7 @@ public class ImageSaver: NSObject
     }
 }
 
-class ImageZoomViewController: UIViewController
+public class ImageZoomViewController: UIViewController
 {
     
     
@@ -31,10 +31,10 @@ class ImageZoomViewController: UIViewController
     
     @IBOutlet weak var imageView: UIImageView!
     
-    var image:Any?
+    public var image:Any?
     
     
-    override func viewDidLoad()
+    public override func viewDidLoad()
     {
         super.viewDidLoad()
         
@@ -51,18 +51,18 @@ class ImageZoomViewController: UIViewController
         self.scrollView.contentSize = self.imageView.bounds.size
     }
     
-    override func didReceiveMemoryWarning() {
+    public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillLayoutSubviews() {
+    public override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
         setZoomScale()
     }
     
-    override func viewWillAppear(_ animated: Bool)
+    public override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
     }
@@ -147,12 +147,12 @@ class ImageZoomViewController: UIViewController
 
 extension ImageZoomViewController: UIScrollViewDelegate
 {
-    func viewForZooming(in scrollView: UIScrollView) -> UIView?
+    public func viewForZooming(in scrollView: UIScrollView) -> UIView?
     {
         return self.imageView
     }
     
-    func scrollViewDidZoom(_ scrollView: UIScrollView)
+    public func scrollViewDidZoom(_ scrollView: UIScrollView)
     {
         let imageViewSize = imageView.frame.size
         let scrollViewSize = scrollView.bounds.size

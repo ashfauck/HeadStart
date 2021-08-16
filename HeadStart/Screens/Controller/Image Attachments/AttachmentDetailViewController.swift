@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AttachmentDetailViewController: UIViewController {
+public class AttachmentDetailViewController: UIViewController {
 
     // MARK: - Properties
     let imageZoomVC:ImageZoomViewController = {
@@ -29,8 +29,8 @@ class AttachmentDetailViewController: UIViewController {
     
     var pageViewController = UIPageViewController()
 
-    var attachments:[HSAttachment] = []
-    var selectedIndex:Int = 0
+    public var attachments:[HSAttachment] = []
+    public var selectedIndex:Int = 0
 
     
     // MARK: - IBOutlets
@@ -42,7 +42,7 @@ class AttachmentDetailViewController: UIViewController {
     // MARK: - Life cycle
     
 
-    override func viewDidLoad()
+    public override func viewDidLoad()
     {
         super.viewDidLoad()
 
@@ -127,14 +127,14 @@ class AttachmentDetailViewController: UIViewController {
 
 extension AttachmentDetailViewController : UIPageViewControllerDelegate,UIPageViewControllerDataSource
 {
-    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool)
+    public func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool)
     {
         guard completed else {
             return
         }
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
     {
         if self.attachments.count > 1
         {
@@ -155,7 +155,7 @@ extension AttachmentDetailViewController : UIPageViewControllerDelegate,UIPageVi
         }
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
         if self.attachments.count > 1 {
             
@@ -177,12 +177,12 @@ extension AttachmentDetailViewController : UIPageViewControllerDelegate,UIPageVi
         }
     }
     
-    func presentationCount(for pageViewController: UIPageViewController) -> Int
+    public func presentationCount(for pageViewController: UIPageViewController) -> Int
     {
         return 0
     }
     
-    func presentationIndex(for pageViewController: UIPageViewController) -> Int
+    public func presentationIndex(for pageViewController: UIPageViewController) -> Int
     {
         return selectedIndex
     }
