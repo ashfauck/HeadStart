@@ -79,7 +79,7 @@ public class PhotoAttachmentViewController: UIViewController
     
     fileprivate func setUpCollectionView()
     {
-        self.photoCollectionView.register(identifier: PhotoCollectionViewCell.identifier)
+        self.photoCollectionView.register(UINib(nibName: PhotoCollectionViewCell.identifier, bundle: Bundle(for: PhotoCollectionViewCell.self)), forCellWithReuseIdentifier: PhotoCollectionViewCell.identifier)
     }
     
     public func setUpViewModel()

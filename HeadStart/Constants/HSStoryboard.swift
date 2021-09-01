@@ -11,6 +11,6 @@ import UIKit
 
 public struct HSStoryboard
 {
-    static public let common:UIStoryboard = UIStoryboard.init(name: "Common", bundle: nil)
+    static public let common:UIStoryboard = UIStoryboard.init(name: "Common", bundle: Bundle(for: AttachmentDetailViewController.self))
 }
 
