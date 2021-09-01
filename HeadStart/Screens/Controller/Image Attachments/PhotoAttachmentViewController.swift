@@ -1,6 +1,6 @@
 //
 //  PhotoAttachmentViewController.swift
-//  
+//
 //
 //  Created by ashfauck t on 25/12/19.
 //  Copyright © 2019 orgware. All rights reserved.
@@ -10,12 +10,12 @@ import UIKit
 import Photos
 
 
-struct ImageAndInfo {
-    var image:UIImage?
-    var imageInfo:[AnyHashable : Any]?
+public struct ImageAndInfo {
+    public var image:UIImage?
+    public var imageInfo:[AnyHashable : Any]?
 }
 
-protocol PhotoAttachmentDelegate: NSObjectProtocol
+public protocol PhotoAttachmentDelegate: NSObjectProtocol
 {
     func getArrayOfImageFromCameraRoll(success:Bool, imageInfos:[ImageAndInfo]?, errorMessage:String?)
 }
@@ -26,8 +26,8 @@ public class PhotoAttachmentViewController: UIViewController
     
     // MARK: - Properties
     
-    weak var delegate:PhotoAttachmentDelegate? = nil
-    var viewModel = PhotoAttachmentViewModel()
+    public weak var delegate:PhotoAttachmentDelegate? = nil
+    public var viewModel = PhotoAttachmentViewModel()
     
     // MARK: - IBOutlets
     @IBOutlet weak var photoCollectionView: UICollectionView!
@@ -65,7 +65,7 @@ public class PhotoAttachmentViewController: UIViewController
     
     // MARK: - Set up
     
-    func setUpIsMultiSelect()
+    public func setUpIsMultiSelect()
     {
         if self.viewModel.isMultiSelect
         {
@@ -82,7 +82,7 @@ public class PhotoAttachmentViewController: UIViewController
         self.photoCollectionView.register(identifier: PhotoCollectionViewCell.identifier)
     }
     
-    func setUpViewModel()
+    public func setUpViewModel()
     {
         
         self.viewModel.didUpdateLoading = { (success) in
@@ -153,7 +153,7 @@ public class PhotoAttachmentViewController: UIViewController
         
     }
     
-    func openCamera()
+    public func openCamera()
     {
         let cameraMediaType = AVMediaType.video
         let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: cameraMediaType)

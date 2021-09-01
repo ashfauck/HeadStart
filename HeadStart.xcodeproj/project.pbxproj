@@ -688,7 +688,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.53;
+				MARKETING_VERSION = 0.0.54;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashfauck.HeadStart;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -715,7 +715,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.53;
+				MARKETING_VERSION = 0.0.54;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashfauck.HeadStart;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

@@ -15,22 +15,22 @@ public class PhotoAttachmentViewModel: NSObject
     public var allPhotos: PHFetchResult<PHAsset>? = nil
     public var selectedPhotos:[PHAsset] = []
 
-    lazy var imageManager: PHCachingImageManager = {
+    public lazy var imageManager: PHCachingImageManager = {
         return PHCachingImageManager()
     }()
 
-    var previousPreheatRect = CGRect.zero
+    public var previousPreheatRect = CGRect.zero
     public var isMultiSelect:Bool = false
     public var didUpdateLoading:((_ success:Bool)->())?
     public var alertMessage:((_ message:String)->())?
     public var permissionDenied:((_ message:String)->())?
     public var updateView:(()->())?
-    var addedSuccessfully:((_ imageInfos: [ImageAndInfo]) -> ())?
+    public var addedSuccessfully:((_ imageInfos: [ImageAndInfo]) -> ())?
     public var openCamera:(()->())?
 
     
     
-    override init()
+    public override init()
     {
         super.init()
     }
@@ -38,7 +38,7 @@ public class PhotoAttachmentViewModel: NSObject
     
     
     
-    func checkPhotoLibraryPermission()
+    public func checkPhotoLibraryPermission()
     {
         switch PHPhotoLibrary.authorizationStatus()
         {
@@ -93,7 +93,7 @@ public class PhotoAttachmentViewModel: NSObject
         }
     }
     
-    func getSelectedImages(assets: [PHAsset?])
+    public func getSelectedImages(assets: [PHAsset?])
     {
         
         var imageAndInfoArray:[ImageAndInfo] = []
@@ -116,7 +116,7 @@ public class PhotoAttachmentViewModel: NSObject
         self.addedSuccessfully?(imageAndInfoArray)
     }
     
-    func didSelectCameraOrImage(indexPath:IndexPath)
+    public func didSelectCameraOrImage(indexPath:IndexPath)
     {
         var asset:PHAsset? = nil;
         

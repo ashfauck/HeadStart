@@ -6,8 +6,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Attachment Detail View Controller-->
         <scene sceneID="5KV-6N-cwf">
@@ -127,11 +133,91 @@
             </objects>
             <point key="canvasLocation" x="6098" y="808"/>
         </scene>
+        <!--Choose-->
+        <scene sceneID="u1S-2B-kNg">
+            <objects>
+                <viewController storyboardIdentifier="PhotoAttachmentViewController" id="h53-IB-hbn" customClass="PhotoAttachmentViewController" customModule="Malafi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IjC-fG-kU4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9ed-ZX-mAQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="iZh-Ec-tAc">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="h53-IB-hbn" id="7yM-9Z-V90"/>
+                                    <outlet property="delegate" destination="h53-IB-hbn" id="R8f-WN-YAT"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpD-Ql-HfV" customClass="MFGradientButton" customModule="Malafi" customModuleProvider="target">
+                                <rect key="frame" x="20" y="440" width="280" height="44"/>
+                                <color key="backgroundColor" name="primaryAccent"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Inh-pa-IiJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dontBtnAction:" destination="h53-IB-hbn" eventType="touchUpInside" id="nM0-dh-bBd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G4s-TY-ht3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9ed-ZX-mAQ" firstAttribute="leading" secondItem="G4s-TY-ht3" secondAttribute="leading" id="2yD-F2-sUK"/>
+                            <constraint firstItem="G4s-TY-ht3" firstAttribute="trailing" secondItem="zpD-Ql-HfV" secondAttribute="trailing" constant="20" id="FVn-C8-dDb"/>
+                            <constraint firstItem="G4s-TY-ht3" firstAttribute="trailing" secondItem="9ed-ZX-mAQ" secondAttribute="trailing" id="Hza-iK-NkA"/>
+                            <constraint firstItem="G4s-TY-ht3" firstAttribute="bottom" secondItem="9ed-ZX-mAQ" secondAttribute="bottom" id="TzP-uP-kMx"/>
+                            <constraint firstItem="9ed-ZX-mAQ" firstAttribute="top" secondItem="G4s-TY-ht3" secondAttribute="top" id="dmL-vB-p3I"/>
+                            <constraint firstItem="G4s-TY-ht3" firstAttribute="bottom" secondItem="zpD-Ql-HfV" secondAttribute="bottom" constant="40" id="nnc-7M-atg"/>
+                            <constraint firstItem="zpD-Ql-HfV" firstAttribute="leading" secondItem="G4s-TY-ht3" secondAttribute="leading" constant="20" id="s0H-Xy-Aby"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose" largeTitleDisplayMode="never" id="FDB-d7-k43">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" style="done" id="U2m-ad-bgu">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancelBarBtnAction:" destination="h53-IB-hbn" id="uj4-Gg-ped"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="cancelBarBtn" destination="U2m-ad-bgu" id="hlV-4Y-pSj"/>
+                        <outlet property="doneBtn" destination="zpD-Ql-HfV" id="n9Y-Z9-Sgh"/>
+                        <outlet property="photoCollectionView" destination="9ed-ZX-mAQ" id="0U1-kR-3ib"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P7k-Oq-aK2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3713" y="810"/>
+        </scene>
     </scenes>
     <resources>
         <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
         <namedColor name="AppBlueColor">
             <color red="0.070588235294117646" green="0.69803921568627447" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="primaryAccent">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

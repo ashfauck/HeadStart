@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |spec|
 spec.name = "HeadStart"
-spec.version = "0.0.53"
+spec.version = "0.0.54"
 spec.summary = "Framework for users who would like to head start their project with high level structure."
 spec.homepage = "https://github.com/ashfauck/HeadStart"
 spec.license = { type: 'MIT', file: 'LICENSE' }
@@ -19,7 +19,7 @@ spec.dependency "PINRemoteImage"
 
 spec.source_files = "HeadStart/**/*.{h,swift,storyboard,otf,xib}"
 spec.resource_bundles = {
-    'Framework' => ['HeadStart/**/*.{storyboard}']
+    'Framework' => ['HeadStart/**/*.{storyboard,otf,xib}']
 }
 
 end
