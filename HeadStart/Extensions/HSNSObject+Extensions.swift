@@ -166,7 +166,7 @@ extension UINavigationBar {
 
 extension UINavigationController {
     
-    @IBInspectable var isBarTransparent:Bool {
+    @IBInspectable public var isBarTransparent:Bool {
         set {
             self.navigationBar.transparentBackground()
         }
